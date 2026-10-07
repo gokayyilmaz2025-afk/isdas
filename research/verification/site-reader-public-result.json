@@ -1,0 +1,11 @@
+{
+  "passed": true,
+  "checked_at": "2026-10-04T11:12:10.616326+00:00",
+  "url": "https://www.iana.org/domains/reserved",
+  "title": "IANA-managed Reserved Domains",
+  "characters": 1838,
+  "warnings_roundtrip_utf8": [
+    "Yalnızca bu sayfanın sunucudan gelen metni okundu. Alt sayfalar, görseller ve JavaScript ile sonradan gelen içerikler okunmadı."
+  ],
+  "scope": "single public HTTPS page through real isolated reader; no JavaScript, login or full site crawl"
+}

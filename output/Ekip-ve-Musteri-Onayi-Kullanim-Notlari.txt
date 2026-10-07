@@ -1,0 +1,92 @@
+İŞDAŞ · EKİP VE MÜŞTERİ ONAYI
+4 Ekim 2026
+
+KULLANICIYA SUNULAN AKIŞ
+Alan üyeleri ekranından bir e-posta adresine davet gönderilir. Rol açıkça seçilir:
+Alan yöneticisi: alanı kuran kişi. Davet/erişim, marka bilgisi, bağlantı ve onayları yönetir.
+Ekip üyesi: ortak sohbet, belge, hafıza, ajanda ve içerikleri kullanır; iş başlatabilir.
+Müşteri: yalnızca ajansın kendisine gönderdiği içerik sürümlerini görür ve yanıtlar.
+
+Müşteri rolü yalnızca ajans alanında seçilir. Ajans müşterilerinin marka hafızaları
+birbirine karışmamalıdır: ayrı müşteri/marka için ayrı çalışma alanı açılmalıdır.
+Ekip üyeleri kendi alanlarındaki TÜM ortak kayıtları görür; kişisel gizli sohbet
+alanı veya belge bazlı ekip izni bu sürümde yoktur. Müşteri bu ortak kayıtlara erişmez.
+
+DAVET
+Davet 7 gün geçerli, tek kullanımlı ve belirli e-posta adresine bağlıdır. Davet sahibi
+ile aynı e-postayı taşıyan DOĞRULANMIŞ hesapla açıkça kabul edilmelidir. Davet bağlantısı
+kendi başına hesap e-postasını doğrulamaz. Yeni kullanıcı davet sayfasında hesap açar,
+doğrulama iletisini yeni sekmede açar ve davet sekmesine dönüp kabul eder.
+Genel kayıt kapalı olsa bile geçerli davet, yalnızca davet edilen adresin hesap
+açmasına izin verir. İptal edilmiş veya başka adrese ait davet kayıt açamaz.
+Yanlış hesap açıkken davet kabul edilmez; doğru hesapla giriş düğmesi gösterilir.
+Bir alanda üyeler ve bekleyen davetlerle birlikte en fazla 25 kişi bulunabilir.
+Bu pilot kapasite sınırıdır; satılmış ücretli koltuk taahhüdü değildir.
+Saatlik en fazla 20 davet hazırlanır. Var olan bekleyen davet iptal edilmeden yenisi
+oluşturulmaz. Süresi dolmuş davet yer tutmaz. Yeni yönetici atama/alan sahipliği devri
+henüz yoktur; mevcut yönetici kendisini veya başka tek yöneticiyi silemez.
+Rol değişimi açıkça erişim kaldırma ve yeni rolde davet gerektirir.
+
+E-POSTA
+Gerçek SMTP kurulumu Hesap-ve-Eposta-Isletim-Notlari.txt dosyasında anlatılır.
+Davet için alan yöneticisinin kendi e-postası da doğrulanmış olmalıdır. SMTP yokken
+davet gönderilmiş gibi gösterilmez. Davet bağlantıları API yanıtında verilmez; açık
+token yalnızca şifreli e-posta kuyruğundadır. Tarayıcı tokenı adresten temizler.
+Parola sıfırlanan/değişen yöneticinin henüz kabul edilmemiş davetleri iptal edilir.
+Gönderimi belirsiz davet otomatik tekrar gönderilmez; yönetici iptal edip yenisini açar.
+
+İÇERİK → MÜŞTERİ → GERİ BİLDİRİM → YENİ SÜRÜM → ONAY
+1. Ajans içerik metnini ve varsa görselini kaydeder.
+2. Düzenleyicide Müşteri onayı bölümünden daveti kabul etmiş bir müşteri seçer.
+3. Müşterinin onayına gönder düğmesi TAM O SÜRÜMÜ müşteri paneline ekler.
+4. Müşteri yalnızca başlık, platform/tür, metin, görsel ve önerilen zaman bilgisini görür.
+   İç görsel komutu, marka dosyaları, sohbet, maliyet ve başka müşterilerin içerikleri yoktur.
+5. Müşteri bu sürümü onaylar veya en az üç karakterlik bir değişiklik notu bırakır.
+6. Değişiklik isteği içeriği taslağa döndürür. Ajans düzenleyip yeni sürümü tekrar gönderir.
+7. Onay sonrasında metin veya görsel değişirse eski onay geçersizleşir; yeni onay gerekir.
+8. Müşteri isteği beklerken yönetici kendi onayını veremez. Önce müşteri isteğini açıkça
+   iptal etmelidir. İptal edilen içerik taslağa döner.
+
+Bir içerik için aynı anda tek müşteri onayı beklenir. Birden fazla onaycının sıralı veya
+ortak oyuyla karar verme yoktur. Müşterinin kararı ve notu sürüm geçmişinde kalır.
+Tekrar gönderilen aynı karar aynı sonucu döndürür; iki farklı eşzamanlı karardan biri
+kabul edilir. Eski sürüm yeni sürüm adına onaylanamaz. Onay gerçek sosyal yayın değildir:
+bu sürüm sosyal hesaplara yayın yapmaz. Takvim saati öneri olarak gösterilir.
+
+Müşteri paneli 50 kayıtta sayfalanır; Tüm gönderilenler ve Onay bekleyenler filtresi
+vardır. İçerik düzenleyici son beş müşteri isteğini gösterir; API son 50 isteği döndürür.
+İçerik sürümleri ortak çalışma alanında saklanır; müşteri yalnızca kendisine atanmış
+onay kayıtlarını okur. Eski görsel sonradan kaldırılmışsa bu durum müşteriye gösterilir.
+Müşteri onayı paneli SMTP olmadan da kullanılır; varsa bildirim kuyruğa alınır ve yalnızca
+panel bağlantısı içerir. Bildirimde içerik metni veya dosya gönderilmez.
+
+ERİŞİMİ KALDIRMA
+Yönetici ekip üyesi veya müşterinin erişimini kaldırabilir; kişi kendisi de ayrılabilir.
+Kaldırılan üyenin sıradaki işleri iptal edilir, ayrılmış müşteri kullanım hakkı serbest
+bırakılır, düzenli işleri kapanır. Başlamış sağlayıcı çağrısı tamamlanabilir ve maliyeti
+kaydedilir; iptal edilmiş işin sonucu yeni çıktı olarak alana eklenmez.
+Ortak alana daha önce eklenen kayıtlar alanda kalır. Önceden görüntülenmiş/indirilmiş
+bilginin kullanıcının cihazından geri alınması iddia edilmez. Yeni API istekleri reddedilir.
+Müşteri çıkarıldığında bekleyen onayları kapanır. Daha önce verilmiş karar geçmişi
+ajansın kayıtlarında kalır. Müşteri paneli sonraki yenilemede içeriği temizler.
+İşçi ve düzenli iş zamanlayıcısı üyeliği ayrıca kontrol eder; sahipsiz işler çalışmaz.
+
+YEDEKTEN DÖNÜŞ
+restore-candidate bekleyen davetleri iptal eder. Bekleyen ve onaylı müşteri incelemeleri
+geçersizleşir; ilgili içerikler yeni sürümle taslağa döner. Eski onaylar sessizce tekrar
+kullanılmaz. Eski kayıtlar denetim geçmişinde kalır. Bakım kilidi açılmadan mutasyon yoktur.
+
+DOĞRULAMA
+tests/test_membership_reviews.py: rol/adres/doğrulama/süre sınırları, kapalı kayıtla
+davetli kayıt, eşzamanlı kabul, e-posta iptali, müşteri veri ayrımı, görev maliyeti,
+eski sürüm onayının reddi, geri bildirim, özel görsel erişimi ve restore senaryoları.
+Tarayıcıda üç ayrı oturum: ajans, ekip üyesi, müşteri. Kayıt → e-posta doğrulama → davet
+kabul → içerik gönderme → değişiklik → yeniden gönderme → onay → düzenlemeyle onay
+iptali → erişim kaldırma akışı gerçek yerel API ile denenmiştir. 390 px mobil müşteri
+ve üye ekranları incelenmiştir. E-postalar yalnızca test başlatıcısının belleğinde
+yakalanmıştır; gerçek müşteri/SMTP hesabına ileti gönderilmemiştir.
+
+KALAN ÜRÜN İŞLERİ
+Gerçek SMTP ve pilot müşteri kabulü; sahiplik devri; daha ayrıntılı ekip yetkileri;
+çok aşamalı onay; gerçek sosyal yayın; müşteri/marka başına ticari paket sınırlarının
+ödeme sistemiyle bağlanması. Bunlar bu sürümde tamamlanmış sayılmaz.

@@ -1,0 +1,55 @@
+İŞDAŞ — İÇERİK STÜDYOSU
+4 Ekim 2026 · yerel uygulama sürümü
+
+Ne hazır?
+İçerikler ekranında markanın işi, hedef kitlesi, doğrulanmış ürün/fiyat bilgileri,
+konuşma dili, kaçınılacak ifadeler, görsel tarzı, renkleri ve logosu saklanır.
+Marka bilgilerini alan yöneticisi düzenler; üyeler okuyabilir.
+
+Haftamı hazırla düğmesi gerçek iş kuyruğuna sosyal içerik görevi ekler.
+xAI metin adaptörü prepare_social_posts araç çağrısını alırsa 1–14 düzenlenebilir
+kayıt oluşturur. Haftalık düğme 7 kayıt ister; gerçek modelin bu sayıyı her çağrıda
+üreteceği henüz canlı test edilmedi. Geçersiz veya yarım plan kaydedilmez.
+Hermes bu yapılandırılmış içerik aracını henüz kullanmaz.
+
+Her içerikte başlık, platform, tür, metin, görsel tarifi, görsel ve yerel saat vardır.
+Instagram, Facebook, LinkedIn, X ve TikTok seçimleri içerik kategorisidir;
+bu seçimler ilgili hesaba bağlantı veya yayın yetkisi vermez.
+Kaydırmalı gönderi seçimi çoklu görsel üretmez. Reel seçimi video üretmez.
+Onay bekliyor ve Onaylı durumları uygulama içi incelemedir; yayın sonucu değildir.
+Ekip üyeleri taslak oluşturabilir; onayı alan yöneticisi verir. Ajans alanında yönetici
+belirli sürümü bir müşteriye atayabilir; yalnızca atanan müşteri o sürümü onaylayabilir.
+Ekip-ve-Musteri-Onayi-Kullanim-Notlari.txt müşteri akışını ve yetki sınırlarını açıklar.
+Metin/görsel düzenlemesi eski onayı kaldırır. Eski sürümler son 30 kayıtla görünür.
+İki oturum aynı içeriği değiştirirse eski sürüm yeni sürümü ezemez.
+
+Görseller
+PNG/JPG/WebP yüklenebilir; dosya başına 8 MB, çalışma alanı başına 50 MB sınırı vardır.
+Görseller çözümlenir, metaverileri temizlenir ve PNG olarak saklanır.
+Görseller ve dosya indirmeleri oturum ve alan üyeliği gerektirir; herkese açık URL yoktur.
+Veri ve görsel içeriği aynı SQLite işlemiyle saklanır; yedek ikisini de içerir.
+
+xAI görsel adaptörü: grok-imagine-image-2.0, tek görsel, 1k/low, b64_json.
+Hikâye/Reel kapakları 9:16; diğerleri 1:1. Logo otomatik bindirilmez.
+Varsayılan görsel rezervasyonu 0,10 USD / en fazla 10 müşteri puanıdır.
+Gerçek kesinti sağlayıcının cost_in_usd_ticks makbuzuyla hesaplanır.
+Görsel hazırlanırken içerik değişirse çıktı yalnızca görsel kütüphanesine eklenir.
+Hazırlanırken iptal edilen işin doğrulanmış sağlayıcı maliyeti korunur; çıktı eklenmez.
+Kayıp makbuz sıfır maliyet sayılmaz. Kullanım kaydı operatör incelemesi ister.
+
+Takvim
+Saat dilimleri IANA adlarıyla saklanır. Yaz/kış saatinde belirsiz veya atlanan yerel
+saatler reddedilir. Takvim, içerikte seçilen yerel günü gösterir; paylaşımı çalıştırmaz.
+Farklı saat dilimlerinde hazırlanan içerikler ortak UTC gününe dönüştürülerek çizilmez.
+Metin ve görsel ayrı indirilebilir. Gerçek sosyal yayın ve CMS bağlantıları bekleniyor.
+
+Doğrulama
+İçerik sunucu katmanında 16 test; tarayıcıda marka kaydı, özel medya yükleme,
+7 düzenlenebilir taslak, görsel adaptörü, onay/revizyon, eşzamanlı düzenleme,
+390 px mobil takvim, maliyet makbuzu ve yeniden yükleme kontrol edildi.
+Tarayıcı metin/görsel hizmeti sentetiktir; ücretli xAI üretimi yapılmadı.
+Canlı model kalitesi, gerçek Türkçe reklam çıktısı ve sosyal yayın kabul testi bekliyor.
+
+Kaynaklar
+https://docs.x.ai/developers/model-capabilities/images/generation
+https://docs.x.ai/developers/cost-tracking

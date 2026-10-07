@@ -1,0 +1,20 @@
+{
+  "passed": true,
+  "checks": {
+    "followup_has_history": true,
+    "reload_preserves_conversation": true,
+    "explicit_memory_saved": true,
+    "export_contains_dialogue": true,
+    "cancel_shows_terminal_status": true,
+    "in_flight_cancel_keeps_charge": true,
+    "archive_restore": true,
+    "new_thread_has_no_other_history": true
+  },
+  "widths": {
+    "page": 390,
+    "viewport": 390
+  },
+  "errors": [],
+  "model": "synthetic local HTTP service",
+  "live_model_tested": false
+}

@@ -1,0 +1,69 @@
+{
+  "date": "2026-10-04",
+  "goal_status": "active",
+  "backend_tests": 111,
+  "test_suite": {
+    "name": "pytest",
+    "errors": "0",
+    "failures": "0",
+    "skipped": "0",
+    "tests": "111",
+    "time": "32.165",
+    "timestamp": "2026-10-04T12:18:02.082830+03:00",
+    "hostname": "DESKTOP-CSUUNJP"
+  },
+  "content_browser": {
+    "passed": true,
+    "checks": {
+      "private_media_upload": true,
+      "brand_kit_persists": true,
+      "chat_creates_seven_editable_posts": true,
+      "image_adapter_saves_private_asset": true,
+      "edited_approved_post_needs_new_approval": true,
+      "revision_history_saved": true,
+      "stale_editor_cannot_overwrite": true,
+      "calendar_and_mobile_no_overflow": true,
+      "text_and_image_costs_recorded": true,
+      "reload_preserves_content": true
+    },
+    "widths": {
+      "page": 390,
+      "viewport": 390
+    },
+    "errors": [],
+    "live_model_tested": false,
+    "live_image_provider_tested": false,
+    "live_social_publishing_tested": false,
+    "model": "synthetic local HTTP text/image service"
+  },
+  "deployment": {
+    "passed": true,
+    "checks": {
+      "archive_manifest_verified": true,
+      "config_keys_not_overwritten": true,
+      "production_archive_serves_web_and_api": true,
+      "second_production_process_rejected": true,
+      "restored_archive_stays_read_only": true
+    },
+    "os": "Windows",
+    "live_provider_tested": false,
+    "linux_systemd_caddy_tested": false,
+    "off_server_backup_tested": false,
+    "archive": "Isdas-Sunucu-Paketi-20261004-r2.zip"
+  },
+  "release": {
+    "path": "output\\Isdas-Sunucu-Paketi-20261004-r2.zip",
+    "sha256": "4040f7c0de49d274621f89647e8a9eb673bfff843e68520ba6f77b1bb82d323e",
+    "bytes": 1367970
+  },
+  "main_database_migration": "additive content/media/system_state schema applied, previous local snapshot retained in data/backups",
+  "live_model_tested": false,
+  "live_google_tested": false,
+  "live_payment_tested": false,
+  "scope_reduced": false,
+  "next_work": [
+    "document ingestion and scoped retrieval",
+    "member invitation and account lifecycle",
+    "live provider/server/payment acceptance when configuration becomes available"
+  ]
+}

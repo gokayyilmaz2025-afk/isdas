@@ -1,0 +1,14 @@
+{
+  "passed": true,
+  "checks": {
+    "archive_manifest_verified": true,
+    "config_keys_not_overwritten": true,
+    "production_archive_serves_web_and_api": true,
+    "second_production_process_rejected": true,
+    "restored_archive_stays_read_only": true
+  },
+  "os": "Windows",
+  "live_provider_tested": false,
+  "linux_systemd_caddy_tested": false,
+  "off_server_backup_tested": false
+}

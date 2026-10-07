@@ -1,0 +1,67 @@
+İŞDAŞ · BİLDİRİMLER VE SONUCA GEÇİŞ
+4 Ekim 2026 · r8
+
+KULLANICI AKIŞI
+Üst çubuktaki zil, hesabın erişebildiği tüm çalışma alanlarındaki gelişmeleri
+gösterir. Kullanıcı farklı bir ekranda veya alanda çalışırken tamamlanan işi
+buradan açabilir. Her kartta alan adı, zaman, kısa başlık ve ilgili iş görünür.
+Okunmamış filtresi, iş/hesap işlemi/müşteri onayı türleri ve sayfalama vardır.
+
+İş sonucu → tam o işin sonuç penceresi → aynı sohbette devam et.
+Görsel işi → bağlı içeriğin düzenleyicisi.
+Hesap işlemi → tam o işlemin inceleme penceresi.
+Müşteriye yeni inceleme → yalnızca kendisine atanmış içerik sürümü.
+Müşterinin değişiklik isteği/onayı → ajanstaki ilgili içerik düzenleyicisi.
+
+Bağlantılar çalışma alanı ve kaynak kimliğini içerir; sayfa yenilendiğinde hedef
+korunur. İlk 100 iş/işlem veya ilk 50 müşteri incelemesi arasında bulunmayan
+kayıtlar da tekil, yetki kontrollü uçtan açılabilir. Pencereyi kapatmak hedefi
+bağlantıdan kaldırır. Bildirimi açmak iş başlatmaz, tekrar denemez veya dış hesap
+işlemini onaylamaz. Onay düğmesi ayrıca bilinçli olarak kullanılmalıdır.
+
+HANGİ GELİŞME KİME GİDER?
+- İş tamamlandı, başarısız, engellendi, kesildi veya iptal edildi: işi isteyen
+  ve hâlâ alanda owner/member olan kullanıcı.
+- İşlem onay bekliyor: alan yöneticisi. Sonuç durumları: yönetici ve varsa işi
+  isteyen mevcut ekip üyesi. Müşteri rolü hesap işlemlerini göremez.
+- İnceleme bekliyor, eski sürüm oldu veya kapatıldı: atanmış mevcut müşteri.
+- Müşteri onayladı/değişiklik istedi: isteği oluşturan mevcut alan yöneticisi.
+
+YETKİ VE GÜNCELLİK
+Sunucu her liste, sayı, okundu ve açma işleminde üyeliği ve kaynak durumunu
+yeniden kontrol eder. Kaldırılmış üyelik, değişmiş atama, değişmiş işlem özeti,
+silinmiş kaynak ve artık geçerli olmayan durum için eski bildirim açılmaz.
+Eski onay güncelmiş gibi gösterilmez. Bildirim paneli kalıcı denetim günlüğü
+değildir: güncel kaynakla uyuşan son 90 günlük gelişmeleri gösterir.
+
+Kaynak durumu ile bildirim aynı SQLite işlemi içinde yazılır; geri alınan işlem
+bildirim üretmez. Alıcı/kaynak/durum/sürüm birleşimi aynı bildirimin çoğalmasını
+önler. Geçmiş işler bu sürüm yüklenince topluca bildirilmez; yeni geçişler izlenir.
+Yeni bildirim eklenirken 90 günden eski bildirim satırları temizlenir. Kaynak işler,
+çıktılar, içerikler veya inceleme kayıtları bu temizlikle silinmez. Bildirim
+oluşmasa da 90 günlük görünürlük sınırı her okumada uygulanır.
+
+Her sayfada en fazla 30 kayıt vardır. Zaman ve kimliğe dayalı sayfalama yeni gelen
+kayıtların sonraki sayfada eski kayıtları tekrar ettirmesini önler. "Listelenenleri
+okundu işaretle" yalnızca ekranda listelenen kayıtların kimliklerini gönderir;
+bu sırada yeni gelen veya sonraki sayfada kalan kayıtları topluca okundu yapmaz.
+Herhangi bir kimlik yetkisiz/geçersizse tüm okundu işlemi geri alınır.
+
+GÜNCELLEME VE SINIRLAR
+Aktif tarayıcı sekmesi yaklaşık 7 saniyede bir kontrol eder; sekmeye dönünce veya
+panel açılınca da yenilenir. Kapalı uygulamaya telefon bildirimi, işletim sistemi
+bildirimi ya da yeni e-posta göndermez. Mevcut davet/inceleme e-posta akışı ayrı
+çalışır; bu özellik o akışın yerine geçmez. Gerçek cihaz push testi yapılmadı.
+Erişim/API hatasında eski panel verisi temizlenir; yeniden yükleme sunulur.
+
+DOĞRULAMA
+12 yeni backend testi: gerçek kuyruk tamamlanması, işlem geri alma, aynı olayın
+çoğalmaması, rol/alıcı/sürüm sınırları, iptal ve revizyon, okunma kalıcılığı,
+eş zamanlı yeni kayıtta sayfalama, toplu okundu atomikliği, 90 günlük sınır,
+ilk sayfa dışındaki kayıt, görsel içerik hedefi, yetki ve hatalı parametreler.
+Tarayıcı: sonuç → aynı sohbet, sayfa yenileme, farklı alan, işlem inceleme,
+geçersiz bildirimden toparlanma, müşteri yorumu → tam içerik, yeni sürüm onayı,
+eski sürüm ve erişim kaldırma; masaüstü/mobil ve klavye odağı.
+Model testi yerel sentetik sunucu; Google kaydı açıkça etiketli yerel veri;
+e-posta yerel yakalama kullanır. Gerçek model kalitesi, gerçek Google işlemi,
+canlı SMTP ve sunucu yayını bu testlerle doğrulanmış sayılmaz.

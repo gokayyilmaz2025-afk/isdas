@@ -1,0 +1,80 @@
+İŞDAŞ — BELGELER VE KAYNAKLI HAFIZA
+4 Ekim 2026 · yerel uygulama sürümü
+
+KULLANIM
+Hafıza ekranındaki Belge yükle düğmesi PDF, DOCX, TXT, CSV ve Markdown kabul eder.
+Dosya okunduktan sonra açılan pencerede hangi metinlerin alındığını incele.
+PDF için sayfa; Word için paragraf ve tablo satırı; metin/CSV için satır bilgisi tutulur.
+Özgün dosya alan yöneticisi ve ekip üyelerinin oturumuyla indirilebilir. Müşteri rolü
+belge kütüphanesine erişmez. Herkese açık dosya URL'si yoktur.
+
+Belgelerde ara alanı açık belgelerin metninde kelime araması yapar. Türkçe büyük/küçük
+harf ve aksan farklılıkları normalize edilir. Bu sürüm anlamsal vektör araması yapmaz;
+eşleşme bulunmazsa belgedeki kelimelerle tekrar denemek gerekir.
+
+Sohbette Belge seç alanından en fazla 5 dosya seçebilirsin. Seçmezsen sorundaki kelimeler
+ve konuşmanın son iki kullanıcı mesajıyla açık belgelerde ilgili bölümler aranır.
+Belge seçtiğinde her seçilen dosyadan en az bir bölüm bağlama alınır. Soruya uygun
+kelime bulunamazsa seçilen dosyalardan örnek bölümler alınır. Uzun belgenin tamamı
+her seferinde modele gönderilmez: en fazla 8 bölüm / yaklaşık 12.800 karakter.
+Bu nedenle tüm sözleşme veya bütün kitap hakkında eksiksiz inceleme vaadi yoktur.
+
+Yanıtta [K1] gibi bir işaret varsa Belge bölümleri düğmesinden dosya adını, konumunu
+ve asistana verilen metni açabilirsin. İşaretin varlığı, iddianın semantik olarak
+doğrulandığı anlamına gelmez. Modelin var olmayan bir bölüm numarasına atfı açıkça
+doğrulanamadı olarak işaretlenir. Önemli sonuçlar özgün belgeyle karşılaştırılmalıdır.
+Sosyal gönderi taslağına uygulama içi atıf eklememesi için modele ayrıca talimat verilir.
+
+KAPSAM VE SINIRLAR
+Dosya başına 8 MB, PDF başına 100 sayfa, belge başına 200.000 okunmuş karakter;
+çalışma alanı başına 100 belge ve 50 MB özgün dosya limiti vardır. Bu 50 MB sınırı,
+arama indeksi ve alınan metnin veritabanındaki ek alanını kapsamaz.
+CSV en fazla 10.000 satır ve 200 sütun olabilir; metin dosyaları UTF-8 olmalıdır.
+Word için .docx gerekir; eski .doc veya makrolu dosyalar desteklenmez.
+Parola korumalı PDF bu sürümde açılmaz; yetkili olduğun parolasız kopyayı kullan.
+
+Taranmış görseller OCR ile okunmaz. Tamamen metinsiz PDF eklenmez; bazı sayfaları
+metinsiz PDF'te hangi sayfaların okunamadığı gösterilir. PDF tablo hizası/metin sırası
+değişebilir. Word ana metni ve tablo hücreleri okunur; görseller, metin kutuları,
+yorumlar, dipnotlar ve üst/alt bilgiler okunmaz. Bu sınırlamalar belge penceresinde görünür.
+Sınır aşıldığında dosya sessizce kırpılarak kaydedilmez; yükleme reddedilir.
+
+İZİNLER VE KALDIRMA
+Belgeler kişisel gizli alt alanlar değildir: ilgili çalışma alanının tüm üyeleri
+okuyabilir ve belge ekleyebilir. Yalnız alan yöneticisi kullanıma kapatabilir veya silebilir.
+Kullanıma kapatılan belge yeni aramalarda seçilmez. Silinen dosya, metin parçaları,
+arama indeksi ve kaynak kartlarındaki alıntılar kaldırılır.
+Önceki sohbet yanıtları ve eski kaynak adları geçmişte kalır. Asistanın geçmişte
+ürettiği yanıtı da kaldırmak, ayrı sohbet/veri silme yaşam döngüsü gerektirir.
+Yedeklerdeki kopyalar mevcut yedek saklama politikası süresince ayrıca kalabilir.
+
+Bir belge iş sıradayken kaldırılmışsa modele çağrı yapılmadan iş durur ve rezervasyon
+geri bırakılır. Model çalışırken kullanılan belge kapatılır veya silinirse eski
+belgeye dayalı çıktı kaydedilmez; başlamış çağrının gerçek kullanım maliyeti korunur.
+Kullanıma kapatıp tekrar açmak geçmiş yanıtları değiştirmez.
+
+İŞLETİM
+Ayrıştırma ayrı süreçte çalışır; uygulama anahtarları ve veritabanı yolu bu sürece verilmez.
+Bu bir tam işletim sistemi sandbox'ı değildir. Linux'ta 512 MiB adres alanı ve 15 saniye
+CPU sınırı; ana süreçte 22 saniye bekleme ve aynı anda 2 ayrıştırıcı sınırı vardır.
+Windows yerel testte duvar saati sınırı uygulanır; Linux kaynak sınırları henüz Linux
+sunucuda canlı denenmedi. Paket Python 3.12 ve SQLite FTS5 desteği gerektirir.
+Bağımlılıklar pypdf 6.19.0, python-docx 1.2.0 ve lxml 6.1.3 olarak sabitlenmiştir.
+Özgün dosyalar, okunmuş metin ve arama indeksi aynı SQLite yedeğine dahildir.
+Şifreli pilot yedek aracının toplam veritabanı sınırı 256 MiB'dir; belge yükleme limiti
+bu yedek sınırının tüm hesaplarda aşılmayacağı garantisini vermez. Disk/kapasite izlemesi gerekir.
+
+DOĞRULAMA
+15 belge testi: gerçek PDF/DOCX ayrıştırma; parola/metinsiz/geçersiz dosya reddi;
+eşzamanlı aynı dosya yükleme; kota; Türkçe arama; müşteri ayrımı; seçilmiş dosyalar;
+model bağlamına yalnız alanın kaynaklarını verme; geçersiz atıf; belge silme/kapatma;
+iş sırasında değişiklik; zaman aşımı; anahtarların ayrıştırıcıya aktarılmaması;
+şifreli yedekten dosya ve arama indeksini geri alma.
+Toplam 126 backend testi geçti. Masaüstü ve 390 px mobil tarayıcı akışı doğrulandı.
+Tarayıcı modeli sentetik yerel HTTP hizmetidir; gerçek xAI/Hermes belge yanıtlarının
+kalitesi, OCR ve semantik arama henüz doğrulanmadı.
+
+KAYNAKLAR
+https://pypdf.readthedocs.io/en/stable/user/extract-text.html
+https://python-docx.readthedocs.io/en/latest/api/document.html
+https://www.sqlite.org/fts5.html

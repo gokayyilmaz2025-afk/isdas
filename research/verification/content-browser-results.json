@@ -1,0 +1,24 @@
+{
+  "passed": true,
+  "checks": {
+    "private_media_upload": true,
+    "brand_kit_persists": true,
+    "chat_creates_seven_editable_posts": true,
+    "image_adapter_saves_private_asset": true,
+    "edited_approved_post_needs_new_approval": true,
+    "revision_history_saved": true,
+    "stale_editor_cannot_overwrite": true,
+    "calendar_and_mobile_no_overflow": true,
+    "text_and_image_costs_recorded": true,
+    "reload_preserves_content": true
+  },
+  "widths": {
+    "page": 390,
+    "viewport": 390
+  },
+  "errors": [],
+  "live_model_tested": false,
+  "live_image_provider_tested": false,
+  "live_social_publishing_tested": false,
+  "model": "synthetic local HTTP text/image service"
+}

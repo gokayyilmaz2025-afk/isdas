@@ -1,0 +1,123 @@
+{
+  "date": "2026-10-04",
+  "goal_status": "active",
+  "notification_backend_tests": 12,
+  "backend_tests": 192,
+  "suite": {
+    "name": "pytest",
+    "errors": "0",
+    "failures": "0",
+    "skipped": "0",
+    "tests": "192",
+    "time": "90.565",
+    "timestamp": "2026-10-04T15:08:17.352631+03:00",
+    "hostname": "DESKTOP-CSUUNJP"
+  },
+  "browser": {
+    "passed": true,
+    "checks": {
+      "empty_and_keyboard_focus": true,
+      "job_exact_result_and_refresh": true,
+      "continue_same_conversation": true,
+      "read_persists": true,
+      "keyset_pages_filter_and_visible_batch": true,
+      "old_action_outside_first_100_opens_without_execution": true,
+      "cross_workspace_target": true,
+      "stale_notice_rechecks_source_and_recovers": true
+    },
+    "errors": [],
+    "synthetic_model": true,
+    "synthetic_google_connection": true,
+    "live_model_tested": false,
+    "live_google_tested": false,
+    "job_link_roundtrip": true
+  },
+  "review_browser": {
+    "passed": true,
+    "checks": {
+      "customer_direct_review_and_refresh": true,
+      "feedback_to_exact_owner_editor": true,
+      "fresh_revision_approval_handoff": true,
+      "stale_review_notice": true,
+      "mixed_owner_and_reviewer_workspace_switch": true,
+      "revocation_clears_badge_inbox_and_open_content": true
+    },
+    "errors": [],
+    "mail_transport": "local capture only",
+    "live_smtp_tested": false
+  },
+  "deployment": {
+    "passed": true,
+    "checks": {
+      "archive_manifest_verified": true,
+      "bundled_document_parser_runs": true,
+      "bundled_site_reader_runs_and_rejects_http_without_network": true,
+      "config_keys_not_overwritten": true,
+      "public_site_routes_metadata_catalogue_and_404": true,
+      "notification_and_exact_targets_require_authentication": true,
+      "membership_and_review_routes_require_auth": true,
+      "guided_setup_and_site_reader_routes_require_auth": true,
+      "account_routes_require_auth_and_test_mailbox_absent": true,
+      "production_archive_serves_web_and_api": true,
+      "second_production_process_rejected": true,
+      "restored_archive_stays_read_only": true
+    },
+    "os": "Windows",
+    "live_provider_tested": false,
+    "linux_systemd_caddy_tested": false,
+    "off_server_backup_tested": false,
+    "archive": "Isdas-Sunucu-Paketi-20261004-r8.zip"
+  },
+  "release": {
+    "file": "Isdas-Sunucu-Paketi-20261004-r8.zip",
+    "sha256": "2190da702a18cc5095cf9b3ad867d8a2ea9bfdaf46babcacea36ffbc180f6236",
+    "bytes": 1459138
+  },
+  "main_app": {
+    "pid": 16340,
+    "port": 8000,
+    "ready_status": 200,
+    "authenticated_routes": {
+      "/notifications": 401,
+      "/workspaces/none/jobs/missing": 401,
+      "/workspaces/none/actions/missing": 401,
+      "/workspaces/none/client-reviews/missing": 401
+    },
+    "notification_triggers": 7,
+    "history_backfilled": false,
+    "web_assets_match_release_manifest": true,
+    "archive": "Isdas-Sunucu-Paketi-20261004-r8.zip",
+    "outbound_mail_rows": 0,
+    "active_jobs": 0,
+    "executing_actions": 0,
+    "backup": "data/backups/before-notifications-20261004-151218.sqlite3",
+    "test_mailbox_status": 405
+  },
+  "screenshots_reviewed": [
+    "notifications-desktop.png",
+    "notifications-mobile.png",
+    "notification-review-mobile.png"
+  ],
+  "native_push_implemented": false,
+  "live_model_tested": false,
+  "live_google_tested": false,
+  "live_smtp_tested": false,
+  "own_server_deployed": false,
+  "next_product_flow": "Complete personal agenda/task/reminder flow; real subscription payment, social publication, full voice/native mobile and own-server live acceptance remain. Existing requests for secure provider and commercial configuration remain pending.",
+  "boundaries": [
+    "in-app only; no new email or operating-system push",
+    "current authorized source states in last 90 days; not permanent audit history",
+    "seven-second active-tab polling, no immediate closed-app delivery",
+    "exact source open never executes or approves work",
+    "fixture Google data and local synthetic model/mail do not prove live service quality"
+  ],
+  "still_required": [
+    "Actual payment collection and subscription lifecycle",
+    "Final commercial/legal/support information",
+    "Live model/Google/SMTP acceptance",
+    "Social publishing and complete video/carousel output",
+    "Native app and real-device full voice/push",
+    "Own-server TLS deployment and off-server restore",
+    "Paid pilot outcome and operating-cost validation"
+  ]
+}

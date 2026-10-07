@@ -1,0 +1,159 @@
+{
+  "date": "2026-10-04",
+  "goal_status": "active",
+  "public_site_tests": 4,
+  "backend_tests": 180,
+  "test_suite": {
+    "name": "pytest",
+    "errors": "0",
+    "failures": "0",
+    "skipped": "0",
+    "tests": "180",
+    "time": "75.380",
+    "timestamp": "2026-10-04T14:33:44.018296+03:00",
+    "hostname": "DESKTOP-CSUUNJP"
+  },
+  "browser": {
+    "passed": true,
+    "checks": {
+      "interactive_tour_is_labelled_example_and_read_only": true,
+      "all_seven_public_pages_desktop_and_mobile_fit": true,
+      "expert_filter_detail_and_intent_link": true,
+      "available_native_tools_and_planned_connectors_distinguished": true,
+      "preview_pricing_matches_server_policy_no_fake_checkout": true,
+      "mobile_navigation_escape_focus_and_links": true,
+      "help_search_filter_and_empty_recovery": true,
+      "catalog_failure_can_be_retried": true,
+      "unknown_public_urls_are_real_404": true,
+      "public_personal_choice_survives_signup_and_persists_in_setup": true,
+      "existing_account_can_open_new_intent_without_automatic_creation": true
+    },
+    "errors": [],
+    "public_demo_executes_jobs": false,
+    "live_checkout_tested": false
+  },
+  "email_gate_intent": {
+    "passed": true,
+    "checks": {
+      "persona_and_goal_survive_email_gate": true,
+      "selection_survives_reload_before_creation": true,
+      "confirmed_selection_persisted": true
+    },
+    "mail": "local memory capture only",
+    "live_smtp_tested": false
+  },
+  "onboarding_regression": {
+    "passed": true,
+    "checks": {
+      "business_persona_profile_and_resume": true,
+      "website_requires_explicit_review_and_uses_edited_text": true,
+      "actual_document_upload_in_guide": true,
+      "lost_enqueue_response_recovers_existing_job": true,
+      "business_first_job_through_actual_queue_with_synthetic_model": true,
+      "completed_guide_can_be_reopened_and_dismissed": true,
+      "personal_persona_profile_and_resume": true,
+      "personal_first_job_through_actual_queue_with_synthetic_model": true,
+      "agency_persona_profile_and_resume": true,
+      "no_free_job_on_signup_and_explicit_skip": true
+    },
+    "errors": [],
+    "site_preview": "local deterministic fixture; real HTTPS reader checked separately",
+    "model": "local synthetic HTTP model; live model quality untested"
+  },
+  "contrast": {
+    "passed": true,
+    "scope": "Heuristic computed text contrast on five default public pages, opaque nearest backgrounds; not a full accessibility audit",
+    "findings": [
+      {
+        "path": "/",
+        "findings": []
+      },
+      {
+        "path": "/isdaslar",
+        "findings": []
+      },
+      {
+        "path": "/paketler",
+        "findings": []
+      },
+      {
+        "path": "/baglantilar",
+        "findings": []
+      },
+      {
+        "path": "/yardim",
+        "findings": []
+      }
+    ]
+  },
+  "deployment": {
+    "passed": true,
+    "checks": {
+      "archive_manifest_verified": true,
+      "bundled_document_parser_runs": true,
+      "bundled_site_reader_runs_and_rejects_http_without_network": true,
+      "config_keys_not_overwritten": true,
+      "public_site_routes_metadata_catalogue_and_404": true,
+      "membership_and_review_routes_require_auth": true,
+      "guided_setup_and_site_reader_routes_require_auth": true,
+      "account_routes_require_auth_and_test_mailbox_absent": true,
+      "production_archive_serves_web_and_api": true,
+      "second_production_process_rejected": true,
+      "restored_archive_stays_read_only": true
+    },
+    "os": "Windows",
+    "live_provider_tested": false,
+    "linux_systemd_caddy_tested": false,
+    "off_server_backup_tested": false,
+    "archive": "Isdas-Sunucu-Paketi-20261004-r7.zip"
+  },
+  "release": {
+    "file": "Isdas-Sunucu-Paketi-20261004-r7.zip",
+    "sha256": "9b0d5f1c345b90fa446e58a372b19d450a95827a78995fa9095a3bcc53671dbb",
+    "bytes": 1449494
+  },
+  "main_app": {
+    "port": 8000,
+    "pid": 14124,
+    "ready_status": 200,
+    "public_pages": {
+      "/": 200,
+      "/kullanim/kisisel": 200,
+      "/kullanim/isletme": 200,
+      "/kullanim/ajans": 200,
+      "/isdaslar": 200,
+      "/baglantilar": 200,
+      "/paketler": 200,
+      "/yardim": 200
+    },
+    "catalogue_status": "preview; no checkout",
+    "web_assets_match_release_manifest": true,
+    "archive": "Isdas-Sunucu-Paketi-20261004-r7.zip",
+    "test_mailbox_status": 405,
+    "outbound_mail_rows": 0,
+    "active_jobs": 0,
+    "backup": "data/backups/before-marketing-20261004-144003.sqlite3"
+  },
+  "screenshots_reviewed": [
+    "marketing-home-desktop.png",
+    "marketing-home-mobile.png",
+    "marketing-tour-desktop.png",
+    "marketing-pricing-desktop.png",
+    "marketing-pricing-mobile.png",
+    "marketing-menu-mobile.png"
+  ],
+  "live_checkout_tested": false,
+  "live_model_tested": false,
+  "live_smtp_tested": false,
+  "own_server_deployed": false,
+  "next_product_flow": "In-app task completion/action notifications and direct result handoff; live payment, social publishing, full voice/native mobile and own-server launch remain.",
+  "still_required": [
+    "Actual payment collection and subscription lifecycle",
+    "Final commercial/legal/support information",
+    "Live model/Google/SMTP acceptance",
+    "Social publishing and complete video/carousel output",
+    "Native app and real-device full voice/push",
+    "Own-server TLS deployment and off-server restore",
+    "Paid pilot outcome and operating-cost validation"
+  ]
+}

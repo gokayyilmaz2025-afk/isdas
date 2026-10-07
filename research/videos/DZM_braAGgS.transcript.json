@@ -1,0 +1,150 @@
+{
+  "engine": "faster-whisper base.en; machine transcript; verify uncertain terms",
+  "segments": [
+    {
+      "start": 0.0,
+      "end": 4.48,
+      "text": "What is Cinta and how does it work? Cinta acts like an agency that has employees ready to"
+    },
+    {
+      "start": 4.48,
+      "end": 8.96,
+      "text": "execute tasks for your projects or your business. For this agency to work well, you need to provide"
+    },
+    {
+      "start": 8.96,
+      "end": 14.48,
+      "text": "information upfront. What tools you use, what files, documents, or information is relevant for your"
+    },
+    {
+      "start": 14.48,
+      "end": 19.36,
+      "text": "tasks. Our helpers are ready to execute tasks. However, if you want them to do it your way,"
+    },
+    {
+      "start": 19.36,
+      "end": 24.48,
+      "text": "you need to share feedback or better train them. Let's dive deeper. The main components are"
+    },
+    {
+      "start": 24.48,
+      "end": 29.12,
+      "text": "workspaces, they allow separating different projects or businesses from one another. Each"
+    },
+    {
+      "start": 29.2,
+      "end": 34.24,
+      "text": "workspace has its own. Briniye, it's basically a storage of all the files, documents, and knowledge"
+    },
+    {
+      "start": 34.24,
+      "end": 38.8,
+      "text": "regarding that project. Keeping this tidy ensures that helpers have only the relevant context when"
+    },
+    {
+      "start": 38.8,
+      "end": 43.28,
+      "text": "working on it. Helpers in that workspace. These are specialists best equipped in their field of"
+    },
+    {
+      "start": 43.28,
+      "end": 47.76,
+      "text": "knowledge. Each workspace has its own helpers. Even though they may have the same name and look,"
+    },
+    {
+      "start": 47.76,
+      "end": 51.6,
+      "text": "they're working on a project only within that workspace. In case you need more helpers than the"
+    },
+    {
+      "start": 51.6,
+      "end": 56.08,
+      "text": "workspace already has, you can actually hire more from the helper marketplace. The helper"
+    },
+    {
+      "start": 56.08,
+      "end": 60.72,
+      "text": "marketplace contains specialists that were built by central users using the helper builder. These"
+    },
+    {
+      "start": 60.72,
+      "end": 64.96,
+      "text": "helpers are specialized in niche fields, which means you can get a helper equipped in knowledge"
+    },
+    {
+      "start": 64.96,
+      "end": 69.68,
+      "text": "specifically for your needs. Then, there's integrations. These are easily connectable tools."
+    },
+    {
+      "start": 69.68,
+      "end": 74.0,
+      "text": "They allow helpers to perform additional actions or use these tools as an additional source of"
+    },
+    {
+      "start": 74.0,
+      "end": 78.96,
+      "text": "information. You can connect almost any tool that you use day to day. Now that we've got the basics"
+    },
+    {
+      "start": 78.96,
+      "end": 83.36,
+      "text": "out of the way, you can have multiple workspaces under the same account, and each workspace will"
+    },
+    {
+      "start": 83.44,
+      "end": 87.52,
+      "text": "be treated as a separate project. You can also add team members to your workspace for free."
+    },
+    {
+      "start": 88.16,
+      "end": 91.92,
+      "text": "The only thing to note is central works on a credit-based system. You have a set of"
+    },
+    {
+      "start": 91.92,
+      "end": 96.0,
+      "text": "credits available in a workspace, and these credits are used by everyone on the team."
+    },
+    {
+      "start": 96.0,
+      "end": 100.96,
+      "text": "You can upgrade or downgrade the credit plan anytime. Now that we know what Central is,"
+    },
+    {
+      "start": 100.96,
+      "end": 107.2,
+      "text": "what can Central AI actually do? Central can generate images, videos, social media posts,"
+    },
+    {
+      "start": 107.2,
+      "end": 112.56,
+      "text": "websites, and so much more. Honestly, listing everything out will take a lot of time."
+    },
+    {
+      "start": 112.64,
+      "end": 116.96,
+      "text": "But most importantly, Central saves time. Since Central can perform a lot of actions with"
+    },
+    {
+      "start": 116.96,
+      "end": 121.84,
+      "text": "the connected tools, retains knowledge, and uses this knowledge for the tasks, it basically becomes"
+    },
+    {
+      "start": 121.84,
+      "end": 125.92,
+      "text": "your team of employees. When doing a task for the first time, you tell the helpers how to do it in"
+    },
+    {
+      "start": 125.92,
+      "end": 130.8,
+      "text": "detail, as if you were training a new employee. And then, they have this knowledge for later use."
+    },
+    {
+      "start": 130.8,
+      "end": 136.08,
+      "text": "Just tell them to remember it for later."
+    }
+  ]
+}

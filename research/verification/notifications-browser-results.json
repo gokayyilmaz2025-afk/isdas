@@ -1,0 +1,19 @@
+{
+  "passed": true,
+  "checks": {
+    "empty_and_keyboard_focus": true,
+    "job_exact_result_and_refresh": true,
+    "continue_same_conversation": true,
+    "read_persists": true,
+    "keyset_pages_filter_and_visible_batch": true,
+    "old_action_outside_first_100_opens_without_execution": true,
+    "cross_workspace_target": true,
+    "stale_notice_rechecks_source_and_recovers": true
+  },
+  "errors": [],
+  "synthetic_model": true,
+  "synthetic_google_connection": true,
+  "live_model_tested": false,
+  "live_google_tested": false,
+  "job_link_roundtrip": true
+}

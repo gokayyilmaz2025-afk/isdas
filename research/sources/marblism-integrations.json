@@ -1,0 +1,92 @@
+{
+  "url": "https://help.marblism.com/en/articles/15278633-what-integrations-are-available",
+  "retrieved_at": "2026-10-04T05:25:16.999830+00:00",
+  "title": "What integrations are available? | Marblism",
+  "text": "What integrations are available? | Marblism Skip to main content Search for articles... What integrations are available? What other platforms can you connect to Marblism? Written by Carlie Updated this week Table of contents Marblism works with the tools you already use. Each AI employee has built-in connections, and on hours plans they can also work in 100+ other apps and run automations for you. Built-in connections Connect these from the AI employee's settings: open their chat and click the gear icon. They work on every plan. Eva: your inbox (Gmail or Google Workspace, Outlook, or any other provider through IMAP) and your Google or Outlook calendar. She sorts your emails and writes draft replies for you to send. Her Notetaker takes notes in your Zoom, Google Meet and Microsoft Teams meetings once your calendar is connected. Sonny: Instagram, Facebook, X (Twitter), LinkedIn, Google Business Profile, Threads, Pinterest, TikTok and YouTube. TikTok and YouTube are for videos. Penny: WordPress, Wix, Shopify (your store's blog), Webflow, or a website built by Walter. Stan: one or more inboxes to send from (Google, Microsoft or IMAP) and your LinkedIn account. You can also import leads from a CSV or Excel file, and export them. Rachel: her own phone number (United States, Canada, United Kingdom, Australia or Mexico), your Google or Microsoft calendar for bookings, and call transfer to your own numbers. Linda: the files you pick in Google Drive or OneDrive. Walter (hours plans): your own domain name, and API keys for services your website uses. Not sure where a connection lives? Search the app's name on the Integrations page: its card opens the right AI employee's settings. Brain sources Your Brain is the company knowledge your AI employees share. In Brain , click Add entry to add: Webpages: one page or a whole website (up to 200 pages). Turn on Keep it synced to refresh it every week. Files: PDF, Word, Excel, CSV, text, images, audio and video, up to 25 MB each. Google Drive or OneDrive files: pick the files you want. They don't update on their own, so use Resync from drive after you change them. 100+ more apps (hours plans) On hours plans, your AI employees can also work in apps like HubSpot, Salesforce, Stripe, QuickBooks, Mailchimp, Airtable, Notion, Google Sheets, Google Docs and Canva. Connect an app: go to Integrations in the sidebar, find the app, click Connect , then sign in and approve access. On mobile, go to Brain , then Apps . Who can use it: anyone in the workspace can connect an app. Every AI employee you work with there can then use it, except Walter. You stay in control: reading is always allowed. Before creating, changing or deleting anything, your AI employee asks you first. In the app's settings you can choose Always allow , Ask every time , Auto (AI decides) or Never allow . Missing an app? Search for it and click Request . Slack and Xero aren't available yet. Automations (hours plans) An automation is a task your AI employee runs by itself when something happens in a connected app. For example: when a new lead is added in Salesforce, Eva drafts a welcome email. Set one up: in Tasks , click Add task , choose Runs: App event , then pick the event and the AI employee. Or ask in chat: your AI employee describes the automation and asks you to confirm. Limits: up to 200 runs per workspace per day, and up to 15 events per automation every 10 minutes. Extra events are skipped. 💡 Nobody is there to approve during an automation. If it needs to change something in an app, set that action to Always allow , or it won't run. On an older plan On older (legacy) plans you can browse the apps, but connecting one or setting up an automation needs an hours plan. Clicking Connect shows how to switch, and only the workspace owner can switch. See What changes when I switch from an older plan to an hours plan? API and webhooks Marblism has no public API or webhooks. See When will the API be available? Related Articles How do I connect my inbox to Eva? Why do my emails keep disconnecting? How to Work With Walter, the AI Website Builder? Getting started with Marblism What changes when I switch from an older plan to an hours plan? Did this answer your question? Disappointed Reaction 😞 Neutral Reaction 😐 Smiley Reaction 😃 Table of contents",
+  "links": [
+    {
+      "text": "Skip to main content",
+      "url": "#main-content"
+    },
+    {
+      "text": "",
+      "url": "/en/"
+    },
+    {
+      "text": "",
+      "url": "#h_90082967bb"
+    },
+    {
+      "text": "",
+      "url": "#h_c44ad47622"
+    },
+    {
+      "text": "",
+      "url": "#h_58074ac153"
+    },
+    {
+      "text": "",
+      "url": "#h_ec09929701"
+    },
+    {
+      "text": "",
+      "url": "#h_c3d31c34c7"
+    },
+    {
+      "text": "",
+      "url": "#h_d67ea73a14"
+    },
+    {
+      "text": "What changes when I switch from an older plan to an hours plan?",
+      "url": "https://help.marblism.com/en/articles/17232133"
+    },
+    {
+      "text": "When will the API be available?",
+      "url": "https://help.marblism.com/en/articles/14826186"
+    },
+    {
+      "text": "How do I connect my inbox to Eva?",
+      "url": "https://help.marblism.com/en/articles/11824458-how-do-i-connect-my-inbox-to-eva"
+    },
+    {
+      "text": "Why do my emails keep disconnecting?",
+      "url": "https://help.marblism.com/en/articles/14808779-why-do-my-emails-keep-disconnecting"
+    },
+    {
+      "text": "How to Work With Walter, the AI Website Builder?",
+      "url": "https://help.marblism.com/en/articles/16552262-how-to-work-with-walter-the-ai-website-builder"
+    },
+    {
+      "text": "Getting started with Marblism",
+      "url": "https://help.marblism.com/en/articles/17217749-getting-started-with-marblism"
+    },
+    {
+      "text": "What changes when I switch from an older plan to an hours plan?",
+      "url": "https://help.marblism.com/en/articles/17232133-what-changes-when-i-switch-from-an-older-plan-to-an-hours-plan"
+    },
+    {
+      "text": "",
+      "url": "#h_90082967bb"
+    },
+    {
+      "text": "",
+      "url": "#h_c44ad47622"
+    },
+    {
+      "text": "",
+      "url": "#h_58074ac153"
+    },
+    {
+      "text": "",
+      "url": "#h_ec09929701"
+    },
+    {
+      "text": "",
+      "url": "#h_c3d31c34c7"
+    },
+    {
+      "text": "",
+      "url": "#h_d67ea73a14"
+    }
+  ]
+}

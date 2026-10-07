@@ -1,0 +1,93 @@
+İŞDAŞ · HESAP VE E-POSTA İŞLETİM NOTLARI
+Kontrol tarihi: 4 Ekim 2026
+
+BU SÜRÜMDE ÇALIŞANLAR
+Kayıt, giriş, e-posta doğrulama, parola yenileme ve mevcut parolayla parola değişimi.
+Hesabım ekranı çalışma alanından bağımsız hesap bilgilerini gösterir. Doğrulama
+gereken hesap çalışma alanı verilerine erişemez; hesabını doğrulayabilir veya çıkabilir.
+Üye daveti ve müşteri onayı Ekip-ve-Musteri-Onayi-Kullanim-Notlari.txt içinde anlatılır.
+MFA ve e-posta adresi değiştirme henüz eklenmedi.
+
+ÜRETİM AYARLARI
+deploy/init_config.py yeni sunucu için kayıtları kapalı, doğrulamayı açık oluşturur.
+Var olan ENCRYPTION_KEY değiştirilmez; OAuth bilgileri ve bekleyen e-postalar bu
+anahtarla şifrelenir. Sunucu ayarları /etc/isdas/isdas.env içinde tutulur.
+
+EMAIL_VERIFICATION_REQUIRED=true
+MAIL_WORKER_ENABLED=true
+SMTP_HOST=sağlayıcının SMTP sunucusu
+SMTP_PORT=587
+SMTP_SECURITY=starttls
+SMTP_FROM=hesap@kendi-alan-adin
+SMTP_USERNAME=sağlayıcının verdiği kullanıcı adı
+SMTP_PASSWORD=sağlayıcının verdiği parola
+
+465 portu kullanan sağlayıcı için SMTP_SECURITY=ssl seçilir. Her iki modda da
+sunucunun TLS sertifikası ve adı doğrulanır. Şifresiz SMTP desteklenmez.
+Kimlik doğrulaması kullanılıyorsa kullanıcı adı ve parola birlikte girilir.
+SMTP_FROM yalnızca e-posta adresidir; görünen ad veya ek başlık yazılmaz.
+APP_ORIGIN ve PUBLIC_ORIGIN aynı gerçek HTTPS alan adı olmalıdır. Bağlantılar
+isteğin Host başlığından değil bu ayardan üretilir. Parola veya bağlantı günlüklenmez.
+
+Alan adı gönderim yetkisi, SPF/DKIM/DMARC ve sağlayıcı teslimat kurulumu sağlayıcının
+güncel talimatlarıyla tamamlanır. Bu uygulama bu DNS ayarlarını kendi başına yapmaz.
+Önce izinli test alıcısında gerçek teslimat/doğrulama/yenileme denenir; sonra
+REGISTRATION_ENABLED=true yapılır. SMTP ve doğrulama olmadan üretimde herkese açık
+kayıt başlatılamaz. Geliştirmedeki doğrulamasız test hesapları otomatik doğrulanmaz.
+Yerel .env.example geliştirme içindir; üretimde init_config.py çıktısı esas alınır.
+
+KULLANICI AKIŞI
+1. Yeni kayıt doğrulama e-postasını sıraya alır. Kullanıcı hesabında bekleme ekranı görür.
+2. Doğrulama bağlantısı 24 saat, parola yenileme bağlantısı 30 dakika geçerlidir.
+3. E-postadaki bağlantıyı açmak tek başına hesapta değişiklik yapmaz. Doğrulamada
+   mevcut hesap parolası girilir. Parola bilinmiyorsa Parolamı unuttum kullanılır.
+4. Yenilemede iki eşleşen yeni parola gerekir. Başarılı işlem e-posta sahipliğini de
+   doğrular; tüm oturumları, eski kurtarma bağlantılarını ve bekleyen OAuth başlangıç
+   durumlarını kapatır. Kullanıcı yeni parolayla tekrar giriş yapar.
+5. Hesabım üzerinden parola değişiminde mevcut parola gerekir ve tüm oturumlar kapanır.
+6. Yeni bağlantı isteği, aynı amaca ait önceki bağlantıyı kapatır. Doğrulama yeniden
+   gönderiminde en az 60 saniye beklenir; saatlik/IP sınırları da vardır.
+
+Hesabım alanındaki “e-posta sunucusu iletiyi kabul etti” durumu gelen kutusuna kesin
+teslimat anlamına gelmez. Spam/karantina veya sağlayıcı reddi ayrıca incelenmelidir.
+Parola yenileme isteği kayıtlı ve kayıtlı olmayan adrese aynı yanıtı verir.
+Asgari yanıt süresi eşitlenir; bu tüm yük koşullarında zamanlama sızıntısı yoktur
+iddiası değildir. Kötüye kullanım koruması adres/IP tabanlıdır; CAPTCHA/MFA yoktur.
+
+GÖNDERİM VE SAKLAMA
+Mail kuyruğu SQLite'ta, ileti gövdesi ENCRYPTION_KEY ile şifreli tutulur. Açık token
+yalnızca şifreli iletide bulunur; account_tokens tablosunda SHA-256 özeti saklanır.
+Bağlantı tokenı URL fragment'ında taşınır; sayfa açılınca adresten temizlenir ve
+yalnızca tarayıcı belleğinde kalır. Sayfa yenilenirse e-postadaki bağlantı tekrar açılır.
+Arka plan e-posta işçisi model kuyruğundan ayrıdır; SMTP sırasında DB kilidi tutulmaz.
+Gönderim denemesi bittikten sonra ileti gövdesi kuyruktan silinir. Başarısız/yarıda
+kalmış gönderim belirsiz olarak işaretlenir; kendiliğinden yeniden gönderilmez.
+Kullanıcı gelmeyen ileti için yeni bağlantı isteyebilir. Eski bağlantı geçersiz kalır.
+“uncertain” durumunda yeniden deneyerek aynı iletiyi çift gönderen otomatik bir
+mekanizma yoktur. Sağlayıcı hata metni veya parola kullanıcıya/loglara aktarılmaz.
+Gönderim durumu metadata'sı ve süresi geçmiş token özetleri için uzun dönem saklama
+politikasının otomatik temizliği henüz uygulanmadı; pilot DB boyutu takip edilmelidir.
+
+YEDEKTEN DÖNÜŞ
+Yedek bütün tabloları içerir. restore-candidate eski oturumları, kurtarma tokenlarını
+ve bekleyen hesap e-postalarını kapatır. Eski e-postalar yedekten dönünce yeniden
+gönderilmez. Bakım kilidi açıkken e-posta işçisi gönderim yapmaz. Hesap tablosu olmayan
+eski yedeklerle uyumluluk korunur; sunucu açılışında ek tablolar oluşturulur.
+
+DOĞRULAMA KANITI
+tests/test_accounts.py: 16 test. Tek kullanımlı/süreli/amaç ve sürüm bağlı token,
+parola eşleştirme, eski oturumların kapatılması, eşzamanlı giriş ve reset yarışı,
+iki eşzamanlı resetten yalnızca birinin işlemesi, kalıcı istek sınırları, belirsiz SMTP
+sonucunun tekrarlanmaması, TLS sırası ve yedekten dönmüş e-postanın iptali doğrulandı.
+Hesap sürümünün kontrolünde 142 backend testi geçmişti; güncel toplam ekip sürümünde 161.
+Bir mevcut Starlette/httpx kullanımdan kaldırma uyarısı var.
+Tarayıcı: gerçek uygulama API'siyle kayıt/doğrulama/yenileme/parola değişimi, eski
+oturum reddi, tekrar kullanılan bağlantı ve 390 px mobil ekran kontrolü geçti.
+İletiler yalnızca özel yerel test başlatıcısının belleğinde yakalandı. Gerçek SMTP
+sunucusu, gerçek gelen kutusu, DNS teslimatı veya üretim Linux kurulumu test edilmedi.
+Test posta kutusu yalnızca tests/browser_accounts_app.py tarafından açılır; dağıtım
+paketinde test kodu ve test API'si bulunmaz.
+
+TEKNİK DAYANAK
+https://cheatsheetseries.owasp.org/cheatsheets/Forgot_Password_Cheat_Sheet.html
+https://docs.python.org/3.12/library/smtplib.html

@@ -1,0 +1,18 @@
+{
+  "passed": true,
+  "checks": {
+    "unfunded_account_blocked": true,
+    "pilot_is_explicit_and_not_payment": true,
+    "owner_balance_shared_across_workspaces": true,
+    "real_provider_receipt_reconciles_customer_balance": true,
+    "reload_preserves_usage": true
+  },
+  "widths": {
+    "page": 390,
+    "viewport": 390
+  },
+  "errors": [],
+  "live_provider_tested": false,
+  "live_payment_tested": false,
+  "model": "synthetic local HTTP service"
+}

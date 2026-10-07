@@ -1,0 +1,69 @@
+{
+  "date": "2026-10-04",
+  "goal_status": "active",
+  "backend_tests": 126,
+  "test_suite": {
+    "name": "pytest",
+    "errors": "0",
+    "failures": "0",
+    "skipped": "0",
+    "tests": "126",
+    "time": "47.535",
+    "timestamp": "2026-10-04T12:42:22.865675+03:00",
+    "hostname": "DESKTOP-CSUUNJP"
+  },
+  "document_tests": 15,
+  "browser": {
+    "passed": true,
+    "checks": {
+      "docx_text_and_table_visible": true,
+      "pdf_pages_visible": true,
+      "download_requires_session": true,
+      "search_finds_turkish_text": true,
+      "chat_uses_selected_document_and_exposes_source": true,
+      "mobile_chat_and_library_fit": true,
+      "disabled_document_not_searched": true,
+      "deleted_document_source_removed_history_explicitly_retained": true
+    },
+    "errors": [],
+    "live_model_tested": false,
+    "parser": "actual pypdf/python-docx isolated subprocess",
+    "model": "synthetic local HTTP response"
+  },
+  "deployment": {
+    "passed": true,
+    "checks": {
+      "archive_manifest_verified": true,
+      "bundled_document_parser_runs": true,
+      "config_keys_not_overwritten": true,
+      "production_archive_serves_web_and_api": true,
+      "second_production_process_rejected": true,
+      "restored_archive_stays_read_only": true
+    },
+    "os": "Windows",
+    "live_provider_tested": false,
+    "linux_systemd_caddy_tested": false,
+    "off_server_backup_tested": false,
+    "archive": "Isdas-Sunucu-Paketi-20261004-r3.zip"
+  },
+  "release": {
+    "path": "output\\Isdas-Sunucu-Paketi-20261004-r3.zip",
+    "sha256": "ca24d13485efe702ac56bda2a4d6a6fa5497e0f16725ec54dea41fe70823bfb2",
+    "bytes": 1383050
+  },
+  "main_local_api_ready": true,
+  "main_document_schema_applied": true,
+  "isolated_test_server_stopped": true,
+  "live_model_tested": false,
+  "live_google_tested": false,
+  "live_payment_tested": false,
+  "linux_parser_limits_tested": false,
+  "scope_reduced": false,
+  "remaining_live_gates": [
+    "provider/model quality",
+    "server/TLS/Linux acceptance",
+    "payment lifecycle",
+    "real social publishing",
+    "OCR and other document structures"
+  ]
+}

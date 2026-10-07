@@ -1,0 +1,62 @@
+İŞDAŞ · BAŞLANGIÇ REHBERİ VE WEB SAYFASI OKUMA
+4 Ekim 2026 · r6
+
+KULLANICI AKIŞI
+Hesap aç / gerekiyorsa e-posta doğrula → Kendim / İşletmem / Ajansım →
+Alan adı ve ilk amaç → Profil → Site / belge / kısa bilgi → Bağlantılar → İlk iş.
+
+Kullanım türü, açıklama soruları ve ilk iş önerileri birlikte değişir. Ajans alanı
+bir marka/müşteri için ayrılır; yeni müşteri gerektiğinde ayrı alan açılabilir.
+Mevcut alanlar zorla yeniden kurulmaz. Alan sahibi çalışma masasındaki Başlangıç
+rehberinden bilgilerine geri dönebilir. Üyeler ve müşteriler yönetici kurulumuna
+yönlendirilmez; müşteriler yalnızca kendilerine gönderilen onay ekranını görür.
+
+Profil açıkça kaydedilir. Diğer adımlar isteğe bağlıdır; sıradaki adıma geçmek
+bağlantı kurulduğu veya bir iş yapıldığı anlamına gelmez. Sayfa yenilenince son
+kaydedilen adım açılır. Formdaki kaydedilmemiş değişiklikler korunmaz.
+
+İlk iş, mevcut gerçek kuyruk ve sohbet üzerinden çalışır. İş başlamadan kullanım
+ve asistan bağlantısı kontrol edilir. Hak yoksa başlangıç düğmesi kapalıdır;
+kullanıcı bilgilerini ekleyebilir ve çalışma alanına geçebilir. Rehber ücretsiz
+kullanım hakkı veya abonelik oluşturmaz. Rehberi tamamlamak işin tamamlandığı
+anlamına gelmez; sonuç gerçek iş durumundan okunur. Yanıt kaybında ilk iş tekrar
+oluşturulmaz: aynı konuşma ve aynı kullanım kaydı bulunarak açılır.
+
+WEB SAYFASI → İNCELEME → HAFIZA
+Yalnızca kullanıcının verdiği herkese açık HTTPS sayfası okunur. Önce başlık,
+son adres ve metin gösterilir. Kullanıcı başlık/metni değiştirip 'Bu bilgileri
+hafızaya ekle' demeden hafıza veya marka profili değişmez. Kayıt kaynak adresini
+taşır; Hafıza bölümünden düzenlenebilir veya silinebilir.
+
+Bu bir tam site taraması veya bilgilerin doğruluğunun onayı değildir. Alt sayfa,
+görsel, oturum gerektiren sayfa, JavaScript sonrası içerik ve OCR okunmaz.
+Metin sınırlı HTML ayrıştırmasıyla alınır; sayfanın görsel düzeni/CSS'i işlenmez.
+1 MB yanıt, 15.000 karakter, en fazla dört yönlendirme adımı ve 22 saniye süreç
+sınırı vardır. Kullanıcı başına saatte 10 istek; aynı anda en fazla iki okuyucu.
+Tek alanın son önizlemesi bir saat kullanılabilir. Yeni okuma önceki önizlemeyi
+geçersiz kılar. Aynı onay tekrarlanırsa aynı hafıza kaydı döner.
+
+Okuyucu ayrı, -I kipinde Python sürecidir. Uygulamanın model, SMTP, OAuth,
+veritabanı ve şifreleme değişkenleri bu sürece verilmez. Özel/yerel IP, IP
+literal, kullanıcı/parola içeren adres ve 443 dışı port reddedilir. Her yönlendirme
+yeniden denetlenir; DNS sonuçlarının tümü denetlenir ve TLS bağlantısı denetlenen
+IP'ye, özgün alan adının sertifikası doğrulanarak kurulur. DNS yeniden çözülmez.
+Linux bellek/CPU sınırları kodda mevcut; bu turda Linux üzerinde doğrulanmadı.
+
+Bilgiler çalışma alanı yetkilerine göre ayrıdır. Kullanıcı iş başlattığında seçilen
+bağlam mevcut model sağlayıcısına gönderilebilir; alan ayrımı 'hiçbir dış hizmete
+veri gönderilmez' anlamına gelmez. Harici model kalitesi ve veri işleme koşulları
+canlı kurulumun ayrı kabul maddeleridir.
+
+DOĞRULAMA VE SINIRLAR
+Backend: atomik kurulum/tekrar, alan sınırı, profil sürüm çakışması, sahip yetkisi,
+önizleme onayı/süresi, okuma sınırı, bakım kontrolü, URL/DNS/TLS pinleme,
+yönlendirme ve süreç kimlik bilgisi ayrımı testleri.
+Tarayıcı: üç persona, kayıtlı adımın yenilenmesi, düzenlenmiş site metninin açık
+onayı, gerçek TXT yükleme/ayrıştırma, ilk iş, kopan yanıtın kurtarılması, yeniden
+rehber açma, mobil 390 px taşma kontrolü.
+Tarayıcıdaki site metni yerel test verisidir. Model ayrı yerel HTTP test sunucusudur.
+Ayrıca tek bir gerçek herkese açık HTTPS sayfası okuyucuyla başarıyla okundu.
+Bunlar canlı model kalitesi, tüm sitelerde çalışma veya Google yetkilendirmesi
+kanıtı değildir. Canlı ödeme, sosyal yayınlama, native uygulama ve kendi sunucuna
+gerçek dağıtım tamamlanmış değildir. Ürünün bütünü tamamlandı iddiası yoktur.

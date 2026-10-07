@@ -1,0 +1,85 @@
+{
+  "engine": "faster-whisper base.en; machine transcript; verify uncertain terms",
+  "segments": [
+    {
+      "start": 0.0,
+      "end": 2.46,
+      "text": "Oh, hi, looking for someone to run your whole day?"
+    },
+    {
+      "start": 2.46,
+      "end": 5.3,
+      "text": "Ooh, don't just look, swipe right on me."
+    },
+    {
+      "start": 5.3,
+      "end": 9.1,
+      "text": "While the other guys finishing his coffee, I've already booked you three calls."
+    },
+    {
+      "start": 9.1,
+      "end": 11.8,
+      "text": "You could hire an agency, wait six weeks, pay triple."
+    },
+    {
+      "start": 11.8,
+      "end": 17.0,
+      "text": "I post, I engage, I make you look good online, 24-7, no burnout, no ran out of content ideas excuse."
+    },
+    {
+      "start": 17.0,
+      "end": 18.3,
+      "text": "I'm kind of a big deal already."
+    },
+    {
+      "start": 18.3,
+      "end": 21.3,
+      "text": "In box zero, calendar sorted, never double booked, never asleep."
+    },
+    {
+      "start": 21.3,
+      "end": 23.5,
+      "text": "I don't need coffee breaks, I don't need weekends."
+    },
+    {
+      "start": 23.5,
+      "end": 25.9,
+      "text": "Pick me and your mornings get so much easier."
+    },
+    {
+      "start": 25.9,
+      "end": 28.6,
+      "text": "Or you take me home tonight and your sites live by morning."
+    },
+    {
+      "start": 28.6,
+      "end": 30.3,
+      "text": "Fast, clean, no drama."
+    },
+    {
+      "start": 30.3,
+      "end": 31.5,
+      "text": "Choose me."
+    },
+    {
+      "start": 31.5,
+      "end": 33.0,
+      "text": "Ah, choose me."
+    },
+    {
+      "start": 33.0,
+      "end": 34.2,
+      "text": "Choose me."
+    },
+    {
+      "start": 34.2,
+      "end": 35.5,
+      "text": "Choose me."
+    },
+    {
+      "start": 35.5,
+      "end": 37.0,
+      "text": "Choose us."
+    }
+  ]
+}

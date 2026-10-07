@@ -1,0 +1,11 @@
+[Unit]
+Description=Daily Isdas encrypted backup
+
+[Timer]
+OnCalendar=*-*-* 03:20:00 UTC
+Persistent=true
+RandomizedDelaySec=10m
+Unit=isdas-backup.service
+
+[Install]
+WantedBy=timers.target

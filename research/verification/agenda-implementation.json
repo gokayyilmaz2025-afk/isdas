@@ -1,0 +1,117 @@
+{
+  "date": "2026-10-04",
+  "goal_status": "active",
+  "agenda_tests": 23,
+  "backend_tests": 215,
+  "test_suite": {
+    "name": "pytest",
+    "errors": "0",
+    "failures": "0",
+    "skipped": "0",
+    "tests": "215",
+    "time": "105.918",
+    "timestamp": "2026-10-04T15:46:45.398190+03:00",
+    "hostname": "DESKTOP-CSUUNJP"
+  },
+  "browser": {
+    "passed": true,
+    "checks": {
+      "local_calendar_create_edit": true,
+      "reminder_exact_task_and_refresh": true,
+      "complete_archive_restore_and_invalidated_reminder": true,
+      "unsaved_plan_and_event_preserved": true,
+      "review_select_edit_and_response_loss_idempotency": true,
+      "stale_edit_recovery": true,
+      "current_plan_state_in_followup_context": true,
+      "plain_answer_to_editable_task": true
+    },
+    "errors": [],
+    "synthetic_model": true,
+    "live_model_tested": false,
+    "live_google_tested": false,
+    "phone_push_tested": false
+  },
+  "deployment": {
+    "passed": true,
+    "checks": {
+      "archive_manifest_verified": true,
+      "bundled_document_parser_runs": true,
+      "bundled_site_reader_runs_and_rejects_http_without_network": true,
+      "config_keys_not_overwritten": true,
+      "public_site_routes_metadata_catalogue_and_404": true,
+      "notification_and_exact_targets_require_authentication": true,
+      "agenda_and_plan_routes_require_authentication": true,
+      "membership_and_review_routes_require_auth": true,
+      "guided_setup_and_site_reader_routes_require_auth": true,
+      "account_routes_require_auth_and_test_mailbox_absent": true,
+      "production_archive_serves_web_and_api": true,
+      "second_production_process_rejected": true,
+      "restored_archive_stays_read_only": true
+    },
+    "os": "Windows",
+    "live_provider_tested": false,
+    "linux_systemd_caddy_tested": false,
+    "off_server_backup_tested": false,
+    "archive": "Isdas-Sunucu-Paketi-20261004-r9.zip"
+  },
+  "release": {
+    "file": "Isdas-Sunucu-Paketi-20261004-r9.zip",
+    "sha256": "702ede9ba59ea45985bb1238720e3aef23e6d0ab62bc558134e7878f07117e67",
+    "bytes": 1476910
+  },
+  "main_app": {
+    "pid": 13080,
+    "port": 8000,
+    "ready_status": 200,
+    "archive": "Isdas-Sunucu-Paketi-20261004-r9.zip",
+    "web_assets_match_release_manifest": true,
+    "authorized_routes": {
+      "/agenda?day=2026-10-04": 401,
+      "/agenda/tasks/missing": 401,
+      "/agenda/plans/missing": 401
+    },
+    "new_table_counts": {
+      "agenda_tasks": 0,
+      "agenda_plans": 0,
+      "agenda_event_requests": 0
+    },
+    "existing_events_preserved": true,
+    "existing_event_count": 5,
+    "backup": "data/backups/before-agenda-20261004-155039.sqlite3",
+    "active_jobs": 0,
+    "executing_actions": 0,
+    "outbound_mail_rows": 0,
+    "test_mailbox_status": 405
+  },
+  "screenshots_reviewed": [
+    "agenda-desktop.png",
+    "agenda-mobile.png",
+    "agenda-tablet.png",
+    "agenda-plan-mobile.png"
+  ],
+  "live_model_tested": false,
+  "live_google_tested": false,
+  "phone_push_tested": false,
+  "own_server_deployed": false,
+  "next_product_flow": "Complete reviewed external content publication and scheduling for supported connectors; actual subscription payments, full voice/native app and own-server live acceptance remain. Secure provider/server and commercial configuration requests remain pending.",
+  "implemented": [
+    "shared tasks with assignee/date/priority/estimate and state lifecycle",
+    "revision-safe edits, task/event create receipts and atomic reviewed plan application",
+    "xAI prepare_agenda_plan proposal through actual worker; no autoactivation",
+    "same-thread current applied/completed plan state in follow-up context",
+    "independent durable reminder scheduler with revoked access and restore hold",
+    "exact task links and source-plan/source-conversation handoff",
+    "local calendar create/edit/delete, IANA timezone validation and existing ICS export",
+    "desktop/tablet/mobile, unsaved edit protection and lost-response retry"
+  ],
+  "limits": [
+    "local synthetic model proves tool/queue plumbing, not real model plan quality",
+    "Hermes does not yet implement the structured plan tool",
+    "chat cannot directly update/complete existing tasks; UI supports it",
+    "up to 20 requester open tasks and last 3 conversation plans are context excerpts",
+    "in-app reminders only; no OS push or new email",
+    "ICS exports calendar events, not tasks",
+    "5,000 total tasks per workspace",
+    "live payment, publication, phone voice/native, server and pilot remain"
+  ]
+}

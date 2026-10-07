@@ -1,0 +1,19 @@
+{
+  "passed": true,
+  "checks": {
+    "interactive_tour_is_labelled_example_and_read_only": true,
+    "all_seven_public_pages_desktop_and_mobile_fit": true,
+    "expert_filter_detail_and_intent_link": true,
+    "available_native_tools_and_planned_connectors_distinguished": true,
+    "preview_pricing_matches_server_policy_no_fake_checkout": true,
+    "mobile_navigation_escape_focus_and_links": true,
+    "help_search_filter_and_empty_recovery": true,
+    "catalog_failure_can_be_retried": true,
+    "unknown_public_urls_are_real_404": true,
+    "public_personal_choice_survives_signup_and_persists_in_setup": true,
+    "existing_account_can_open_new_intent_without_automatic_creation": true
+  },
+  "errors": [],
+  "public_demo_executes_jobs": false,
+  "live_checkout_tested": false
+}

@@ -1,0 +1,106 @@
+{
+  "date": "2026-10-04",
+  "source": "User: rakiplerdeki gibi tam akış, full tasarım, her şey full olsun",
+  "scope": "Complete own-branded personal, small-business and agency product; research, implementation, mobile, integrations, sales and own-server launch remain in scope.",
+  "current_verified_milestone": "Reviewed chat-to-agenda plans, actual shared tasks, dates/priority/assignees, durable in-app reminders and local calendar edit are verified in 215 backend tests and desktop/tablet/mobile browser flows; r9 release and local upgrade preserve earlier data. Full commercial/native/live launch remains incomplete.",
+  "next_product_flow": "Complete reviewed external content publication and scheduling for supported connectors; actual subscription payments, full voice/native app and own-server live acceptance remain. Secure provider/server and commercial configuration requests remain pending.",
+  "acceptance": [
+    {
+      "flow": "Landing to first setup",
+      "requires": [
+        "Clear outcomes per personal/business/agency audience",
+        "Original character and consistent illustration language",
+        "Working signup, verification and guided persona setup",
+        "Honest plans and available capabilities"
+      ],
+      "state": "eight-page public site, original character, read-only example tour, policy-sourced preview plans, capability status and searchable help now link to persisted persona/goal setup through signup/verification; actual checkout and final legal/commercial content remain"
+    },
+    {
+      "flow": "Business information to personalized assistant",
+      "requires": [
+        "Easy brand/site/document intake",
+        "Review extracted facts before saving",
+        "Visible, editable memory scoped to each client",
+        "Optional connections with clear benefits and permissions"
+      ],
+      "state": "structured profile, explicit single-page HTTPS review, actual documents and optional connections implemented locally; live model quality and wider site ingestion unverified"
+    },
+    {
+      "flow": "Speak or write to a finished result",
+      "requires": [
+        "Simple examples matched to persona",
+        "Real job status and useful progress animation",
+        "Result preview, revision, export and next action",
+        "Recoverable error, cancellation and credit explanation"
+      ],
+      "state": "persistent text chat, real queue/status, completion notices and same-conversation continuation; typed agenda proposals become selected editable tasks with idempotent save; live model quality and full voice remain"
+    },
+    {
+      "flow": "Content from idea to publication",
+      "requires": [
+        "Brand-aware content plan",
+        "Editable copy and visual formats",
+        "Client approval of exact version",
+        "Connected social publishing, scheduler and published-state verification"
+      ],
+      "state": "partial: drafts, one-image generation adapter, revisions and client approval implemented; publishing and full video/carousel production missing"
+    },
+    {
+      "flow": "Personal assistant and employee productivity",
+      "requires": [
+        "Calendar, task planning and reminders",
+        "Source-backed research and document work",
+        "Role-specific repeatable jobs",
+        "Useful notifications and connected actions"
+      ],
+      "state": "reviewed chat-to-task plan, assignments, dates/priorities/estimates, complete/archive/restore, search/day/week filters, local event edits, in-app reminders, exact source links and current plan context implemented locally; live quality, direct chat updates, full calendar sync and more integrations remain"
+    },
+    {
+      "flow": "Agency collaboration",
+      "requires": [
+        "Separate brand/client workspaces",
+        "Named invitations and role-specific interface",
+        "Feedback, changes and fresh approval",
+        "Revocation, history and usage ownership"
+      ],
+      "state": "owner/member/reviewer lifecycle, exact-version customer review, feedback/approval notifications to exact editor and mixed-role workspace switch implemented locally; live customer pilot and advanced permissions remain"
+    },
+    {
+      "flow": "Subscription lifecycle",
+      "requires": [
+        "Actual checkout",
+        "Verified payment notifications",
+        "Renewal, cancellation, upgrade and refund handling",
+        "Consistent credit display and receipts"
+      ],
+      "state": "partial: entitlement ledger and usage controls exist; live checkout and payment lifecycle missing"
+    },
+    {
+      "flow": "Mobile and accessibility",
+      "requires": [
+        "Responsive layouts, keyboard and readable states",
+        "Actual mobile voice input/output",
+        "Native app packaging and store delivery",
+        "Push and deep-link behavior on real devices"
+      ],
+      "state": "responsive desktop/mobile flows, notification dialog keyboard focus and exact source links verified in headless Chrome; native, real-device voice and OS push missing"
+    },
+    {
+      "flow": "Launch operations",
+      "requires": [
+        "Own-server deployment, TLS and real provider setup",
+        "Monitoring and off-server restore drill",
+        "Clear support/data controls",
+        "Pilot task success and cost acceptance"
+      ],
+      "state": "local release/restore drills pass; actual server and live integrations pending"
+    }
+  ],
+  "design_rules": [
+    "Every visible action must lead to implemented behavior or a clear unavailable state; no fake success or publication.",
+    "Use plain Turkish outcome labels; keep provider names, tokens and orchestration out of customer flows.",
+    "Use one typography, spacing, color, card and interaction system; preserve original Piko identity.",
+    "Review each complete flow in desktop and mobile, including empty/loading/error/success and role restrictions.",
+    "Tests of synthetic providers prove plumbing only; live outcome quality and actual publication/payment need separate evidence."
+  ]
+}

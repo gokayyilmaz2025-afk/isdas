@@ -1,0 +1,19 @@
+[Unit]
+Description=Encrypted Isdas database snapshot and verification
+
+[Service]
+Type=oneshot
+User=isdas
+Group=isdas
+WorkingDirectory=/opt/isdas/current
+EnvironmentFile=/etc/isdas/isdas.env
+Environment=PYTHONDONTWRITEBYTECODE=1
+ExecStart=/opt/isdas/current/.venv/bin/python -m deploy.daily_backup
+TimeoutStartSec=300
+UMask=0077
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectSystem=strict
+ProtectHome=true
+ReadWritePaths=/var/lib/isdas /var/backups/isdas
+

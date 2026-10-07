@@ -1,0 +1,78 @@
+{
+  "date": "2026-10-04",
+  "goal_status": "active",
+  "account_tests": 16,
+  "backend_tests": 142,
+  "test_suite": {
+    "name": "pytest",
+    "errors": "0",
+    "failures": "0",
+    "skipped": "0",
+    "tests": "142",
+    "time": "59.712",
+    "timestamp": "2026-10-04T13:05:44.406515+03:00",
+    "hostname": "DESKTOP-CSUUNJP"
+  },
+  "browser": {
+    "passed": true,
+    "checks": {
+      "registration_requires_verification": true,
+      "verified_account_can_create_workspace": true,
+      "verification_requires_password_and_strips_fragment": true,
+      "reset_revokes_all_sessions_and_requires_matching_passwords": true,
+      "mobile_reset_fits": true,
+      "reset_token_single_use": true,
+      "password_change_signs_out": true
+    },
+    "errors": [],
+    "mail_transport": "captured in memory by isolated test launcher",
+    "live_smtp_tested": false
+  },
+  "deployment": {
+    "passed": true,
+    "checks": {
+      "archive_manifest_verified": true,
+      "bundled_document_parser_runs": true,
+      "config_keys_not_overwritten": true,
+      "account_routes_require_auth_and_test_mailbox_absent": true,
+      "production_archive_serves_web_and_api": true,
+      "second_production_process_rejected": true,
+      "restored_archive_stays_read_only": true
+    },
+    "os": "Windows",
+    "live_provider_tested": false,
+    "linux_systemd_caddy_tested": false,
+    "off_server_backup_tested": false,
+    "archive": "Isdas-Sunucu-Paketi-20261004-r4.zip"
+  },
+  "release": {
+    "file": "Isdas-Sunucu-Paketi-20261004-r4.zip",
+    "sha256": "0b4217fc3a145f6f7fc44167c9d233f378d025d6a6624f46eaad860ee29ad1b9",
+    "bytes": 1395158
+  },
+  "main_app": {
+    "port": 8000,
+    "pid": 1984,
+    "ready_status": 200,
+    "private_account_status": 401,
+    "test_mailbox_status": 405,
+    "migrated_accounts": 10,
+    "outbound_mail_rows": 0,
+    "mail_configured": false,
+    "backup": "data/backups/before-accounts-20261004-131022.sqlite3"
+  },
+  "live_smtp_tested": false,
+  "screenshots_reviewed": [
+    "account-settings-desktop.png",
+    "account-reset-mobile.png"
+  ],
+  "scope_remaining": [
+    "membership invitations and revocation",
+    "agency client approval",
+    "live provider and SMTP configuration",
+    "payments and lifecycle",
+    "social publishing",
+    "native mobile and voice",
+    "actual own-server deployment and pilot validation"
+  ]
+}

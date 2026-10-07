@@ -1,0 +1,76 @@
+İŞDAŞ — PAKET VE KULLANIM
+Güncelleme: 4 Ekim 2026
+
+Mevcut durum
+Müşteri hesabının sahibi, tüm çalışma alanları için ortak kullanım hakkı taşır.
+Üye başlatırsa iş, çalışma alanı sahibinin hakkından düşer. Yeni alan veya işdaş
+açmak hakkı artırmaz. Yeni kayıt ücretsiz API kredisi doğurmaz; kullanıcı ilk
+alanını kurabilir, hafıza ve ajanda hazırlayabilir. Yapay zekâ işi için aktif hak gerekir.
+
+Bu sürümde ödeme alma yoktur. Kullanıcı arayüzünde satın alma etkin değildir.
+Paket isimleri/fiyatları taslaktır. Gerçek ödeme, abonelik yenilemesi, iptal, iade,
+dönem içi paket değişimi ve ek puan satışı henüz bir ödeme sağlayıcısına bağlanmadı.
+Doğrulanmış ödeme gibi işaretlenmiş dönemler testlerde sentetik olarak oluşturuldu;
+bu, gerçek banka/ödeme sağlayıcısı kabul testi anlamına gelmez.
+
+Operatör tarafından deneme açma
+Proje klasöründe, mevcut sunucu ortamı ve veritabanıyla çalıştır:
+  python -m backend.billing pilot --account HESAP_KIMLIGI --evidence "Pilot erişimi açma gerekçesi veya kayıt numarası"
+Hesap kimliği, kullanıcının oturumu açıkken /api/me yanıtındaki id alanıdır.
+Deneme: 14 gün, 300 puan, 3 çalışma alanı. Otomatik yenilenmez.
+Aynı komut veya başka referansla aynı hesaba ikinci deneme verilemez.
+Deneme verilmesi model bağlantısını açmaz; XAI_API_KEY veya izole Hermes ayrıca gerekir.
+
+Dönemi kapatma
+  python -m backend.billing revoke --period DONEM_KIMLIGI --evidence "Kapatma gerekçesi veya kayıt numarası"
+Kayıtlar silinmez. Yeni işler durur. Sağlayıcıya ulaşmış bir işin maliyeti sıfırlanmaz.
+Komut para iadesi yapmaz veya harici abonelik iptal etmez; yalnızca yerel hakkı kapatır.
+
+Puan politikası (pilot-2026-10-04)
+1 puan, ölçülebilen model/araç tüketiminde 0,01 USD karşılığıdır.
+1 puan = 1.000 milipuan; yuvarlama yukarı doğru milipuan düzeyinde yapılır.
+Bu bir para bakiyesi veya nakit iade vaadi değildir. Abonelik fiyatı ayrıca belirlenir.
+İş için üst sınır önceden ayrılır; tamamlandığında gerçek kullanım kadar düşülür.
+Kullanıcının bir işteki puan kesintisi o iş için ayrılan üst sınırı aşmaz.
+Sağlayıcı daha pahalı çalışırsa fark, ham USD maliyet defterinde kalır ve işletmeye aittir.
+İç rezervasyon sağlayıcı isteğini kesin bir dolar sınırında durdurmaz.
+xAI görsel maliyeti de makbuzla ölçülür; varsayılan en fazla 10 puan ayrılır.
+Video, telefon, Apify ve tarayıcı çalışma maliyeti için ayrı ölçüm/adaptör gerekir.
+
+Varsayılan rezervasyonlar
+Metin işi: en fazla 25 puan; araştırma/satış/SEO: 100 puan; Hermes: 200 puan.
+JOB_RESERVE_USD, RESEARCH_JOB_RESERVE_USD ve HERMES_JOB_RESERVE_USD ayarlarından gelir.
+Müşteri puanı ile ayrıca tutulan çalışma alanı ve genel USD işletme bütçesi birlikte denetlenir.
+Genel/alan bütçesi dolduğunda, müşteri puanı olsa bile yeni dış istek başlatılmaz.
+Çağrı başlatılmadıysa müşteriye ayrılan hak geri bırakılır.
+
+Belirsiz tutar ve yeniden başlatma
+Kayıp sağlayıcı yanıtı ücretsiz kullanım sayılmaz. Ayrılan puan tutulur; aynı sahibin
+diğer alanlarında ve yeni döneminde de yeni işler incelemeye kadar durur.
+Yalnızca doğrulanmış sağlayıcı faturasıyla:
+  python -m backend.usage --job IS_KIMLIGI --cost-usd 0.10 --evidence "Gerçek sağlayıcı fatura/istek referansı"
+Bu komut gerçek maliyet defterini ve müşteriye yansıyan puanı birlikte uzlaştırır.
+Sunucu kesintisinde başlamış işler belirsiz olur; sıradaki işler ayrılmış hakla korunur.
+
+Dönemler ve paket hazırlığı
+Haklar takvim ayı değişti diye yenilenmez. Başlangıç/bitiş anı dönem kaydında saklanır.
+Yenileme eski işi yeni dönemden düşmez. Süresi dolmadan başlamış iş eski döneminde kalır.
+Dönemi sırada beklerken biten iş çalıştırılmaz; yeni dönemde açıkça tekrar başlatılmalıdır.
+Aynı kaynak/referans tekrar geldiğinde hak çoğalmaz. Çakışan dönemler reddedilir;
+sonradan gelen eski kayıt, kapatılmış dönemi yeniden açmaz.
+İşçi kuyruğu tek API süreci kullanır. Dağıtık üretim kuyruğu ayrıca tamamlanmalıdır.
+
+Henüz satışa açık olmayan taslaklar
+Kişisel: 19 USD/ay, 400 puan, 1 yeni alan sınırı.
+İşletme: 49 USD/ay, 1.200 puan, 3 yeni alan sınırı.
+Ajans: 149 USD/ay, 4.000 puan, 5 yeni alan sınırı.
+Vergi, yerel para birimi, ödeme komisyonu ve ticari sözleşme kesinleşmedi.
+Bu fiyatlar gerçek satış teklifi değildir; gerçek tüketim ölçümüyle yeniden ele alınmalı.
+Mevcut alanlar alt pakete geçişte silinmez; alan sınırı yeni alan açmayı denetler.
+Dönem içi yükseltme/azaltma ve kullanım farkı hesapları bu sürümde desteklenmez.
+
+Doğrulama
+Paket/kullanım sürümü doğrulamasında 85 backend testi; derleme; yerel sentetik HTTP model testi.
+Masaüstü ve 390 px mobil kullanım ekranı; kota olmayan hesabın reddi; iki alanın
+ortak hakkı; gerçek uygulama üzerinden makbuz işleme; yeniden yüklemede kayıt korunması.
+Model hizmeti, Google ve ödeme sistemi için canlı kabul testi yapılmadı.

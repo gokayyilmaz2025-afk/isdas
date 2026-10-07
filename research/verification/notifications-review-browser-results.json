@@ -1,0 +1,14 @@
+{
+  "passed": true,
+  "checks": {
+    "customer_direct_review_and_refresh": true,
+    "feedback_to_exact_owner_editor": true,
+    "fresh_revision_approval_handoff": true,
+    "stale_review_notice": true,
+    "mixed_owner_and_reviewer_workspace_switch": true,
+    "revocation_clears_badge_inbox_and_open_content": true
+  },
+  "errors": [],
+  "mail_transport": "local capture only",
+  "live_smtp_tested": false
+}

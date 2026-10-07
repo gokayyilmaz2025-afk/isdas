@@ -1,0 +1,35 @@
+{
+  "engine": "faster-whisper base.en; machine transcript; verify uncertain terms",
+  "segments": [
+    {
+      "start": 0.0,
+      "end": 2.96,
+      "text": "Here's how to get 100 million views on social media."
+    },
+    {
+      "start": 2.96,
+      "end": 7.68,
+      "text": "For six months, we ran a version of Sunny that watched TikTok all day and made videos."
+    },
+    {
+      "start": 7.68,
+      "end": 11.6,
+      "text": "It spotted what was about to trend and answered what people were already searching for."
+    },
+    {
+      "start": 12.56,
+      "end": 17.68,
+      "text": "The result was 113 million views. It became one of Marblissom's biggest growth drivers."
+    },
+    {
+      "start": 17.68,
+      "end": 20.0,
+      "text": "Today we're putting that same technology in your hands."
+    },
+    {
+      "start": 20.0,
+      "end": 24.88,
+      "text": "Ask Sunny to make a trending video, he researches, writes and generates it using your face and voice."
+    }
+  ]
+}

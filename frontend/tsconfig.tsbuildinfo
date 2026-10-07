@@ -1,0 +1,1 @@
+{"root":["./src/account.tsx","./src/actions.tsx","./src/agenda.tsx","./src/billing.tsx","./src/chat.tsx","./src/contentstudio.tsx","./src/knowledge.tsx","./src/marketing.tsx","./src/members.tsx","./src/notifications.tsx","./src/onboarding.tsx","./src/api.ts","./src/main.tsx","./src/setupintent.ts"],"version":"5.9.3"}

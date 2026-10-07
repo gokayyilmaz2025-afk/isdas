@@ -1,0 +1,15 @@
+{
+  "passed": true,
+  "checks": {
+    "registration_requires_verification": true,
+    "verified_account_can_create_workspace": true,
+    "verification_requires_password_and_strips_fragment": true,
+    "reset_revokes_all_sessions_and_requires_matching_passwords": true,
+    "mobile_reset_fits": true,
+    "reset_token_single_use": true,
+    "password_change_signs_out": true
+  },
+  "errors": [],
+  "mail_transport": "captured in memory by isolated test launcher",
+  "live_smtp_tested": false
+}

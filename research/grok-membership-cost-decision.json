@@ -1,0 +1,35 @@
+{
+  "checked_at": "2026-10-04",
+  "sources": [
+    "https://docs.x.ai/developers/pricing",
+    "https://docs.x.ai/grok-bot/overview",
+    "https://cursor.com/help/grok-bot/plans",
+    "https://x.ai/legal/grok-bot-terms",
+    "https://x.ai/legal/terms-of-service-enterprise"
+  ],
+  "example_not_measured_average": true,
+  "basket": {
+    "monthly_input_tokens": 2000000,
+    "billed_output_reasoning_tokens": 400000,
+    "web_calls": 50,
+    "image_2_low_1k_text_only": 20,
+    "per_request_context_under": 200000
+  },
+  "model_costs_usd": {
+    "grok_4_7": 7.45,
+    "grok_4_3": 4.55
+  },
+  "excluded": [
+    "voice",
+    "video",
+    "browser runtime",
+    "Apify",
+    "hosting",
+    "support",
+    "taxes",
+    "payment costs",
+    "customer acquisition"
+  ],
+  "shared_bot_membership": "no separate customer computer or fresh allowance per bot; public commercial provisioning API not verified",
+  "recommendation": "own application with metered xAI API, per-customer data/credential isolation and entitlements; managed browser runtime only for needed tasks"
+}

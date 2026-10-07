@@ -1,0 +1,17 @@
+{
+  "passed": true,
+  "checks": {
+    "late_workspace_response_ignored": true,
+    "review_edit_approve": true,
+    "original_timezone_preserved": true
+  },
+  "approvals": 1,
+  "overflow": {
+    "width": 390,
+    "document": 390,
+    "dialog": 360
+  },
+  "errors": [],
+  "google_api": "mocked",
+  "live_google_tested": false
+}

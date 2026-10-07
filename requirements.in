@@ -1,0 +1,11 @@
+fastapi
+uvicorn[standard]
+httpx
+cryptography
+python-multipart
+pydantic-settings
+pytest
+pillow
+tzdata
+pypdf
+python-docx

@@ -1,0 +1,59 @@
+İŞDAŞ — SOHBET VE HAFIZA
+4 Ekim 2026 geliştirme durumu
+
+Çalışma masasından bir iş başlatmak yeni bir sohbet açar. Sohbetler bölümünde
+aynı konuyu sürdürmek, sonucu kısaltmak veya yeni bir ayrıntı eklemek mümkündür.
+Yeni sohbet düğmesi ayrı bir konu başlatır. Önceki konuşmanın mesajları yeni
+konuya otomatik taşınmaz; çalışma alanına kaydedilen ortak hafıza kullanılabilir.
+
+Her sohbet bu çalışma alanının üyeleriyle paylaşılır. Kişisel konular için ayrı
+kişisel çalışma alanı kullanılmalıdır. Uygulama bu konuşmaları özel mesaj olarak
+etiketlemez. Alanlar arasında erişim ve geçmiş aktarımı ayrı kontrol edilir.
+
+Sohbet geçmişi
+- Konuşma sunucuda saklanır; sayfa yenilendiğinde aynı bağlantıdan açılır.
+- Önceki mesajlar sayfalanarak okunabilir ve metin dosyası olarak indirilebilir.
+- Sohbet başlığı değiştirilebilir, sohbet arşivlenebilir ve tekrar açılabilir.
+- Arşivleme silme değildir. Devam eden iş varken arşivleme yapılmaz.
+- Aynı sohbet içinde bir yanıt sürerken yeni mesaj başlatılmaz. İstek yazılabilir;
+  önceki yanıt tamamlandığında gönderilir veya mevcut iş durdurulur.
+
+Modelin kullandığı bağlam
+- Yalnızca aynı çalışma alanı ve aynı konuşmanın önceki mesajları kullanılır.
+- Son 12 konuşma turu, toplam en fazla 32.000 karakter olacak şekilde seçilir.
+- Çok uzun son mesajın başı ve sonu korunur; alınmayan bölüm açıkça belirtilir.
+- Geçmiş kırpıldığında yanıt altında bilgilendirme görünür.
+- Sonucun kullanıcı tarafından düzenlenmiş güncel kaydı ayrıca verilir.
+- Sohbette hazırlanan dış işlemlerin güncel onay/başarı durumu ayrıca verilir.
+- Bu bilgiler, dış hesabı güncelleme yetkisi yerine geçmez. Onay gerektiren
+  işlemler ilgili önizleme ekranında onaylanmalıdır.
+- Grok Responses çağrısında store=false kullanılır; uygulama geçmişi kendi
+  veritabanında tutar. Bu ayar bütün sağlayıcı veri politikaları hakkında daha
+  geniş bir gizlilik garantisi olarak sunulmaz.
+- Hermes adaptörü de açık mesaj geçmişini kullanır; eski tek çalışma alanı
+  oturum başlığı kaldırıldı. Gerçek Hermes ortamında kabul testi bekleniyor.
+
+Hafızaya ekleme
+Tamamlanan yanıtın altında Hafızaya ekle seçeneği bulunur. Başlık ve bilgi kullanıcı
+tarafından kontrol edilip düzenlenebilir. Kaydetmek, bilgiyi çalışma alanının ortak
+hafızasına ekler. Otomatik, kontrolsüz kalıcı öğrenme iddiası yoktur. Çok uzun
+metinler sessizce kesilmez; hangi kısmın hatırlanacağı kullanıcı tarafından seçilir.
+
+İptal ve maliyet
+Durdur isteği verildiğinde görev iptal durumuna geçer. Sağlayıcıya başlamış bir
+çağrının ücreti oluşmuş olabilir. Gelen sonuç kullanıcıya teslim edilmez fakat
+bildirilen maliyet kaydı korunur. İptal, sağlayıcı ücretini geri alma sözü değildir.
+
+Doğrulama
+68 arka uç testi geçti. Ayrı test veritabanı, gerçek uygulama kuyruğu ve yerel,
+sentetik yanıt veren HTTP modeliyle tarayıcı kabul testi yapıldı. İki turlu sohbet,
+yenileme, hafızaya kaydetme, indirme, arşivleme, yeni konu ve çalışma sırasında
+iptal doğrulandı. Masaüstü ve mobil yerleşim görsel olarak incelendi.
+
+Canlı Grok/Hermes kalitesi, gerçek mikrofon ve üretim hesabı bağlantıları henüz
+doğrulanmadı. Test sunucusu kontrol bitince durduruldu. Ana uygulamada sentetik
+model etkinleştirilmedi.
+
+Teknik kaynaklar
+https://docs.x.ai/developers/model-capabilities/text/generate-text
+https://hermes-agent.nousresearch.com/docs/user-guide/features/api-server

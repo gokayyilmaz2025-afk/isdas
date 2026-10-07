@@ -1,0 +1,84 @@
+{
+  "date": "2026-10-04",
+  "goal_status": "active",
+  "membership_review_tests": 19,
+  "backend_tests": 161,
+  "test_suite": {
+    "name": "pytest",
+    "errors": "0",
+    "failures": "0",
+    "skipped": "0",
+    "tests": "161",
+    "time": "71.799",
+    "timestamp": "2026-10-04T13:36:50.667403+03:00",
+    "hostname": "DESKTOP-CSUUNJP"
+  },
+  "browser": {
+    "passed": true,
+    "checks": {
+      "customer_signup_verify_accept_and_restricted_portal": true,
+      "employee_signup_accept_shared_workspace": true,
+      "customer_feedback_returns_draft": true,
+      "customer_exact_revision_approval": true,
+      "customer_mobile_fits": true,
+      "edit_invalidates_customer_approval": true,
+      "removal_revokes_access": true,
+      "removed_customer_portal_clears": true
+    },
+    "errors": [],
+    "mail_transport": "local memory capture only",
+    "live_smtp_tested": false,
+    "live_model_tested": false
+  },
+  "deployment": {
+    "passed": true,
+    "checks": {
+      "archive_manifest_verified": true,
+      "bundled_document_parser_runs": true,
+      "config_keys_not_overwritten": true,
+      "membership_and_review_routes_require_auth": true,
+      "account_routes_require_auth_and_test_mailbox_absent": true,
+      "production_archive_serves_web_and_api": true,
+      "second_production_process_rejected": true,
+      "restored_archive_stays_read_only": true
+    },
+    "os": "Windows",
+    "live_provider_tested": false,
+    "linux_systemd_caddy_tested": false,
+    "off_server_backup_tested": false,
+    "archive": "Isdas-Sunucu-Paketi-20261004-r5.zip"
+  },
+  "release": {
+    "file": "Isdas-Sunucu-Paketi-20261004-r5.zip",
+    "sha256": "52ac4fb89128a7f8bc12bd2ba954beda8868924c46cc264abc4a6a8abae5db26",
+    "bytes": 1410938
+  },
+  "main_app": {
+    "port": 8000,
+    "pid": 15312,
+    "ready_status": 200,
+    "private_members_status": 401,
+    "private_reviews_status": 401,
+    "test_mailbox_status": 405,
+    "outbound_mail_rows": 0,
+    "backup": "data/backups/before-membership-20261004-134106.sqlite3"
+  },
+  "live_smtp_tested": false,
+  "live_model_tested": false,
+  "screenshots_reviewed": [
+    "agency-members-desktop.png",
+    "agency-members-mobile.png",
+    "agency-customer-mobile.png",
+    "agency-review-editor-desktop.png"
+  ],
+  "new_user_instruction": "Complete competitor-level flows and consistent full design, not a partial panel",
+  "next_product_flow": "Guided persona setup through first completed result; see product-experience-backlog.json",
+  "still_required": [
+    "live integrations and SMTP",
+    "full product UX and persona onboarding",
+    "checkout and payment lifecycle",
+    "social publishing and complete content formats",
+    "mobile app and real-device voice/push",
+    "own-server launch and live pilot validation"
+  ]
+}

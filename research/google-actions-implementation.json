@@ -1,0 +1,49 @@
+{
+  "checked_at": "2026-10-04",
+  "implemented": [
+    "prepare/review/edit/reject/approve lifecycle",
+    "tenant and connection binding with immutable review hash",
+    "encrypted Google access/refresh tokens",
+    "partial OAuth scope checks",
+    "verified Google email and subject binding",
+    "Gmail draft creation only",
+    "primary Calendar event creation without attendees",
+    "atomic duplicate approval prevention",
+    "uncertain writes are not automatically repeated",
+    "Calendar reconciliation by deterministic UUID and private review marker",
+    "restart recovery for executing actions",
+    "local disconnect preserves audit history and invalidates proposals"
+  ],
+  "limitations": [
+    "No live OAuth or model credentials configured for verification",
+    "Gmail uncertain draft outcomes require manual account check",
+    "Disconnect removes workspace credentials; project-wide Google grant revocation is separate because it can affect other workspaces",
+    "Single API process; application lock is process-local",
+    "Google OAuth app verification and public deployment remain necessary"
+  ],
+  "sources": [
+    {
+      "title": "Google OAuth web server flow, offline refresh and revocation scope",
+      "url": "https://developers.google.com/identity/protocols/oauth2/web-server"
+    },
+    {
+      "title": "Gmail draft creation",
+      "url": "https://developers.google.com/workspace/gmail/api/reference/rest/v1/users.drafts/create"
+    },
+    {
+      "title": "Calendar insert and event IDs",
+      "url": "https://developers.google.com/workspace/calendar/api/v3/reference/events/insert"
+    },
+    {
+      "title": "xAI function calling",
+      "url": "https://docs.x.ai/developers/tools/function-calling"
+    }
+  ],
+  "verification": [
+    "../tests/test_actions.py",
+    "verification/tests.xml",
+    "verification/actions-browser-results.json",
+    "verification/action-review-desktop.png",
+    "verification/action-review-mobile.png"
+  ]
+}

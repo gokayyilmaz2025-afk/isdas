@@ -1,0 +1,160 @@
+İŞDAŞ — KENDİ SUNUCUNA KURULUM VE YEDEKTEN DÖNÜŞ
+4 Ekim 2026 · tek sunuculu pilot dağıtım paketi
+
+DURUM
+Bu belge ve paket Linux/systemd kurulumu içindir. Kendi sunucunda kurulum, DNS,
+TLS, Caddy ve gerçek sağlayıcı bağlantısı henüz denenmedi. Yerelde Windows üzerinde
+uygulama testleri ve şifreli yedek/geri dönüş testi yapıldı.
+E-posta doğrulama, ekip daveti ve sürüme bağlı müşteri onayı yerelde uygulandı/test edildi;
+gerçek SMTP teslimatı bekliyor. Ödeme alma, üyelik yenileme/iade, canlı sosyal yayın,
+ses ve mağaza uygulaması tamamlanmadı. Bu paket tek başına satışa hazır ürün değildir.
+
+MİMARİ
+Caddy HTTPS -> 127.0.0.1:8000 -> bir Uvicorn API süreci + görev işçisi.
+SMTP yapılandırılınca hesap/davet e-postaları için ayrı bir gönderim işçisi başlar.
+React üretim dosyalarını aynı API sunar. Vite geliştirme sunucusu üretimde çalışmaz.
+SQLite, görseller ve içerikler /var/lib/isdas/isdas.sqlite3 dosyasındadır.
+Aynı veritabanında ikinci üretim süreci OS kilidi nedeniyle başlayamaz.
+Uvicorn worker sayısını artırma; yatay ölçek için ayrı kuyruk/veritabanı tasarımı gerekir.
+Bu paket yerel disk ister; ağ dosya sistemi üzerinde kilit/SQLite garantisi test edilmedi.
+
+ÖNKOŞULLAR
+Linux, systemd, Python 3.12 ve venv, unzip, Caddy; kullanılabilir bir alan adı.
+Şifreli pilot yedek aracı en fazla 256 MiB veritabanını kabul eder. Fernet arşivi
+bellekte işlediği için yedek sırasında yaklaşık 2 GiB boş RAM ayır. Bu kapasite
+kullanıcı sayısı garantisi değildir. Limit aşılırsa yedek başarısız olur ve alarm gerekir;
+büyük veritabanı için akış halinde şifreleyen yönetilen yedek çözümü ayrıca kurulmalı.
+Uygulama portunu internete açma. İnternete Caddy'nin 80/443 portları açılır.
+
+İLK KURULUM
+Aşağıdaki RELEASE dizini örnektir; paketin sürümü için yeni ve boş dizin seç.
+Var olan uygulama, Caddy yapılandırması veya veri dizinini üzerine yazarak değiştirme.
+Sunucuda isdas kullanıcısı yoksa:
+  sudo useradd --system --home-dir /var/lib/isdas --shell /usr/sbin/nologin isdas
+  sudo install -d -m 0755 /opt/isdas/releases/RELEASE
+  sudo install -d -m 0700 /etc/isdas
+  sudo install -d -o isdas -g isdas -m 0700 /var/lib/isdas /var/backups/isdas
+  sudo unzip Isdas-Sunucu-Paketi.zip -d /opt/isdas/releases/RELEASE
+  cd /opt/isdas/releases/RELEASE
+  python3.12 deploy/verify_release.py
+  sudo python3.12 -m venv .venv
+  sudo .venv/bin/python -m pip install -r requirements.txt
+  sudo .venv/bin/python -m deploy.init_config --domain app.senin-alanin.com --output /etc/isdas/isdas.env
+
+Örnek alan adını kendi alanınla değiştir. init_config geçerli küçük harfli DNS adı
+ister; şema, port veya yol ekleme. Bu komut iki ayrı şifreleme anahtarı üretir,
+yalnızca özel dosyaya yazar. Mevcut ayar dosyasını değiştirmez. Anahtarlar konsola
+basılmaz ve dağıtım ZIP'inde yoktur.
+
+  sudoedit /etc/isdas/isdas.env
+XAI_API_KEY ve varsa GOOGLE_CLIENT_ID/GOOGLE_CLIENT_SECRET değerlerini bu özel
+sunucu dosyasına gir. Anahtarları sohbete, komut satırı argümanına veya repoya koyma.
+İki şifreleme anahtarını erişimi kısıtlı, sunucudan ayrı bir kasada sakla. OAuth
+anahtarını değiştirirsen eski bağlantı verileri okunamaz; yedek anahtarı olmadan
+şifreli yedek çözülemez. Hiçbir anahtar yedek arşivinin içine konmaz.
+
+İlk kurulumda /opt/isdas/current yolu henüz yokken:
+  sudo ln -s /opt/isdas/releases/RELEASE /opt/isdas/current
+  sudo install -m 0644 deploy/isdas.service /etc/systemd/system/isdas.service
+  sudo install -m 0644 deploy/isdas-backup.service /etc/systemd/system/isdas-backup.service
+  sudo install -m 0644 deploy/isdas-backup.timer /etc/systemd/system/isdas-backup.timer
+  sudo systemctl daemon-reload
+  sudo systemctl enable --now isdas.service
+
+deploy/Caddyfile.example içindeki alan adını gerçek alanınla değiştir; mevcut Caddy
+sitelerini koruyarak bu bloğu Caddy yapılandırmasına ekle. DNS A/AAAA kayıtlarını
+sunucuna yönlendir. Ardından:
+  sudo caddy validate --config /etc/caddy/Caddyfile
+  sudo systemctl reload caddy
+  curl --fail https://ALAN_ADIN/api/ready
+
+/api/health yalnızca API canlılığını; /api/ready veritabanı, bakım kilidi ve işçi
+varlığını denetler. İkisi de model anahtarının, ödeme sisteminin veya Google izninin
+canlı başarı testi değildir. Model bağlantısı ayrı gerçek görevle denenmelidir.
+Üretim başlangıcı HTTPS adresi, aynı web/API alanı, mutlak veritabanı yolu,
+şifreleme anahtarı, üretim frontend dosyası ve geçerli bütçe ayarlarını doğrular.
+
+KAYIT VE PİLOT
+Yeni kayıtlar varsayılan kapalıdır. Kontrollü pilotta REGISTRATION_ENABLED=true yapıp
+servisi yeniden başlat. Kayıt olmak AI hakkı vermez; operatör pilot hakkını ayrı açar.
+Paket-ve-Kullanim-Isletim-Notlari.txt dosyasındaki pilot komutunu kullan.
+Ödeme alındığını elle uyduran kayıt veya sahte ödeme bildirimi oluşturma.
+Google OAuth dönüş adresi:
+  https://ALAN_ADIN/api/oauth/google/callback
+Google-Baglanti-Kurulumu.txt içindeki kapsam ve canlı test adımlarını ayrıca tamamla.
+
+SYSTEMD ORTAMINDA OPERATÖR KOMUTLARI
+Özel ayarları kabukta ekrana basmadan bir komut çalıştırma örneği:
+  sudo systemd-run --wait --pipe --collect -p User=isdas -p WorkingDirectory=/opt/isdas/current -p EnvironmentFile=/etc/isdas/isdas.env /opt/isdas/current/.venv/bin/python -m backend.ops verify --backup /var/backups/isdas/YEDEK.enc
+Diğer backend.ops/backend.usage/backend.billing komutları aynı yöntemle çalıştırılır.
+EnvironmentFile değerlerini eval veya kabuk kaynaklama ile yorumlama.
+
+YEDEK
+  sudo systemctl start isdas-backup.service
+  sudo journalctl -u isdas-backup.service --since today
+  sudo systemctl enable --now isdas-backup.timer
+Zamanlayıcı her gün UTC 03:20'den sonra en fazla 10 dakikalık rastgele gecikmeyle çalışır.
+SQLite backup API canlı WAL kayıtlarını tutarlı görüntüye alır; doğrudan .sqlite3
+kopyalama kullanılmaz. Bütünlük ve yabancı anahtar kontrolü yapılır, şifreli dosya
+tekrar çözülüp hash ve tablo sayıları doğrulanır. Görseller de yedeğe dahildir.
+Dosya adında tarih ve rastgele son ek vardır; mevcut yedek üzerine yazılmaz.
+Şifreli kopyanın sunucu dışına aktarımı, disk doluluk alarmı ve saklama politikası
+bu pakette otomatik değildir. Bunlar canlıya çıkıştan önce mevcut yedek hedefinle
+kurulmalı. Aynı sunucudaki yedek sunucu kaybına karşı yeterli değildir.
+
+GERİ DÖNÜŞ TATBİKATI
+Önce mevcut veriyi koru; aşağıdaki araç mevcut veritabanını değiştirmez.
+  python -m backend.ops verify --backup YEDEK.enc
+  python -m backend.ops restore-candidate --backup YEDEK.enc --output /var/lib/isdas/restore-YYYYMMDD.sqlite3
+Komutlar özel ortam dosyası yüklenmiş halde, yukarıdaki systemd-run yöntemiyle çalışır.
+Hedef veritabanı, -wal ve -shm dosyaları önceden mevcutsa işlem reddedilir.
+Geri yüklenen veride:
+- Oturumlar ve bekleyen OAuth dönüşleri silinir; kullanıcı yeniden giriş yapar.
+- Rutinler kapanır; sıradaki/çalışan işler kesilmiş sayılır ve tekrar çalışmaz.
+- Eski bekleyen onaylar geçersizleşir; yürütülürken kesilmiş dış işlemler belirsiz kalır.
+- Ayrılmış kullanım kayıtları incelemeye alınır; kayıp maliyet sıfır kabul edilmez.
+- Kalıcı bakım kilidi yazılır; okuma/giriş açık, yeni müşteri işlemleri kapalıdır.
+
+Orijinal anahtarları koruyarak servisi durdur; DATABASE_PATH değerini yeni aday
+veritabanına değiştir ve başlat. Yeni dosya isdas kullanıcısına ait olmalı. /api/ready
+bakım kilidi yüzünden 503, /api/health 200 verir. Bu durumda kayıtları incele.
+Yedek alındıktan olay anına kadar gerçekleşmiş işlemleri, sağlayıcı faturalarını ve
+ödemeleri dış sistemlerden karşılaştır. Aracın bu kayıp zaman aralığını otomatik
+olarak yeniden kurduğu iddiası yoktur. Kayıp müşteri/iş kayıtları varsa bunları çözmeden
+bakım kilidini kaldırma. Sıfır veri kaybı veya sıfır kesinti garantisi verilmez.
+
+Var olan belirsiz kullanım makbuzu için normal araç:
+  python -m backend.usage --job IS_KIMLIGI --cost-usd GERCEK_TUTAR --evidence "Fatura ve olay kaydı referansı"
+Yedekte sırada görünen, müşteri rezervasyonu olan ama sağlayıcı makbuzu bulunmayan iş:
+  python -m backend.ops reconcile-missing-receipt --database /var/lib/isdas/restore-YYYYMMDD.sqlite3 --job IS_KIMLIGI --cost-usd GERCEK_TUTAR --period YYYY-MM --provider xai --request-id GERCEK_MAKBUZ --evidence "Doğrulanmış sağlayıcı fatura kaydı referansı"
+Hiç çalışmadığı dış kayıttan doğrulanan işte --provider no_request ve --cost-usd 0
+kullanılır. Sadece makbuz yok diye sıfır yazılmaz. Yeniden uzlaştırma çoğalmaz.
+
+Finansal kayıtlar/harici etkiler kontrol edildikten sonra servisi DURDUR ve:
+  python -m backend.ops release-hold --database /var/lib/isdas/restore-YYYYMMDD.sqlite3 --evidence "Olay raporu ve tüm fatura/ödeme karşılaştırmalarının gerçek referansı"
+Bu komut üretim servisinin kilitli veritabanında çalışmaz; belirsiz maliyet varsa
+veya eski OAuth anahtarı okunamıyorsa açmaz. Komut dış hesapları kendisi incelemez;
+verilen referans operatör incelemesinin kaydıdır. Yeniden başlattıktan sonra rutinler
+kapalı, eski işler kesilmiş kalır; gerekli yeni işleri kullanıcı açıkça başlatır.
+
+GÜNCELLEME / GERİ ALMA
+Yeni sürümü yeni dizine aç, manifesti doğrula ve yeni venv'i kur. Eski sürümü ve
+veritabanı yedeğini tut. Üretim servisini durdur; en fazla 300 saniye devam eden işin
+bitmesi beklenir. systemd 330 saniyede durdurmayı tamamlar; kesilen çağrıda sonuç
+belirsiz kalabilir. current bağlantısını yeni sürüme geçir, sonra servisi başlat.
+Eski kodu yeni şemayla çalıştırmanın güvenli olduğunu varsayma. Bu sürüm geçişleri
+veri ekleyen değişikliklerdir, fakat her yeni sürüm için uyumluluk kontrolü gerekir.
+Veritabanını eski yedeğe körlemesine çevirmek ödeme ve dış işlem geçmişini kaybettirir.
+Gerekirse yukarıdaki ayrı aday veritabanı ve inceleme sürecini uygula.
+
+CANLI KABULDE KALANLAR
+Gerçek alan adı/TLS, sunucuya erişim, Linux servislerinin çalışma testi; gerçek xAI
+metin/görsel maliyet makbuzu; Google kendi hesabında taslak/takvim kontrolü; sunucu dışı
+yedek ve dönüş tatbikatı; pilot müşteri geri bildirimi. Ödeme ve sosyal yayın ayrı
+özelliklerdir; bu testlerden geçmiş sayılmaz.
+
+TEKNİK KAYNAKLAR
+https://docs.python.org/3.12/library/sqlite3.html#sqlite3.Connection.backup
+https://cryptography.io/en/latest/fernet/
+https://uvicorn.dev/settings/
+https://caddyserver.com/docs/caddyfile/directives/reverse_proxy

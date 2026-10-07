@@ -1,0 +1,18 @@
+{
+  "passed": true,
+  "checks": {
+    "local_calendar_create_edit": true,
+    "reminder_exact_task_and_refresh": true,
+    "complete_archive_restore_and_invalidated_reminder": true,
+    "unsaved_plan_and_event_preserved": true,
+    "review_select_edit_and_response_loss_idempotency": true,
+    "stale_edit_recovery": true,
+    "current_plan_state_in_followup_context": true,
+    "plain_answer_to_editable_task": true
+  },
+  "errors": [],
+  "synthetic_model": true,
+  "live_model_tested": false,
+  "live_google_tested": false,
+  "phone_push_tested": false
+}

@@ -1,0 +1,90 @@
+{
+  "engine": "faster-whisper base.en; machine transcript; verify uncertain terms",
+  "segments": [
+    {
+      "start": 0.0,
+      "end": 3.76,
+      "text": "Marbalism AI has the fastest and easiest onboarding process out there."
+    },
+    {
+      "start": 3.76,
+      "end": 5.44,
+      "text": "Stay with me, I'm about to prove it."
+    },
+    {
+      "start": 5.44,
+      "end": 8.88,
+      "text": "First thing you'll do, tell Marbalism how you use your AI team."
+    },
+    {
+      "start": 8.88,
+      "end": 13.04,
+      "text": "There are three options for my business, for my job and for my personal life."
+    },
+    {
+      "start": 13.04,
+      "end": 15.68,
+      "text": "If you just want the help without any of the business setup."
+    },
+    {
+      "start": 15.68,
+      "end": 19.12,
+      "text": "If you pick for my business, Marbalism asks for your website."
+    },
+    {
+      "start": 19.12,
+      "end": 22.88,
+      "text": "It scans a benchmark you against over a thousand similar companies"
+    },
+    {
+      "start": 22.88,
+      "end": 24.88,
+      "text": "and analyzes your growth potential."
+    },
+    {
+      "start": 24.88,
+      "end": 29.36,
+      "text": "So every agent it gives you is already tailored to what your business actually needs."
+    },
+    {
+      "start": 29.36,
+      "end": 33.2,
+      "text": "But if you choose for my personal life, there's no website needed at all."
+    },
+    {
+      "start": 33.2,
+      "end": 37.84,
+      "text": "Marbalism skips straight past the step and drops the full lineup of AI agents right into your"
+    },
+    {
+      "start": 37.84,
+      "end": 42.16,
+      "text": "dashboard. You just pick whichever one you want and onboard it yourself whenever you're ready."
+    },
+    {
+      "start": 42.16,
+      "end": 46.16,
+      "text": "Once your website's being analyzed, Marbalism has you login with your email."
+    },
+    {
+      "start": 46.16,
+      "end": 49.84,
+      "text": "Use whatever email you want, enter your password and hit login."
+    },
+    {
+      "start": 55.95,
+      "end": 58.51,
+      "text": "And just like that, you land on your dashboard."
+    },
+    {
+      "start": 58.51,
+      "end": 62.99,
+      "text": "Your full lineup of AI agents all sitting there ready to be onboarded."
+    },
+    {
+      "start": 62.99,
+      "end": 78.59,
+      "text": "So what are you waiting for? Go get started with Marbalism AI."
+    }
+  ]
+}

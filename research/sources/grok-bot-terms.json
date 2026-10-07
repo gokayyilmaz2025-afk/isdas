@@ -1,0 +1,60 @@
+{
+  "url": "https://x.ai/legal/grok-bot-terms",
+  "retrieved_at": "2026-10-04T05:25:17.827908+00:00",
+  "title": "Grok Bot Terms | SpaceXAI",
+  "text": "Grok Bot Terms | SpaceXAI Grok Bot Terms Last updated: September 3, 2026 These Grok Bot Terms (“ Grok Bot Terms ”) supplement the agreement governing Customer’s use of the Services, which include the product identified as Grok Bot (“ Grok Bot ”), including any applicable Order Forms, data processing addendum, acceptable use policy, and incorporated terms (collectively, the “ Agreement ”). Grok Bot is deemed part of the “Service” or “Services,” as applicable under the Agreement, when Customer enables or accesses it. “ Provider ” means the entity providing Grok Bot to Customer under the Agreement, and “ User ” means an individual authorized to use Grok Bot. These Grok Bot Terms do not change the contracting party or create a contractual relationship between Customer and any affiliate of Provider. Capitalized terms not defined here have the meanings given in the Agreement. In these Grok Bot Terms, “ Customer Data ” includes inputs, and other content submitted or made available by or for Customer. 1. Access and Use 1.1 Authorized Use Subject to the Agreement, the Provider’s acceptable use policy, and the applicable account settings and permissions, Customer may permit its Users to access and use Grok Bot for Customer’s internal business purposes. Customer is responsible for configuring and administering available settings, permissions, approval requirements, integrations, and usage limits. Available controls may depend on Customer’s plan, configuration, and deployment. 1.2 Documentation Customer and its Users will use Grok Bot in accordance with Provider’s Documentation, which describe functionality, requirements, limits, controls, and recommended practices. The Documentation does not create a service level, warranty, or commitment that any feature, integration, model, or configuration will remain available. 2. Agentic Actions 2.1 Agentic Actions Grok Bot may perform autonomous actions on Customer’s behalf (“ Agentic Actions ”), including without limitation accessing websites, executing code, modifying files, sending communications, processing data, invoking tools, and interacting with third-party services. 2.2 Authorization and Responsibility Customer authorizes Agentic Actions requested, approved, configured, or permitted by Customer or its Users, including Agentic Actions that Grok Bot initiates autonomously within the scope of access, permissions, and authority granted by Customer or its Users. Customer is solely responsible for ensuring those Agentic Actions are authorized, lawful, and comply with all applicable laws and third party terms, configuring appropriate permissions, approval requirements, and spending limits, and monitoring recurring or unattended activities. Without limiting the foregoing, Customer is solely responsible for determining the scope of access, permissions, and authority granted to each Bot and for any Agentic Action that results from Customer’s or its Users’ configuration, instructions, permissions, approval settings, or failure to implement available safeguards. 2.3 Warnings and Human Review Agentic Actions may be inaccurate, incomplete, delayed, unsuccessful, or unintended. Approval and automated-review controls are provided as aids only, may not identify or prevent every unintended, unauthorized, or harmful action, and do not reverse completed actions. Provider is not liable for any Agentic Action that an approval or automated-review control fails to prevent. Customer will use appropriate human review before permitting Agentic Actions, including those involving external communications, financial transactions, data deletion, permission changes, production systems, legal commitments, or material effects on third parties. 2.4 Consequences and Liability Customer is solely responsible for charges, commitments, communications, and other consequences resulting from Agentic Actions authorized or initiated by Customer or its Users. Provider makes no representations regarding the accuracy, safety, or legality of any Agentic Action and disclaims all liability for Agentic Actions to the fullest extent permitted by law. Agentic Actions are provided “as is” and “as available” without warranty of any kind. CUSTOMER ACKNOWLEDGES THAT AGENTIC ACTIONS ARE PROBABILISTIC, MAY CONTAIN ERRORS, AND MAY PRODUCE RESULTS THAT ARE INACCURATE, INCOMPLETE, INCORRECT, OFFENSIVE, HARMFUL, OR OTHERWISE UNSUITABLE FOR CUSTOMER’S INTENDED PURPOSE. CUSTOMER IS SOLELY RESPONSIBLE FOR ALL AGENTIC ACTIONS TAKEN BY GROK BOT, WHETHER OR NOT SUCH ACTIONS WERE INTENDED, ANTICIPATED, OR AUTHORIZED BY CUSTOMER, INCLUDING ANY AGENTIC ACTION THAT RESULTS FROM CUSTOMER’S OR ITS USERS’ CONFIGURATION, INSTRUCTIONS, PERMISSIONS, APPROVAL SETTINGS, CONNECTED SERVICES, ROUTINES, OR FAILURE TO IMPLEMENT AVAILABLE SAFEGUARDS. PROVIDER IS NOT LIABLE FOR ANY LOSS, DAMAGE, COST, CHARGE, COMMITMENT, OR OTHER CONSEQUENCE ARISING FROM ANY AGENTIC ACTION, EXCEPT TO THE EXTENT DIRECTLY CAUSED BY PROVIDER’S GROSS NEGLIGENCE, OR WILLFUL MISCONDUCT. This Section does not limit Provider’s obligations under the Agreement with respect to the processing of personal data (as defined in the applicable data processing addendum or applicable data protection laws). 2.5 Content Removal and Disabling Actions Provider may remove content or disable Agentic Actions that Provider reasonably determines violate the Agreement, the applicable acceptable use policy, or applicable law, without prior notice when delay would pose a risk to safety, security, or third parties. 3. Connected Services By connecting an account, application, website, add-on or other third-party service to Grok Bot, Customer instructs and authorizes Grok Bot to access, transmit, and interact with Customer Data through that service as directed or configured by Customer or its Users. Customer represents that it has authority to grant such access and is responsible for accepting and complying with applicable third-party terms, permissions, and charges. Provider is not responsible for, does not endorse, makes no warranty regarding, and does not provide support for, any third-party service. Provider is not responsible for the availability, security, or operation of third-party services. Use of any connected services is at Customer’s own risk and Provider disclaims any liability to the greatest extent permitted by law. 4. Persistent and Shared Environment Grok Bot may retain Customer Data, files, browser sessions, credentials, memory, and routines in a persistent cloud environment. Bots associated with the same User may share that environment and must not be treated as separate security boundaries. Deleting a Bot may not delete shared files, sessions, credentials, or routines. Customer is responsible for deleting or disabling bots, removing data, revoking access, and disabling routines when no longer required. 5. Updates to Terms Provider may update these Grok Bot Terms from time to time. Unless an update is materially adverse to Customer, updates take effect upon posting or other notice to Customer. If an update is materially adverse to Customer, Provider will provide Customer with reasonable notice (subject to applicable laws) before the update takes effect (“ Update Notice Period ”). Customer’s continued use of Grok Bot after the Update Notice Period constitutes acceptance of the updated Grok Bot Terms. Updates will not diminish Customer’s rights under the Agreement with respect to Customer Data submitted before the update takes effect.",
+  "links": [
+    {
+      "text": "Grok Bot Terms",
+      "url": "#grok-bot-terms"
+    },
+    {
+      "text": "1. Access and Use",
+      "url": "#1-access-and-use"
+    },
+    {
+      "text": "1.1 Authorized Use",
+      "url": "#11-authorized-use"
+    },
+    {
+      "text": "1.2 Documentation",
+      "url": "#12-documentation"
+    },
+    {
+      "text": "2. Agentic Actions",
+      "url": "#2-agentic-actions"
+    },
+    {
+      "text": "2.1 Agentic Actions",
+      "url": "#21-agentic-actions"
+    },
+    {
+      "text": "2.2 Authorization and Responsibility",
+      "url": "#22-authorization-and-responsibility"
+    },
+    {
+      "text": "2.3 Warnings and Human Review",
+      "url": "#23-warnings-and-human-review"
+    },
+    {
+      "text": "2.4 Consequences and Liability",
+      "url": "#24-consequences-and-liability"
+    },
+    {
+      "text": "2.5 Content Removal and Disabling Actions",
+      "url": "#25-content-removal-and-disabling-actions"
+    },
+    {
+      "text": "3. Connected Services",
+      "url": "#3-connected-services"
+    },
+    {
+      "text": "4. Persistent and Shared Environment",
+      "url": "#4-persistent-and-shared-environment"
+    },
+    {
+      "text": "5. Updates to Terms",
+      "url": "#5-updates-to-terms"
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "pid": 16340,
+  "port": 8000,
+  "ready_status": 200,
+  "authenticated_routes": {
+    "/notifications": 401,
+    "/workspaces/none/jobs/missing": 401,
+    "/workspaces/none/actions/missing": 401,
+    "/workspaces/none/client-reviews/missing": 401
+  },
+  "notification_triggers": 7,
+  "history_backfilled": false,
+  "web_assets_match_release_manifest": true,
+  "archive": "Isdas-Sunucu-Paketi-20261004-r8.zip",
+  "outbound_mail_rows": 0,
+  "active_jobs": 0,
+  "executing_actions": 0,
+  "backup": "data/backups/before-notifications-20261004-151218.sqlite3",
+  "test_mailbox_status": 405
+}

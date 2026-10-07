@@ -1,0 +1,23 @@
+{
+  "passed": true,
+  "checks": {
+    "archive_manifest_verified": true,
+    "bundled_document_parser_runs": true,
+    "bundled_site_reader_runs_and_rejects_http_without_network": true,
+    "config_keys_not_overwritten": true,
+    "public_site_routes_metadata_catalogue_and_404": true,
+    "notification_and_exact_targets_require_authentication": true,
+    "agenda_and_plan_routes_require_authentication": true,
+    "membership_and_review_routes_require_auth": true,
+    "guided_setup_and_site_reader_routes_require_auth": true,
+    "account_routes_require_auth_and_test_mailbox_absent": true,
+    "production_archive_serves_web_and_api": true,
+    "second_production_process_rejected": true,
+    "restored_archive_stays_read_only": true
+  },
+  "os": "Windows",
+  "live_provider_tested": false,
+  "linux_systemd_caddy_tested": false,
+  "off_server_backup_tested": false,
+  "archive": "Isdas-Sunucu-Paketi-20261004-r9.zip"
+}

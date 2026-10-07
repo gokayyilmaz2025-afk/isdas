@@ -1,0 +1,105 @@
+{
+  "date": "2026-10-04",
+  "goal_status": "active",
+  "onboarding_tests": 15,
+  "backend_tests": 176,
+  "test_suite": {
+    "name": "pytest",
+    "errors": "0",
+    "failures": "0",
+    "skipped": "0",
+    "tests": "176",
+    "time": "76.396",
+    "timestamp": "2026-10-04T14:12:36.382557+03:00",
+    "hostname": "DESKTOP-CSUUNJP"
+  },
+  "browser": {
+    "passed": true,
+    "checks": {
+      "business_persona_profile_and_resume": true,
+      "website_requires_explicit_review_and_uses_edited_text": true,
+      "actual_document_upload_in_guide": true,
+      "lost_enqueue_response_recovers_existing_job": true,
+      "business_first_job_through_actual_queue_with_synthetic_model": true,
+      "completed_guide_can_be_reopened_and_dismissed": true,
+      "personal_persona_profile_and_resume": true,
+      "personal_first_job_through_actual_queue_with_synthetic_model": true,
+      "agency_persona_profile_and_resume": true,
+      "no_free_job_on_signup_and_explicit_skip": true
+    },
+    "errors": [],
+    "site_preview": "local deterministic fixture; real HTTPS reader checked separately",
+    "model": "local synthetic HTTP model; live model quality untested"
+  },
+  "real_public_page": {
+    "passed": true,
+    "checked_at": "2026-10-04T11:12:10.616326+00:00",
+    "url": "https://www.iana.org/domains/reserved",
+    "title": "IANA-managed Reserved Domains",
+    "characters": 1838,
+    "warnings_roundtrip_utf8": [
+      "Yalnızca bu sayfanın sunucudan gelen metni okundu. Alt sayfalar, görseller ve JavaScript ile sonradan gelen içerikler okunmadı."
+    ],
+    "scope": "single public HTTPS page through real isolated reader; no JavaScript, login or full site crawl"
+  },
+  "deployment": {
+    "passed": true,
+    "checks": {
+      "archive_manifest_verified": true,
+      "bundled_document_parser_runs": true,
+      "bundled_site_reader_runs_and_rejects_http_without_network": true,
+      "config_keys_not_overwritten": true,
+      "membership_and_review_routes_require_auth": true,
+      "guided_setup_and_site_reader_routes_require_auth": true,
+      "account_routes_require_auth_and_test_mailbox_absent": true,
+      "production_archive_serves_web_and_api": true,
+      "second_production_process_rejected": true,
+      "restored_archive_stays_read_only": true
+    },
+    "os": "Windows",
+    "live_provider_tested": false,
+    "linux_systemd_caddy_tested": false,
+    "off_server_backup_tested": false,
+    "archive": "Isdas-Sunucu-Paketi-20261004-r6.zip"
+  },
+  "release": {
+    "file": "Isdas-Sunucu-Paketi-20261004-r6.zip",
+    "sha256": "972af860ca3a44b21532d04e05aab174a67d2c16848021500e3eeea90e6b0e4c",
+    "bytes": 1429324
+  },
+  "main_app": {
+    "port": 8000,
+    "pid": 10928,
+    "ready_status": 200,
+    "private_setup_status": 401,
+    "test_mailbox_status": 405,
+    "outbound_mail_rows": 0,
+    "active_jobs": 0,
+    "backup": "data/backups/before-onboarding-20261004-141321.sqlite3"
+  },
+  "browser_regressions": {
+    "chat": true,
+    "content": true,
+    "membership": true,
+    "accounts": true
+  },
+  "screenshots_reviewed": [
+    "setup-persona-desktop.png",
+    "setup-persona-mobile.png",
+    "setup-website-review-mobile.png",
+    "setup-first-task-desktop.png",
+    "setup-first-task-mobile.png"
+  ],
+  "live_model_tested": false,
+  "live_smtp_tested": false,
+  "own_server_deployed": false,
+  "next_product_flow": "Public commercial pages and consistent result/notification experience; integrations, payment lifecycle and native/mobile work remain.",
+  "still_required": [
+    "Actual payment checkout and subscription lifecycle",
+    "Social publishing and complete content formats",
+    "Live model/Google/SMTP acceptance",
+    "Native app and real-device full voice/push",
+    "Own-server deployment and off-server restore",
+    "End-to-end paid customer pilot"
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "pid": 13080,
+  "port": 8000,
+  "ready_status": 200,
+  "archive": "Isdas-Sunucu-Paketi-20261004-r9.zip",
+  "web_assets_match_release_manifest": true,
+  "authorized_routes": {
+    "/agenda?day=2026-10-04": 401,
+    "/agenda/tasks/missing": 401,
+    "/agenda/plans/missing": 401
+  },
+  "new_table_counts": {
+    "agenda_tasks": 0,
+    "agenda_plans": 0,
+    "agenda_event_requests": 0
+  },
+  "existing_events_preserved": true,
+  "existing_event_count": 5,
+  "backup": "data/backups/before-agenda-20261004-155039.sqlite3",
+  "active_jobs": 0,
+  "executing_actions": 0,
+  "outbound_mail_rows": 0,
+  "test_mailbox_status": 405
+}

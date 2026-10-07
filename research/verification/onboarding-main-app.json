@@ -1,0 +1,10 @@
+{
+  "port": 8000,
+  "pid": 10928,
+  "ready_status": 200,
+  "private_setup_status": 401,
+  "test_mailbox_status": 405,
+  "outbound_mail_rows": 0,
+  "active_jobs": 0,
+  "backup": "data/backups/before-onboarding-20261004-141321.sqlite3"
+}

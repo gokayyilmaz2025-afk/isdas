@@ -1,0 +1,79 @@
+İŞDAŞ — GOOGLE BAĞLANTISI VE ONAYLI İŞLEMLER
+Durum: 4 Ekim 2026. Yerel geliştirme; canlı hesap kabul testi yapılmadı.
+
+Uygulamada bulunan akış
+1. Çalışma alanı yöneticisi Bağlantılar > Google > Hesabımı bağla yolunu izler.
+2. Google izin ekranında hesabını seçer ve gerekli izinleri verir.
+3. İşlerim bölümünden e-posta taslağı veya takvim kaydı hazırlar. Grok API
+   etkinleştiğinde aynı hazırlık konuşma yoluyla da istenebilir.
+4. Önizlemede hesap, alıcı veya tarihler, konu ve içerik görünür.
+5. Düzenle yalnızca önizlemeyi değiştirir. Onayla ve kaydet dış hesaba yazar.
+6. Gmail işlemi taslak oluşturur; e-posta göndermez. Takvim işlemi birincil
+   takvime kaydeder; katılımcı daveti göndermez.
+
+Yönetici kurulumu
+- Google Cloud projesinde Gmail API ve Google Calendar API etkinleştirilmeli.
+- OAuth uygulamasının izin ekranı, uygulama adı ve iletişim bilgileri doldurulmalı.
+- İlk doğrulama için yalnızca yetkili test kullanıcıları eklenmeli.
+- OAuth istemci türü Web application olmalı.
+- Yerel yönlendirme adresi:
+  http://127.0.0.1:8000/api/oauth/google/callback
+- Canlı ortamda bu adres, HTTPS uygulama alan adıyla değiştirilmelidir.
+  Google istemci ayarında ve PUBLIC_ORIGIN değişkeninde aynı adres kökü kullanılmalı.
+- Proje kökünde .env.example örnek alınarak .env oluşturulmalı. Şu değerler gerekir:
+  GOOGLE_CLIENT_ID
+  GOOGLE_CLIENT_SECRET
+  ENCRYPTION_KEY
+  APP_ORIGIN
+  PUBLIC_ORIGIN
+- ENCRYPTION_KEY geçerli bir Fernet anahtarı olmalıdır. Aynı anahtar kalıcı ve
+  güvenli saklanmalı; değişmesi mevcut şifreli bağlantıları okunamaz hâle getirir.
+- Anahtarlar tarayıcı koduna, git deposuna veya herkese açık klasöre konmamalı.
+- Yapılandırma değişikliklerinden sonra API sunucusu yeniden başlatılmalıdır.
+- Doğrudan Grok kullanımında XAI_API_KEY ayrıca gerekir. Google ile elle
+  hazırlanan işlemlerin onay akışı, Grok bağlantısından bağımsızdır.
+
+İstenen Google kapsamları
+https://www.googleapis.com/auth/calendar.events
+https://www.googleapis.com/auth/gmail.compose
+https://www.googleapis.com/auth/userinfo.email
+
+Kısmi izin verildiğinde yalnızca izinli araçlar modele sunulur. Gmail kapsamı
+sağlayıcı tarafında daha geniş yetkiler içerir; uygulamanın mevcut adaptörü yalnızca
+taslak oluşturma uç noktasını kullanır. Herkese açık hizmet öncesinde Google'ın
+uygulama doğrulaması ve ilgili veri kullanımı gereklilikleri tamamlanmalıdır.
+
+Canlı kabul testi
+- Yetkili, üretimden ayrı Google hesabı bağlanır.
+- Önizleme hazırlandıktan sonra Google tarafında henüz kayıt olmadığı kontrol edilir.
+- Konu, alıcı ve tarih düzenlenerek önizlemenin değiştiği görülür.
+- Onay verilir; Gmail'de tek taslak veya Google Takvim'de tek kayıt doğrulanır.
+- Aynı onay tekrar istendiğinde ikinci kayıt oluşmadığı kontrol edilir.
+- Süresi dolan erişim belirtecinin arka planda yenilendiği doğrulanır.
+- Başka Google hesabı bağlanır; eski bekleyen onayın geçersiz olduğu görülür.
+- Bağlantı kaldırılır; bu çalışma alanından yeni işlem yapılamadığı doğrulanır.
+
+Belirsiz sonuç ve tekrar davranışı
+Google'a yazma isteği gönderildikten sonra yanıt alınamazsa işlem belirsiz olarak
+saklanır. Otomatik tekrar yoktur. Takvim işlemi aynı kayıt kimliğiyle kontrol
+edilebilir. Gmail taslağı için kullanıcı kaynak hesabı kontrol eder. Sunucu işlem
+sırasında yeniden başlarsa da aynı davranış uygulanır.
+
+Bağlantı kaldırma ve Google genel izni
+Uygulamadaki kaldırma, yalnızca ilgili çalışma alanının saklanan erişimini siler.
+Google'daki proje genelindeki izni iptal etmek, aynı Google hesabını kullanan diğer
+çalışma alanlarının erişimini de bozabilir. Genel izin Google Hesabı > Güvenlik
+bölümünden ayrıca kaldırılabilir. Uygulama bunu Google tarafında iptal edilmiş
+gibi göstermez.
+
+Doğrulama kanıtı
+- 53 arka uç testi geçti; dış sağlayıcı HTTP yanıtları testte taklit edildi.
+- Tarayıcıda önizleme, düzenleme, onay, saat dilimi ve mobil yerleşim kontrol edildi.
+- Geciken eski çalışma alanı yanıtının yeni alana karışmadığı kontrol edildi.
+- Canlı Google veya ücretli Grok çağrısı bu testlere dahil değildir.
+
+Kaynaklar
+https://developers.google.com/identity/protocols/oauth2/web-server
+https://developers.google.com/workspace/gmail/api/reference/rest/v1/users.drafts/create
+https://developers.google.com/workspace/calendar/api/v3/reference/events/insert
+https://docs.x.ai/developers/tools/function-calling

@@ -1,0 +1,89 @@
+İŞDAŞ · AJANDA, YAPILACAKLAR VE HATIRLATMALAR
+4 Ekim 2026 · r9
+
+BAŞTAN SONA AKIŞ
+Ajandam → Birlikte planlayalım → işleri yaz veya desteklenen tarayıcıdaki sohbet
+sesle yazma özelliğini kullan → asistanın planını incele → istediğin işleri seç,
+adını/tarihini/sorumlusunu düzelt → ajandaya ekle → tamamlananı işaretle.
+
+Gün, önümüzdeki 7 gün, açık işler, bitenler ve arşiv görünümü; başlık/not arama,
+"Bana ait" filtresi, öncelik ve süre; atanmış ekip üyesi; düzenleme ve geri açma
+vardır. Gün/7 gün görünümünde geciken ve tarihi olmayan işler de gösterilir.
+"Bu güne kalan" seçili günün sonuna kadar tarih verilmiş açık işleri sayar.
+"Geciken" gerçek şu andan önce tarihi olan açık işleri sayar. Arşivden geri alma,
+işin daha önce tamamlanmış olup olmadığını korur. Tamamlanmış işi yeniden açma
+ayrı bir işlemdir. Çalışma alanı başına toplam 5.000 yapılacak kaydı sınırı vardır.
+
+KONUŞMADAN GERÇEK KAYDA
+xAI bağlantısında Piko/Ada/iş geliştirme uzmanlığına prepare_agenda_plan aracı
+sunulur. Model en fazla 20 iş önerir. Bu, mevcut kullanım hesabına tabi tek model
+isteğidir; aracın öneri üretmesi gerçek görev veya hatırlatma başlatmaz.
+Kullanıcı seçim ve düzenlemeyi tamamlayıp kaydedince işler atomik olarak oluşur.
+Aynı kaydetme isteğini tekrar etmek yeni işler üretmez. Farklı içeriği uygulanmış
+plana tekrar yazmak reddedilir; oluşan işler tek tek düzenlenebilir.
+
+Planın kaynak sohbetine doğrudan dönülebilir. Takip mesajına o sohbetteki son üç
+planın uygulanma durumu ve bağlı işlerin güncel başlık/tarih/tamamlanma durumu
+aktarılır. Ayrıca kullanıcının kendisine atanmış en fazla 20 açık işi seçilmiş
+bağlam olarak verilir. Bu, tüm ajandanın eksiksiz analizi değildir. Model mevcut
+işi değiştirmiş veya tamamlamış gibi konuşmamalıdır; mevcut işleri değiştiren
+sohbet aracı henüz yoktur. Kullanıcı Ajandam ekranında düzenler.
+
+Normal bir metin yanıtından da "Yapılacak iş oluştur" ile düzenlenebilir form
+açılabilir. Başlık ilk 200, not ilk 5.000 karakterle başlar. Asıl sohbet çıktısı
+yerinde kalır. Hermes yolu metin yanıtını destekler; xAI yapılandırılmış plan
+aracı Hermes'e uygulanmış değildir. Canlı sağlayıcı kalitesi ayrıca doğrulanmalı.
+
+HATIRLATMA
+İşin tarihinde, 5/15/30/60 dakika veya bir gün öncesinde uygulama içi hatırlatma
+seçilebilir. Tarih yoksa hatırlatma seçilemez. Gecikmiş açık bir işe geçmiş
+hatırlatma seçilmişse bir sonraki kontrolde bildirilir. Bildirim görev ayrıntısına
+götürür ve kaynak yetkileri her açmada kontrol edilir.
+
+Kontrol, model kuyruğundan ayrı hafif bir sunucu iş parçacığında yaklaşık beş
+saniyede bir yapılır; uzun model yanıtını beklemez. Aktif tarayıcı bildirim paneli
+yaklaşık yedi saniyede bir yenilenir. Bunlar kesin teslim süresi garantisi değildir.
+Sunucu çalışmıyorsa bildirim oluşturulmaz; yeniden çalışınca uygun bekleyen işler
+işlenir. Telefon push bildirimi veya yeni e-posta gönderilmez.
+
+Bildirim ve gönderildi işareti aynı veritabanı işlemiyle kaydedilir. İki kontrol
+aynı hatırlatmayı çoğaltmaz; başarısız işlemde ikisi de geri alınır. Başlık/not
+düzeltmesi tek başına yeniden bildirmez. Tarih, hatırlatma veya sorumlu değişince,
+iş yeniden açılınca yeni hatırlatma sürümü oluşur. Tamamlanan/arşivlenen işin ve
+atanmış kişinin eski bildirimi geçersiz olur. Üyeliği kaldırılmış veya müşteri
+rolündeki kişiye hatırlatma verilmez.
+
+EKİP VE KİŞİSEL ALAN
+Yapılacaklar ve takvim, alanın yönetici ve ekip üyeleri arasında paylaşılır;
+yalnızca atanmış müşteri rolü ajandaya giremez. İşte değişiklik yapmak üyelere
+açıktır; sorumlu yalnızca o alandaki mevcut yönetici/üye olabilir. Bildirim atanmış
+kişiye gider. Gizli kişisel işler için ayrı, paylaşılmayan alan kullanılmalıdır.
+Kaldırılan üyenin kayıtları ekip alanında korunur; yeni bildirim almaz.
+
+TAKVİM VE TARİH DOĞRULUĞU
+Saat aralığı olan toplantı/odak zamanı ayrı takvim kaydıdır; eklenir, düzenlenir,
+kaldırılır ve ICS olarak indirilir. Bu dosya toplantı kayıtlarını içerir;
+yapılacakları VTODO olarak dışa aktarmaz. Yerel kayıt Google Takvim'e otomatik
+yazılmaz ve kimseye davet göndermez. Google inceleme/onay bağlantısı ayrı akıştır.
+
+Alan saat dilimi görünür; iş veya takvim formunda saat dilimi açıkça seçilebilir.
+Tarihler sunucuda IANA bölgesinden UTC'ye çevrilir; yaz/kış saatinde atlanan veya
+iki kez yaşanan belirsiz saat reddedilir. Tarayıcının kendi saat dilimi, takvimin
+tarihini sessizce değiştirmez. İki kişi aynı sürümü düzenlediğinde sonraki eski
+sürüm yazması reddedilir; son sürümü yeniden açma yolu vardır.
+
+İŞLETİM VE DOĞRULAMA
+Şema eklemelidir: eski takvim kayıtları korunur ve revision=1 ile başlar.
+Yedek tüm ajanda tablolarını içerir. Yedekten dönüş kilidi açıkken hatırlatma
+çalışmaz; operatörün mevcut uzlaştırma ve kilit açma prosedürü gerekir.
+WORKER_ENABLED=true hem model kuyruğunu hem ajanda kontrolünü başlatır. /api/ready
+iki iş parçacığını da kontrol eder. Ayrı push/SMTP servisi bu özellik için yoktur.
+
+23 ajanda testi; gerçek SQLite ve API, sahte yerel model HTTP yanıtıyla araç/iş
+kuyruğu, rol ve saat dilimi sınırları, tekrar koruması, eş zamanlı yazma, hata geri
+alma, uzun model işi sırasında hatırlatma ve şifreli yedekten dönüş kapsanır.
+Tarayıcı kabulü: gerçek arayüzden kayıt/düzenleme, planı seçme, kaydetme yanıtının
+kaybında tekrar, eski sürümden toparlanma, kaynak sohbete dönüş, güncel bağlam ve
+hatırlatma bağlantısı. Masaüstü/tablet/mobil ekranlar incelenir.
+Model sentetik yerel testtir; canlı model plan kalitesi, gerçek Google hesabı,
+gerçek cihaz sesi/push veya uzaktaki sunucu yayını kanıtı değildir.

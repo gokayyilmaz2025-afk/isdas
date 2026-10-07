@@ -1,0 +1,215 @@
+{
+  "engine": "faster-whisper base.en; machine transcript; verify uncertain terms",
+  "segments": [
+    {
+      "start": 0.0,
+      "end": 4.58,
+      "text": "In this video, we're gonna go over one of Cintra's most powerful automations, the Social Media Manage."
+    },
+    {
+      "start": 4.58,
+      "end": 11.48,
+      "text": "I'm gonna walk you through how it works, how to customize it, and how to make sure it's generating content that's genuinely on-brand for your business."
+    },
+    {
+      "start": 11.48,
+      "end": 14.0,
+      "text": "Let me quickly explain how the automation is supposed to work."
+    },
+    {
+      "start": 14.0,
+      "end": 18.76,
+      "text": "The whole idea is that your social is running the background without you having to think about them constantly."
+    },
+    {
+      "start": 18.76,
+      "end": 27.24,
+      "text": "The posts generate for you automatically, and then all you have to do is come in once a week, review them, tweak anything you want to, and schedule them."
+    },
+    {
+      "start": 27.24,
+      "end": 30.04,
+      "text": "The Social Media Manager runs on a weekly cycle."
+    },
+    {
+      "start": 30.04,
+      "end": 36.96,
+      "text": "Each Sunday, it generates posts for the upcoming two weeks, and then all you need to do is review them and edit anything you don't like."
+    },
+    {
+      "start": 36.96,
+      "end": 41.4,
+      "text": "Now, let's talk about what you can actually edit with each post, because you have a lot of control here."
+    },
+    {
+      "start": 41.4,
+      "end": 42.84,
+      "text": "First of all, the image."
+    },
+    {
+      "start": 42.84,
+      "end": 56.96,
+      "text": "If you don't like the AI-generated image, you can regenerate it, or if you want to use a real image, simply click on it, then click on the six circles icon, and you can choose any image that you have uploaded into the brainy eye, or you can just drag and drop a file."
+    },
+    {
+      "start": 56.96,
+      "end": 59.0,
+      "text": "The post bio is fully editable."
+    },
+    {
+      "start": 59.0,
+      "end": 63.64,
+      "text": "You can type directly into the field, regenerate everything, or make specific AI edits."
+    },
+    {
+      "start": 63.64,
+      "end": 65.4,
+      "text": "You can also change the publishing date."
+    },
+    {
+      "start": 65.4,
+      "end": 68.72,
+      "text": "Pick any date you want, or publish it immediately if it's time-sensitive."
+    },
+    {
+      "start": 68.72,
+      "end": 74.88,
+      "text": "But I wouldn't mess with the time of day too much, as that should already be optimized according to your business specifications."
+    },
+    {
+      "start": 74.88,
+      "end": 79.84,
+      "text": "Lastly, you can change the platform, the content type, and the specific page you want to post it to."
+    },
+    {
+      "start": 79.84,
+      "end": 80.88,
+      "text": "One more useful thing."
+    },
+    {
+      "start": 80.88,
+      "end": 85.76,
+      "text": "If you want to post something across multiple platforms, simply click on a scheduled post, then click on Duplicate."
+    },
+    {
+      "start": 85.76,
+      "end": 90.32,
+      "text": "Here, you will have the ability to duplicate a post to any other platform you want to."
+    },
+    {
+      "start": 90.32,
+      "end": 95.48,
+      "text": "Let's talk about content themes, because this is where you have a real choice or what gets generated each week."
+    },
+    {
+      "start": 95.48,
+      "end": 97.68,
+      "text": "Head over to the settings, and click on content themes."
+    },
+    {
+      "start": 97.68,
+      "end": 101.24,
+      "text": "When you first set up the automation, six content themes are created for you."
+    },
+    {
+      "start": 101.24,
+      "end": 104.68,
+      "text": "Three of them are made active, and these are what drive your weekly content."
+    },
+    {
+      "start": 104.68,
+      "end": 111.4,
+      "text": "If you want to activate or deactivate one, simply click on the checkmark, and if you want to delete one, click on the trashcan icon."
+    },
+    {
+      "start": 111.4,
+      "end": 114.48,
+      "text": "If you want to create a new theme, simply click on Add Content Theme."
+    },
+    {
+      "start": 114.48,
+      "end": 117.0,
+      "text": "This will redirect you to the social media helper."
+    },
+    {
+      "start": 117.0,
+      "end": 120.0,
+      "text": "And she's going to ask you a few questions that she needs to create."
+    },
+    {
+      "start": 120.0,
+      "end": 127.88,
+      "text": "These questions are usually what's the main focus of this theme, what's the goal you're looking for, how often you want to post it, and which platform it's for."
+    },
+    {
+      "start": 127.88,
+      "end": 129.72,
+      "text": "Once you've answered, you'll see a preview."
+    },
+    {
+      "start": 129.72,
+      "end": 136.32,
+      "text": "Here, you'll see the title of the content theme, how often it's going to post, which platform it's for, and the possible post that it can create."
+    },
+    {
+      "start": 136.32,
+      "end": 139.64,
+      "text": "If you don't like some of the posts, you can edit them right there in the chat."
+    },
+    {
+      "start": 139.64,
+      "end": 143.08,
+      "text": "Add new ones, delete them, or just make simple edits."
+    },
+    {
+      "start": 143.08,
+      "end": 145.72,
+      "text": "If we go back to the settings, there are a few more things worth knowing."
+    },
+    {
+      "start": 145.72,
+      "end": 147.6,
+      "text": "First off, custom instructions."
+    },
+    {
+      "start": 147.6,
+      "end": 154.04,
+      "text": "Here you can add your logo, color palette, brand tone, business description, and value proposition."
+    },
+    {
+      "start": 154.04,
+      "end": 156.28,
+      "text": "All of these help make your post more consistent."
+    },
+    {
+      "start": 156.28,
+      "end": 163.56,
+      "text": "And if you want to speed up some time, you can simply add a link to your website, and Central will automatically scrape it and add that information for you."
+    },
+    {
+      "start": 163.56,
+      "end": 166.68,
+      "text": "If we scroll to the bottom of the brand kit, we can see a media library."
+    },
+    {
+      "start": 166.68,
+      "end": 169.28,
+      "text": "These images are used as reference images."
+    },
+    {
+      "start": 169.28,
+      "end": 177.64,
+      "text": "So if your business has a particular style, let's say cartoonish characters, upload the examples here, and your generated posts will reflect that."
+    },
+    {
+      "start": 177.64,
+      "end": 179.0,
+      "text": "And that's all you need to know."
+    },
+    {
+      "start": 179.0,
+      "end": 183.08,
+      "text": "Set up your themes properly, fill in your brand kit, and it really does run itself."
+    }
+  ]
+}

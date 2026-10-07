@@ -1,0 +1,17 @@
+{
+  "passed": true,
+  "checks": {
+    "customer_signup_verify_accept_and_restricted_portal": true,
+    "employee_signup_accept_shared_workspace": true,
+    "customer_feedback_returns_draft": true,
+    "customer_exact_revision_approval": true,
+    "customer_mobile_fits": true,
+    "edit_invalidates_customer_approval": true,
+    "removal_revokes_access": true,
+    "removed_customer_portal_clears": true
+  },
+  "errors": [],
+  "mail_transport": "local memory capture only",
+  "live_smtp_tested": false,
+  "live_model_tested": false
+}

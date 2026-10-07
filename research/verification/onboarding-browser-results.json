@@ -1,0 +1,18 @@
+{
+  "passed": true,
+  "checks": {
+    "business_persona_profile_and_resume": true,
+    "website_requires_explicit_review_and_uses_edited_text": true,
+    "actual_document_upload_in_guide": true,
+    "lost_enqueue_response_recovers_existing_job": true,
+    "business_first_job_through_actual_queue_with_synthetic_model": true,
+    "completed_guide_can_be_reopened_and_dismissed": true,
+    "personal_persona_profile_and_resume": true,
+    "personal_first_job_through_actual_queue_with_synthetic_model": true,
+    "agency_persona_profile_and_resume": true,
+    "no_free_job_on_signup_and_explicit_skip": true
+  },
+  "errors": [],
+  "site_preview": "local deterministic fixture; real HTTPS reader checked separately",
+  "model": "local synthetic HTTP model; live model quality untested"
+}

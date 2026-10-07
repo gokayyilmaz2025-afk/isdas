@@ -1,0 +1,64 @@
+İŞDAŞ · TANITIM SİTESİ VE KAYIT AKIŞI
+4 Ekim 2026 · r7
+
+SAYFALAR
+/                         Ana sayfa; üç kullanım alanı ve etkileşimli örnek iş turu
+/kullanim/kisisel          Kişisel planlama, araştırma ve belge işleri
+/kullanim/isletme          Marka bilgisi, içerik ve müşteri hazırlıkları
+/kullanim/ajans            Ayrı marka alanları, ekip ve müşteri sürüm onayı
+/isdaslar                 14 uzmanlık, filtre ve ayrıntı pencereleri
+/baglantilar              Uygulama içi araçlar, kuruluma bağlı ve planlanan bağlantılar
+/paketler                 Planlanan paketler ve pilot kullanım açıklaması
+/yardim                   Başlangıç rehberi, konu filtresi ve Türkçe arama
+
+Marka dili mevcut özgün Piko karakteri, mavi ana renk, ortak yazı ve kart düzeniyle
+uygulamaya bağlandı. Masaüstü ve mobil menüler; klavye, Escape ile menü kapama ve
+odağın menü düğmesine dönmesi; hareket azaltma tercihi uygulanır. Örnek turu gerçek
+iş veya kullanım harcaması başlatmaz ve örnek olduğu görünür biçimde belirtilir.
+Gerçek olmayan müşteri logosu, yorum, kazanç, performans veya başarı sayısı yoktur.
+
+SİTEDEN KURULUMA
+Kişisel / İşletme / Ajans ve seçilen amaç, /app?for=...&goal=... bağlantısıyla
+kurulumun başlangıç seçimine taşınır. Yalnızca izin verilen persona ve amaçlar
+okunur; serbest metin veya yönlendirme URL'si alınmaz. Aynı sekmede hesap açma ve
+e-posta doğrulama kapısından sonra seçim korunur. Kullanıcı formda değiştirebilir.
+
+Alan otomatik açılmaz. Mevcut hesabı olan kişi seçili yeni alan formunu görür;
+vazgeçebilir. Oluşturma düğmesine basınca mevcut atomik, tekrar korumalı API ve
+aktif alan sınırı uygulanır. Alan oluşturulduktan sonra seçili amaç sunucuda
+tutulur. Alan oluşmadan sekmeler arasında tercih senkronizasyonu yapılmaz.
+
+TEK KAYNAKTAN PAKET KAPSAMI
+GET /api/public/catalog, mevcut backend/billing.py plan tanımlarından çalışma
+alanı, planlanan puan ve önerilen aylık USD fiyatını okur. 14 uzmanlığın müşteriye
+açık adı/görevi/açıklaması aynı katalogdan gelir; sistem yönergeleri, kullanıcı
+verileri, sağlayıcı anahtarları veya hesap bağlantı bilgileri yayımlanmaz.
+
+checkout_enabled=false ve pricing_status=preview. Paket sayfası açıkça taslaktır:
+19 / 49 / 149 USD planlanan fiyatlardır; kesin satış fiyatı, vergi dahil teklif veya
+aktif abonelik değildir. Satın alma, tahsilat, yenileme, iptal ve vergi/fatura
+akışı henüz eklenmedi. Düğme yalnızca alan kurulumuna gider. Kayıt veya plan
+seçimi kredi vermez. Pilot tanımlaması operatörün ayrı doğrulanmış işlemidir.
+
+YAYIN DURUMU
+Sayfalar yerel uygulamada ve kendi sunucuna kurulabilir arşivde bulunur. Her kamu
+sayfasının ilk HTTP yanıtında ayrı başlığı, açıklaması ve Open Graph metni vardır.
+Sayfa gövdesi React ile tarayıcıda oluşturulur; tam sunucu render veya arama
+motorlarında indekslenme testi yapılmış değildir. Bilinmeyen kamu yolları 404,
+uygulama/hesap yolları noindex yanıtı verir. Gerçek alan adı veya sosyal paylaşım
+görseli URL'si uydurulmamıştır.
+
+Canlı yayın öncesinde işletmeci bilgisi, marka adı uygunluğu, gerçek destek kanalı,
+gizlilik/çerez/üyelik ve satış belgeleri, fiyat/vergiler, canlı ödeme ve entegrasyon
+koşulları ayrıca tamamlanmalıdır. Bu sayfalar hukuki metin veya tamamlanmış satış
+altyapısı yerine geçmez. Kendi sunucunda TLS/alan adı ile gerçek dağıtım yapılmadı.
+
+DOĞRULAMA
+Backend: anonim kataloğun kullanıcı/veri oluşturmaması; plan kapsamı kaynağı;
+sistem yönergesi/anahtar sızmaması; kayıt kapısı; ayrı sayfa metaverisi, kaçışlama,
+404 ve özel uygulama sayfalarının noindex davranışı.
+Tarayıcı: örnek turunun iş başlatmaması, sekiz sayfa, uzman filtre/ayrıntıları,
+plan taslağı, bağlantı durumları, mobil menü/odak, yardım araması ve boş sonuç,
+API hata/tekrar, bilinmeyen yol, kayıt ve mevcut hesaba göre kurulum geçişi.
+Ayrı tarayıcı testi e-posta doğrulaması boyunca seçimin korunmasını doğrular.
+E-posta testleri yerel yakalama kullanır; gerçek SMTP gönderimi yapılmaz.

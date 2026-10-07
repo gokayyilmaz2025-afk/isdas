@@ -1,0 +1,55 @@
+{
+  "engine": "faster-whisper base.en; machine transcript; verify uncertain terms",
+  "segments": [
+    {
+      "start": 0.0,
+      "end": 4.64,
+      "text": "you should feel illegal to do this as a real estate agent. I'm gonna make a full property"
+    },
+    {
+      "start": 4.64,
+      "end": 10.8,
+      "text": "video tour with Sunny with just one link. Check this out. So I'm gonna list things right now and"
+    },
+    {
+      "start": 10.8,
+      "end": 16.08,
+      "text": "I'm just gonna grab a random property with good photos. I think this one looks good because it has"
+    },
+    {
+      "start": 16.08,
+      "end": 21.76,
+      "text": "a lot of photos and a good quality. So then all I'm gonna do is take this link, only the link,"
+    },
+    {
+      "start": 21.76,
+      "end": 27.92,
+      "text": "and now I'll just go to Sunny and I'll just paste it. And I will also ask him to do a video tour of"
+    },
+    {
+      "start": 27.92,
+      "end": 34.0,
+      "text": "this property for Instagram with only this link. And watch, he's pulling every photo off of that"
+    },
+    {
+      "start": 34.0,
+      "end": 40.4,
+      "text": "listing by himself. I didn't upload anything so that's kind of amazing. He just went on and got"
+    },
+    {
+      "start": 40.4,
+      "end": 45.84,
+      "text": "him all. Then I just made a few adjustments and I hit generate video and wait for the result. And"
+    },
+    {
+      "start": 45.84,
+      "end": 52.0,
+      "text": "that's it. That's a property tour video ready to publish. You can also ask him to add your logo"
+    },
+    {
+      "start": 52.0,
+      "end": 55.52,
+      "text": "and this is the result. Honestly, mind-blowing."
+    }
+  ]
+}

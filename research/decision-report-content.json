@@ -1,0 +1,1505 @@
+{
+  "sources": {
+    "marb": {
+      "title": "Marblism ürün",
+      "url": "https://www.marblism.com/"
+    },
+    "eva": {
+      "title": "Marblism Eva",
+      "url": "https://www.marblism.com/ai-employees/eva"
+    },
+    "sonny": {
+      "title": "Marblism Sonny",
+      "url": "https://www.marblism.com/ai-employees/sonny"
+    },
+    "stan": {
+      "title": "Marblism Stan",
+      "url": "https://www.marblism.com/ai-employees/stan"
+    },
+    "penny": {
+      "title": "Marblism Penny",
+      "url": "https://www.marblism.com/ai-employees/penny"
+    },
+    "walter": {
+      "title": "Marblism Walter",
+      "url": "https://www.marblism.com/ai-employees/walter"
+    },
+    "rachel": {
+      "title": "Marblism Rachel",
+      "url": "https://www.marblism.com/ai-employees/rachel"
+    },
+    "linda": {
+      "title": "Marblism Linda",
+      "url": "https://www.marblism.com/ai-employees/linda"
+    },
+    "marbprice": {
+      "title": "Marblism fiyatlar ve iş saati hesabı",
+      "url": "https://help.marblism.com/en/articles/15361461-marblism-pricing-plans-billing-cadence"
+    },
+    "marbspaces": {
+      "title": "Marblism çalışma alanı sınırları",
+      "url": "https://help.marblism.com/en/articles/15688766-when-should-i-create-a-new-workspace-best-practices"
+    },
+    "marbint": {
+      "title": "Marblism entegrasyonlar",
+      "url": "https://help.marblism.com/en/articles/15278633-what-integrations-are-available"
+    },
+    "sintra": {
+      "title": "Sintra ürün ve rol kataloğu",
+      "url": "https://sintra.ai/"
+    },
+    "summer": {
+      "title": "Sintra Summer Edition 2026",
+      "url": "https://sintra.ai/summer-edition"
+    },
+    "sintraprice": {
+      "title": "Sintra fiyatlar",
+      "url": "https://help.sintra.ai/en/articles/12606895-sintra-ai-plans-and-pricing"
+    },
+    "sintralang": {
+      "title": "Sintra arayüz dilleri",
+      "url": "https://help.sintra.ai/en/articles/12448626-what-languages-is-the-ui-interface-available-in"
+    },
+    "sintraint": {
+      "title": "Sintra entegrasyonlar",
+      "url": "https://sintra.ai/integrations"
+    },
+    "brain": {
+      "title": "Sintra Brain AI",
+      "url": "https://sintra.ai/features/brain-ai"
+    },
+    "DdzWKQYJIK-": {
+      "title": "Marblism karakter reklamı",
+      "url": "https://www.instagram.com/p/DdzWKQYJIK-/"
+    },
+    "Dd9gNr3il86": {
+      "title": "Marblism ilk kurulum",
+      "url": "https://www.instagram.com/p/Dd9gNr3il86/"
+    },
+    "DeAj77dJiED": {
+      "title": "Marblism emlak videosu",
+      "url": "https://www.instagram.com/p/DeAj77dJiED/"
+    },
+    "Dd6pwG_JVZV": {
+      "title": "Marblism trend video anlatımı",
+      "url": "https://www.instagram.com/p/Dd6pwG_JVZV/"
+    },
+    "DZM_braAGgS": {
+      "title": "Sintra çalışma alanı turu",
+      "url": "https://www.instagram.com/p/DZM_braAGgS/"
+    },
+    "Dbkaa1oNW5h": {
+      "title": "Sintra Brain ve Brand Kit",
+      "url": "https://www.instagram.com/p/Dbkaa1oNW5h/"
+    },
+    "Db5DRlatzUa": {
+      "title": "Sintra sosyal medya iş akışı",
+      "url": "https://www.instagram.com/p/Db5DRlatzUa/"
+    },
+    "DZfbmUOiYEL": {
+      "title": "Sintra özel yardımcı oluşturma",
+      "url": "https://www.instagram.com/p/DZfbmUOiYEL/"
+    },
+    "marbad": {
+      "title": "Marblism örnek aktif reklam",
+      "url": "https://www.facebook.com/ads/library/?id=1769320344267627"
+    },
+    "sintraad": {
+      "title": "Sintra örnek aktif reklam",
+      "url": "https://www.facebook.com/ads/library/?id=1827557191940323"
+    },
+    "cash": {
+      "title": "Marblism kurucusunun Ağustos 2026 nakit beyanı",
+      "url": "https://www.linkedin.com/pulse/after-20-years-i-finally-made-my-first-internet-dollar-ulric-musset-nlyif"
+    },
+    "arr": {
+      "title": "Earlybird: Sintra Haziran 2025 beyanları",
+      "url": "https://www.linkedin.com/pulse/earlybird-edition-june-2025-earlybird-venture-capital-3xofc"
+    },
+    "bot": {
+      "title": "Grok Bot çalışma ortamı",
+      "url": "https://docs.x.ai/grok-bot/overview"
+    },
+    "botterms": {
+      "title": "Grok Bot kullanım koşulları",
+      "url": "https://x.ai/legal/grok-bot-terms"
+    },
+    "api": {
+      "title": "xAI ticari API koşulları",
+      "url": "https://x.ai/legal/terms-of-service-enterprise"
+    },
+    "price": {
+      "title": "xAI API fiyatları",
+      "url": "https://docs.x.ai/developers/pricing"
+    },
+    "costtracking": {
+      "title": "xAI gerçek istek maliyeti",
+      "url": "https://docs.x.ai/developers/cost-tracking"
+    },
+    "plans": {
+      "title": "Grok Bot kota ve faturalama",
+      "url": "https://cursor.com/help/grok-bot/plans"
+    },
+    "sdk": {
+      "title": "Cursor TypeScript SDK",
+      "url": "https://cursor.com/docs/sdk/typescript"
+    },
+    "hermes": {
+      "title": "Hermes Agent kaynak kodu",
+      "url": "https://github.com/NousResearch/hermes-agent"
+    },
+    "hermesapi": {
+      "title": "Hermes API sunucusu",
+      "url": "https://hermes-agent.nousresearch.com/docs/user-guide/features/api-server"
+    },
+    "hermesprofiles": {
+      "title": "Hermes profil ayrımı",
+      "url": "https://hermes-agent.nousresearch.com/docs/user-guide/profiles"
+    },
+    "hermessec": {
+      "title": "Hermes güvenlik modeli",
+      "url": "https://hermes-agent.nousresearch.com/docs/user-guide/security"
+    },
+    "license": {
+      "title": "Hermes MIT lisansı",
+      "url": "https://raw.githubusercontent.com/NousResearch/hermes-agent/main/LICENSE"
+    }
+  },
+  "slides": [
+    {
+      "title": "İşini anlat. Sonucunu al.",
+      "lead": "İşdaş için rakip incelemesi, ürün tasarımı, maliyet modeli ve uygulama planı",
+      "bullets": [
+        "Marblism ve Sintra: hizmetlerin ve gerçek panel akışlarının incelemesi",
+        "Grok Bot, Grok API ve Hermes: ticari ürün için altyapı seçimi",
+        "4 Ekim 2026 · Araştırma ve yerel uygulama durumu"
+      ],
+      "table": null,
+      "widths": null,
+      "refs": [],
+      "note": "",
+      "image": null,
+      "kind": "cover"
+    },
+    {
+      "title": "Önerilen ürün ve altyapı",
+      "lead": "Kendi markamız ve müşteri alanlarımız üzerinde, değiştirilebilir model ve ajan bağlantılarıyla ilerlemek.",
+      "bullets": [],
+      "table": [
+        [
+          "Katman",
+          "Karar",
+          "Gerekçe"
+        ],
+        [
+          "Müşterinin gördüğü ürün",
+          "İşdaş web ve mobil deneyimi",
+          "Tek konuşma alanı; yapılan işi ve teslimi görünür kılma."
+        ],
+        [
+          "Kontrollü işler",
+          "Grok API + uygulamanın araçları",
+          "İş başına yetki, kayıt, tekrar deneme ve maliyet kontrolü."
+        ],
+        [
+          "Daha serbest ajan işleri",
+          "İzole Hermes ortamları - pilot sonrası",
+          "Hazır ajan yeteneklerini kullanabilme; daha yüksek işletme yükü."
+        ],
+        [
+          "Grok Bot aboneliği",
+          "Ürün denemesi / iç çalışma için değerlendirme",
+          "Standart hesabı çok müşterili hizmetin temeli saymama."
+        ]
+      ],
+      "widths": [
+        160,
+        240,
+        464
+      ],
+      "refs": [
+        "api",
+        "botterms",
+        "hermesapi"
+      ],
+      "note": "Grok ve Hermes arasında canlı başarı testi henüz yapılmadı. Bu seçim, doğrulanmış kalite üstünlüğü iddiası değil, kontrol ve işletim gereksinimlerine dayalı mimari öneridir.",
+      "image": null,
+      "kind": "normal"
+    },
+    {
+      "title": "İncelemenin kanıt sınırları",
+      "lead": "Ürün beyanı, videoda görülen akış, reklam kaydı ve bizim testimiz ayrı kanıt türleridir.",
+      "bullets": [
+        "Resmî Instagram hesaplarından 8 video: görüntü kareleri incelendi; ses içeren 7 kayıt makineyle yazıya çevrildi. Marka adlarındaki yazım hataları bağlamla kontrol edildi.",
+        "Bir Sintra videosunun indirilen kopyasında ses izi yoktu; bulgular görüntü ve açıklamaya dayanıyor.",
+        "Apify reklam örneklemi: resmî sayfa kimliği ve hedef alan adı eşleşen 10 Marblism + 10 Sintra kaydı. Diğer markalara ait sonuçlar ayrıldı.",
+        "Rakiplerin ücretli hesaplarında uçtan uca iş çalıştırılmadı. Tanıtımdaki özellikler, bizim canlı doğruladığımız entegrasyonlar değildir."
+      ],
+      "table": null,
+      "widths": null,
+      "refs": [],
+      "note": "Apify Instagram run: 0VaUSIlmFLbPMrzEz, SUCCEEDED. Reklam run: KaUZNC776WaHaW2w4, SUCCEEDED. Sonuçlar 3 Ekim 2026; durumları 4 Ekim yeniden kontrol edildi.",
+      "image": null,
+      "kind": "normal"
+    },
+    {
+      "title": "Marblism nasıl bir deneyim satıyor?",
+      "lead": "Müşteriye uzman çalışan seçtiriyor; iş yükünü sohbet üzerinden teslim alıyor.",
+      "bullets": [
+        "İlk seçim: işletmem, işim veya kişisel yaşamım. İşletme seçeneğinde site adresiyle bağlam toplama; kişisel kullanımda site zorunluluğu yok.",
+        "Çalışma alanı, marka bilgisi ve iş rolü: kullanıcıya model seçtirmek yerine Eva, Sonny veya Stan gibi görev sahibi sunuluyor.",
+        "Her çalışanın kurulumunda ilgili hesaplar bağlanıyor. İşin türüne göre taslak, plan, dosya veya uygulamada işlem elde ediliyor.",
+        "Sonuç gözden geçiriliyor, düzeltiliyor ve uygun işlerde planlanıyor. Tanıtım videolarında kullanıcı müdahalesi ve üretim düğmesi de var."
+      ],
+      "table": null,
+      "widths": null,
+      "refs": [
+        "Dd9gNr3il86",
+        "marbint",
+        "DeAj77dJiED"
+      ],
+      "note": "",
+      "image": null,
+      "kind": "normal"
+    },
+    {
+      "title": "Marblism: e-posta, sosyal medya ve satış",
+      "lead": "Her karakterin rolü somut bir iş çıktısına bağlanıyor.",
+      "bullets": [],
+      "table": [
+        [
+          "Çalışan",
+          "Sunduğu işler",
+          "Bizde eşdeğer hizmetin kabul şartı"
+        ],
+        [
+          "Eva · yönetici asistanı",
+          "Gelen kutusu düzeni, cevap taslağı, takvim ve toplantı notu.",
+          "Gerçek posta bağlantısı; taslak önizleme; takvimde doğrulanmış kayıt; işlem geçmişi."
+        ],
+        [
+          "Sonny · sosyal medya",
+          "Markaya uygun plan, görsel/video, platformlara yayın ve içerik takibi.",
+          "Marka kiti, düzenlenebilir içerik takvimi, medya üretimi, onay ve doğrulanmış yayın bağlantısı."
+        ],
+        [
+          "Stan · satış",
+          "Uygun müşteri araştırması, kişiselleştirilmiş iletişim, takip ve randevu.",
+          "Kaynaklı kişi/şirket listesi; izinli veri kaynağı; gönderim onayı; durdurulabilir takip."
+        ]
+      ],
+      "widths": [
+        168,
+        328,
+        368
+      ],
+      "refs": [
+        "eva",
+        "sonny",
+        "stan"
+      ],
+      "note": "Veri tabanı büyüklüğü, yanıt artışı ve kazanılan müşteri gibi pazarlama iddiaları bağımsız doğrulanmadı; kendi performans hedefimiz olarak alınmadı.",
+      "image": null,
+      "kind": "normal"
+    },
+    {
+      "title": "Marblism: diğer dört iş kolu",
+      "lead": "Sadece sohbet cevabı, bu hizmetlerin karşılığı sayılmaz.",
+      "bullets": [],
+      "table": [
+        [
+          "Çalışan",
+          "Ürün sayfasındaki hizmet",
+          "Bizim uygulama gereksinimi"
+        ],
+        [
+          "Penny · SEO",
+          "Konu/anahtar kelime araştırması, yazı ve siteye yayın.",
+          "Kaynaklı taslak, düzenleme, CMS taslak/yayın bağlantısı."
+        ],
+        [
+          "Walter · web sitesi",
+          "Site oluşturma/değiştirme; ziyaretçi verisiyle deneyler.",
+          "Önizleme, alan adı, yayın/geri alma, ölçüm ve yeterli örneklem."
+        ],
+        [
+          "Rachel · telefon",
+          "Arama yanıtlama, randevu, yönlendirme ve görüşme özeti.",
+          "Telefon sağlayıcısı; Türkçe ses testi; gerçek takvim; maliyet limiti."
+        ],
+        [
+          "Linda · belge",
+          "Sözleşme açıklaması, risk işaretleme ve belge taslağı.",
+          "Dosya okuma ve dışa aktarma; kaynak bölümü; uzman incelemesine elverişli çıktı."
+        ]
+      ],
+      "widths": [
+        159,
+        327,
+        378
+      ],
+      "refs": [
+        "penny",
+        "walter",
+        "rachel",
+        "linda"
+      ],
+      "note": "Türkiye telefon numarası ve yerel arama koşulları doğrulanmadı. Hukuki belge çıktısı profesyonel incelemenin yerine geçecek şekilde pazarlanmamalı.",
+      "image": null,
+      "kind": "normal"
+    },
+    {
+      "title": "Sintra: 12 uzman ve ortak işletme bilgisi",
+      "lead": "Aynı çalışma alanındaki uzmanlar Brain AI içeriğinden yararlanıyor.",
+      "bullets": [],
+      "table": [
+        [
+          "Uzman",
+          "Rol",
+          "Uzman",
+          "Rol"
+        ],
+        [
+          "Soshie",
+          "Sosyal medya",
+          "Seomi",
+          "SEO"
+        ],
+        [
+          "Milli",
+          "Satış",
+          "Penn",
+          "Metin yazarlığı"
+        ],
+        [
+          "Emmie",
+          "E-posta",
+          "Cassie",
+          "Müşteri desteği"
+        ],
+        [
+          "Dexter",
+          "Veri analizi",
+          "Scouty",
+          "İşe alım"
+        ],
+        [
+          "Buddy",
+          "İş stratejisi",
+          "Commet",
+          "E-ticaret"
+        ],
+        [
+          "Gigi",
+          "Kişisel planlama",
+          "Vizzy",
+          "Yönetici / sanal asistan"
+        ]
+      ],
+      "widths": [
+        120,
+        312,
+        120,
+        312
+      ],
+      "refs": [
+        "sintra",
+        "summer",
+        "DZM_braAGgS"
+      ],
+      "note": "Rol adları ürün kataloğundan alındı. Bir rolün varlığı, her harici sistemde sınırsız işlem yapabildiği anlamına gelmez; bağlantı ve yetki ayrıca gerekir.",
+      "image": null,
+      "kind": "normal"
+    },
+    {
+      "title": "Sintra sosyal medya akışının ayrıntısı",
+      "lead": "Videoda planlama, düzenleme, marka bilgisi ve yayın ayarları birlikte gösteriliyor.",
+      "bullets": [
+        "00:30 civarı: her pazar gelecek iki haftanın gönderileri hazırlanıyor; kullanıcı gözden geçiriyor.",
+        "Görseli yeniden üretme, gerçek fotoğraf/medya yükleme; açıklamayı elle veya yapay zekâyla düzeltme gösteriliyor. Tarih, platform, gönderi türü ve sayfa seçimi bulunuyor.",
+        "01:30 civarı: içerik temaları. İlk kurulumda 6 tema anlatılıyor; yeni tema için konu, amaç, sıklık ve platform konuşularak belirleniyor.",
+        "02:28 civarı: marka kiti. Logo, renk paleti, ton, işletme açıklaması ve değer önerisi; ardından referans medya kütüphanesi gösteriliyor."
+      ],
+      "table": null,
+      "widths": null,
+      "refs": [
+        "Db5DRlatzUa"
+      ],
+      "note": "Zamanlar makine transkriptine göre yaklaşık. Video, arayüz akışını kanıtlıyor; gerçek hesapta başarılı yayın bizim tarafımızdan denenmedi.",
+      "image": null,
+      "kind": "normal"
+    },
+    {
+      "title": "Sintra hafıza, çalışma alanı ve özel yardımcı",
+      "lead": "Kullanıcının tek seferlik açıklamalarını tekrar kullanılabilir işletme bağlamına dönüştürüyor.",
+      "bullets": [
+        "Çalışma alanları farklı proje veya işletmeleri ayırıyor. Her alanın kendi Brain içeriği, yardımcıları ve bağlantıları bulunuyor.",
+        "Brain görünümünde belge, yükleme, bağlantı ve klasör ekleme; Brand Kit bölümünde markanın dili ve görselleri gösteriliyor.",
+        "Özel yardımcı videosu: kullanıcı görevi ve kişiliği konuşarak tarif ediyor; yardımcı kalıcı olarak kaydediliyor. Pazar yerine sunma da anlatılıyor.",
+        "Ekip üyeleri aynı alanın kapasitesini paylaşabiliyor. Bizde de üye daveti, rol ve müşteri onayı sadece görsel bir panel değil, gerçek yetki modeli olmalı."
+      ],
+      "table": null,
+      "widths": null,
+      "refs": [
+        "DZM_braAGgS",
+        "Dbkaa1oNW5h",
+        "DZfbmUOiYEL",
+        "brain"
+      ],
+      "note": "Yardımcı satışının kazanç şartları ve pazar yeri ticari işleyişi ayrıca doğrulanmadı. Bizim kapsamımıza otomatik gelir vaadi olarak eklenmedi.",
+      "image": null,
+      "kind": "normal"
+    },
+    {
+      "title": "Marblism videolarında ne görüldü?",
+      "lead": "",
+      "bullets": [],
+      "table": [
+        [
+          "Tarih / kayıt",
+          "Gözlem",
+          "Çıkarımın sınırı"
+        ],
+        [
+          "27 Eylül · DdzWKQYJIK-",
+          "Oyuncak ambalajı görünümünde rol karakterleri; kısa görev ve fayda anlatımı.",
+          "Marka ve reklam dili kanıtı; panel işleyişi kanıtı değil."
+        ],
+        [
+          "1 Ekim · Dd9gNr3il86",
+          "İşletme / iş / kişisel yaşam seçenekleri; web sitesiyle ilk kurulum.",
+          "Kullanıcı yolculuğu görüldü; site analiz kalitesi ölçülmedi."
+        ],
+        [
+          "2 Ekim · DeAj77dJiED",
+          "Emlak ilanı bağlantısı, senaryo/sahne önerisi, düzeltme, video üretimi ve sonuç.",
+          "Üretimden önce düzenleme var. Tek adımda kusursuz otomasyon iddiası kurulamaz."
+        ],
+        [
+          "30 Eylül · Dd6pwG_JVZV",
+          "Kurucu anlatımı ve trend video üretimi; 113 milyon görüntülenme beyanı.",
+          "Görüntülenmenin gelir ve reklam kaynaklı payı doğrulanmadı."
+        ]
+      ],
+      "widths": [
+        210,
+        335,
+        319
+      ],
+      "refs": [
+        "DdzWKQYJIK-",
+        "Dd9gNr3il86",
+        "DeAj77dJiED",
+        "Dd6pwG_JVZV"
+      ],
+      "note": "",
+      "image": null,
+      "kind": "normal"
+    },
+    {
+      "title": "Sintra videolarında ne görüldü?",
+      "lead": "",
+      "bullets": [],
+      "table": [
+        [
+          "Tarih / kayıt",
+          "Gözlem",
+          "Bizim tasarıma etkisi"
+        ],
+        [
+          "5 Haziran · DZM_braAGgS",
+          "Alan, Brain, ekip, yardımcı ve bağlantı turu.",
+          "Müşteri bilgisi ve yetkiler alan düzeyinde ayrılmalı."
+        ],
+        [
+          "3 Ağustos · Dbkaa1oNW5h",
+          "Brain yüklemeleri, klasörler ve Brand Kit.",
+          "Sadece düz not kutusu, kapsam eşitliği sağlamaz."
+        ],
+        [
+          "11 Ağustos · Db5DRlatzUa",
+          "Takvim, içerik temaları, medya ve düzenleme.",
+          "Sohbet yanında yapılandırılmış içerik görünümü gerekli."
+        ],
+        [
+          "12 Haziran · DZfbmUOiYEL",
+          "Konuşarak özel yardımcı ve pazar yeri anlatımı.",
+          "Özel asistan kurulumunu uzun teknik form yerine diyalogla sunma."
+        ]
+      ],
+      "widths": [
+        210,
+        335,
+        319
+      ],
+      "refs": [
+        "DZM_braAGgS",
+        "Dbkaa1oNW5h",
+        "Db5DRlatzUa",
+        "DZfbmUOiYEL"
+      ],
+      "note": "",
+      "image": null,
+      "kind": "normal"
+    },
+    {
+      "title": "Karakter, hizmeti anlaşılır kılıyor",
+      "lead": "Marblism karakterleri ve Sintra robotları iş rolünü görsel olarak taşıyor; gerçek kişiler de paneli gösteriyor.",
+      "bullets": [],
+      "table": [
+        [
+          "Karar",
+          "İşdaş için uygulama"
+        ],
+        [
+          "Özgün karakter",
+          "Piko: mavi kuş, sıcak ve becerikli. Rakip karakterlerini veya isimlerini kopyalamama. İşdaş adı henüz marka uygunluğu araştırmasından geçmedi."
+        ],
+        [
+          "Görsel durum",
+          "Dinliyorum, hazırlıyorum, onayın gerekiyor, hazır, bağlantı kesildi. Animasyonu gerçek iş olaylarına bağlama."
+        ],
+        [
+          "Dil",
+          "“İşini anlat”, “İçeriğin hazır”, “Şu hesabına yayımlayacağım”. Kullanıcıya token, MCP ve ajan yönlendirme terimleri gösterilmeyecek."
+        ],
+        [
+          "Reklam anlatımı",
+          "Kısa karakter hikâyesi + gerçek panel + somut teslim. Üretim hatasını animasyonla saklamama."
+        ]
+      ],
+      "widths": [
+        175,
+        689
+      ],
+      "refs": [],
+      "note": "Karakterin dönüşümü artırması bir tasarım hipotezidir. Aynı teklif ve kitleyle karakterli / gerçek panel ağırlıklı reklamları karşılaştırmak gerekir.",
+      "image": null,
+      "kind": "normal"
+    },
+    {
+      "title": "Türkçe tek başına farklılaşma değil",
+      "lead": "Sintra arayüzünde Türkçe zaten var; hafıza, mobil kullanım ve özel yardımcılar da rakiplerde bulunuyor.",
+      "bullets": [],
+      "table": [
+        [
+          "Fırsat",
+          "Dayanak",
+          "Doğrulama"
+        ],
+        [
+          "Sektöre göre hazır işler",
+          "İşletmeyi tekrar anlatmadan doğru teslim almak.",
+          "Kafe, emlak ve hizmet işletmesinde 5’er gerçek görev."
+        ],
+        [
+          "Ajans müşteri onayı",
+          "Hangi müşteri için hangi hesabın değiştiğini açık göstermek.",
+          "Ajans çalışanı ve müşteriyle uçtan uca onay testi."
+        ],
+        [
+          "Aynı platformda çoklu hesap",
+          "Marblism aynı platformun her hesabı için ayrı alan öneriyor.",
+          "Tek müşteri alanında birden çok hesap seçimi; karışma testi."
+        ],
+        [
+          "Kaynak ve sonuç kanıtı",
+          "Araştırmada bağlantı; yayında gönderi adresi; takvimde kayıt kimliği.",
+          "Sonuç gösterildiğinde kaynak sisteminde yeniden kontrol."
+        ]
+      ],
+      "widths": [
+        193,
+        337,
+        334
+      ],
+      "refs": [
+        "sintralang",
+        "marbspaces"
+      ],
+      "note": "Bunlar fırsat hipotezleridir; ilk ve son satırın rakiplerde bulunmadığı iddia edilmiyor. Yerel prototip şu anda platform başına tek bağlantı tutuyor; çoklu hesap farkı henüz uygulanmadı.",
+      "image": null,
+      "kind": "normal"
+    },
+    {
+      "title": "İlk kullanım: anlat, bağla, sonucu gör",
+      "lead": "Kişisel, çalışan, işletme ve ajans seçenekleri aynı sade akışa açılmalı.",
+      "bullets": [
+        "1. “Ne için yardım istiyorsun?” Kullanıcı kendi cümlesiyle anlatır; başlangıç seçenekleri örnek verir.",
+        "2. İzinle site veya dosyadan bilgi toplama. Çıkarılan işletme özeti kullanıcıya doğrulatılır; yanlış bilgi kalıcı hafızaya sessizce yazılmaz.",
+        "3. Yalnızca ilk işin gerektirdiği hesabı bağlama. “Google bağla” yerine “Bu toplantıyı takvimine eklemek için Google’ı bağla.”",
+        "4. Somut ilk sonuç: 3 içerik taslağı, kaynaklı kısa araştırma veya ajanda planı. Yayımlama/gönderme öncesinde hedef hesap ve içerik gösterilir.",
+        "5. “Bunu her hafta yap” ile tekrar eden iş. Kullanıcı zamanı, kapsamı ve kullanım sınırını görür."
+      ],
+      "table": null,
+      "widths": null,
+      "refs": [],
+      "note": "",
+      "image": null,
+      "kind": "normal"
+    },
+    {
+      "title": "Yerel uygulamanın mevcut görünümü",
+      "lead": "Gerçek yerel arayüz: kayıt, çalışma alanı, hafıza ve ajanda akışları tarayıcıda sınandı.",
+      "bullets": [],
+      "table": null,
+      "widths": null,
+      "refs": [],
+      "note": "Bu ekran üretimde çalışan tüm hizmetleri kanıtlamaz. Model anahtarı ve canlı bağlantılar henüz eklenmediği için yeni yapay zekâ işi başlatma kapalı; örnek işletme test verisidir.",
+      "image": "research/verification/workspace-desktop.png",
+      "kind": "normal"
+    },
+    {
+      "title": "İlk satış paketleri: fiyat deneyi",
+      "lead": "Paketler kullanım kapasitesi ve teslim kapsamıyla ayrılmalı. Aşağıdakiler öneridir; satışa açılmış teklifler değildir.",
+      "bullets": [],
+      "table": [
+        [
+          "Paket",
+          "Aylık fiyat deneyi",
+          "Kapsam / sınır"
+        ],
+        [
+          "Kişisel",
+          "19 USD",
+          "Kişisel hafıza, kaynaklı araştırma, ajanda, yazı ve dosya taslakları. Ses için ayrı dakika sınırı."
+        ],
+        [
+          "İşletme",
+          "49 USD",
+          "Marka kiti; içerik takvimi; e-posta ve takvim işleri; düzenli araştırma. Medya ve yayın işlemleri ayrı tüketim kalemleri."
+        ],
+        [
+          "Ajans",
+          "149 USD",
+          "5 müşteri alanı için başlangıç teklifi; ekip rolleri, müşteri onayı ve teslim geçmişi. Ek alan ve yoğun kullanım ayrıca."
+        ]
+      ],
+      "widths": [
+        135,
+        165,
+        564
+      ],
+      "refs": [],
+      "note": "Türkiye fiyatı ödeme isteği, kur ve vergiler doğrulandıktan sonra belirlenmeli. 19/49/149 USD test önerisi; sonraki projeksiyondaki 29 USD karma gelir varsayımı aynı şey değildir. Limitsiz video/telefon vaadi yok.",
+      "image": null,
+      "kind": "normal"
+    },
+    {
+      "title": "Grok Bot aboneliği ve Grok API farklı ürünler",
+      "lead": "OAuth hesabı bağlar; yeni müşteri kotası veya yeniden satış lisansı oluşturmaz.",
+      "bullets": [],
+      "table": [
+        [
+          "Seçenek",
+          "Avantaj",
+          "Sınırlama"
+        ],
+        [
+          "Kişisel Grok Bot hesabı",
+          "Hazır bilgisayar, tarayıcı ve iş deneyimini hızlı deneme.",
+          "Aynı hesaptaki botlar ortamı paylaşır. Kota ortak; standart koşullar iç iş kullanımını tanımlar."
+        ],
+        [
+          "Grok API",
+          "Kendi ürününde kullanım; sunucudan model ve araç çağrısı.",
+          "Uygulama hesabı, hafıza, iş kuyruğu, onay ve bağlantılar bize ait geliştirmedir."
+        ],
+        [
+          "Cursor SDK",
+          "Resmî programatik ajan arayüzü; araştırılabilir alternatif.",
+          "SDK varlığı, bütün Grok Bot özelliklerinin white-label sunulduğunu kanıtlamaz. Ticari kapsam ayrıca kontrol edilmeli."
+        ]
+      ],
+      "widths": [
+        170,
+        330,
+        364
+      ],
+      "refs": [
+        "bot",
+        "botterms",
+        "api",
+        "sdk",
+        "plans"
+      ],
+      "note": "Tam Grok Bot hizmetini üçüncü taraf uygulamalara sunan kamuya açık white-label görev API’si doğrulanmadı. Özel anlaşma ve fiyat varsa ayrı değerlendirilir.",
+      "image": null,
+      "kind": "normal"
+    },
+    {
+      "title": "Hermes ne kazandırır, neyi çözmez?",
+      "lead": "Ajan çalıştırma altyapısı sağlayabilir; çok müşterili ticari ürün katmanı yine kurulmalıdır.",
+      "bullets": [
+        "MIT lisanslı kaynak kodu: lisans bildirimleri korunarak ticari kullanım mümkün. Bağlı model, veri ve diğer servislerin lisansları ayrıca geçerlidir.",
+        "API sunucusunda sohbet/yanıt uçları, kalıcı oturumlar ve çalışma olayları bulunuyor. Hazır hafıza, beceriler, zamanlama ve araç bağlantıları geliştirme yükünü azaltabilir.",
+        "Profiller yapılandırma ve hafızayı ayırıyor; tek başına işletim sistemi güvenlik sınırı değiller. Müşteri başına ayrı konteyner/volume ve dar araç izinleri gerekiyor.",
+        "Grok API anahtarı ve Hermes API anahtarı kullanıcı tarayıcısına verilmemeli. Hermes’in terminal yetkisi nedeniyle ortak ana bilgisayara sınırsız erişim verilmemeli."
+      ],
+      "table": null,
+      "widths": null,
+      "refs": [
+        "license",
+        "hermesapi",
+        "hermesprofiles",
+        "hermessec"
+      ],
+      "note": "Kaynak sürümü incelendi: v2026.9.24. Bu bilgisayarda Hermes çalışma ortamı kurulup canlı görevle doğrulanmadı. Ücretsiz yazılım, ücretsiz model kullanımı anlamına gelmez.",
+      "image": null,
+      "kind": "normal"
+    },
+    {
+      "title": "İşin arka plandaki yürüyüşü",
+      "lead": "Önerilen mimari; müşteriye tek konuşma alanı, sunucuya ölçülebilir işlemler.",
+      "bullets": [],
+      "table": null,
+      "widths": null,
+      "refs": [],
+      "note": "Dış eylem başarısı kaynak sistemindeki kayıt kimliği / yayın bağlantısıyla doğrulanır. Uzmanlar yalnızca ihtiyaç olan görevlerde çağrılır; her istekte tüm ekip çalıştırılmaz.",
+      "image": null,
+      "kind": "architecture"
+    },
+    {
+      "title": "Hafıza ve entegrasyon tasarımı",
+      "lead": "Müşteri bilgisi, bağlantı yetkisi ve dış işlem onayı ayrı tutulmalı.",
+      "bullets": [
+        "Hafıza: kullanıcı tercihleri, işletme bilgisi, marka kiti ve iş geçmişi. Kaynağı ve güncellenme tarihi tutulur; kullanıcı görüntüler, düzeltir ve siler.",
+        "Belge yükleme: dosya tipi ve boyutu denetlenir. Metin güvenli biçimde çıkarılır; tüm arşiv her soruda modele gönderilmez. İlgili parçalar seçilir.",
+        "Bağlantı: müşteri ve alan kimliğine bağlı şifreli token; kısa yetki kapsamı; yenileme ve bağlantıyı iptal etme. Her platformun yayınlama koşulları ayrı uygulanır.",
+        "Onay: ne yapılacak, hangi hesapta, içerik/alıcısı/tutarı ne? Onaylanan sürüm sabitlenir. İçerik sonradan değişirse yeniden onay gerekir.",
+        "Teslim: istek → işlem kaydı → harici sonuç kimliği → kullanıcıya sonuç. Kesintiden sonra aynı mesajı veya gönderiyi iki kez oluşturmama."
+      ],
+      "table": null,
+      "widths": null,
+      "refs": [],
+      "note": "",
+      "image": null,
+      "kind": "normal"
+    },
+    {
+      "title": "Altyapı seçimini 20 görevle sınama",
+      "lead": "Aynı görev, aynı girdi ve aynı yetkiyle Grok araç akışı ile izole Hermes karşılaştırılmalı.",
+      "bullets": [],
+      "table": [
+        [
+          "Grup",
+          "4 görev örneği",
+          "Ölçüm"
+        ],
+        [
+          "İçerik",
+          "Haftalık plan, görsel düzeltme, çok platform uyarlama, planlı yayın.",
+          "Marka tutarlılığı; gerçek yayın; tekrar üretim."
+        ],
+        [
+          "Araştırma",
+          "Rakip karşılaştırma, güncel fiyat, kaynak çelişkisi, rapor dosyası.",
+          "Kaynak doğruluğu; güncellik; eksik bilgi beyanı."
+        ],
+        [
+          "Asistan",
+          "Saat dilimi, çakışan toplantı, e-posta taslağı, yinelenen görev.",
+          "Doğru kayıt; onay; tekrar işlem olmaması."
+        ],
+        [
+          "İşletme",
+          "Müşteri listesi, CSV analizi, destek taslağı, site değişiklik önizlemesi.",
+          "Sonucun kullanılabilirliği; veri ve yetki sınırı."
+        ],
+        [
+          "Dayanıklılık",
+          "Bağlantı süresi dolması, iptal, sunucu kesintisi, müşteri alanı değiştirme.",
+          "Geri kazanım; ücret takibi; veri karışmaması."
+        ]
+      ],
+      "widths": [
+        125,
+        461,
+        278
+      ],
+      "refs": [],
+      "note": "Pilot kabul önerisi: en az 18/20 görevin doğru teslimi; hiçbir müşteriler arası veri sızıntısı veya onaysız dış yazma olmaması. Süre, dolar maliyeti ve insan düzeltmesi ayrıca ölçülür. Sonuç henüz yok.",
+      "image": null,
+      "kind": "normal"
+    },
+    {
+      "title": "Rakip fiyatları ve kullanım sınırları",
+      "lead": "4 Ekim 2026 resmî yardım sayfası görünümü; kampanya ve ödeme ekranı değişebilir.",
+      "bullets": [],
+      "table": [
+        [
+          "Ürün",
+          "Gözlenen fiyat",
+          "Kapasite ve yorum"
+        ],
+        [
+          "Marblism temel plan",
+          "Aylık 44 USD; yıllık ödeme seçeneğinde aylık eşdeğer 24 USD.",
+          "7 çalışan, 50 iş saati/ay. “Saat” gerçek sunucu süresi değil, görev tipine verilen tüketim değeri."
+        ],
+        [
+          "Marblism tüketim örneği",
+          "Sosyal gönderi: 30 dakika; blog: 1 saat.",
+          "Alanlar sahibin ortak havuzunu kullanıyor. Video için ayrıca havuz içi sınır var."
+        ],
+        [
+          "Sintra X başlangıç",
+          "Aylık 48,50 USD; yıllık tabloda 187,20 USD peşin / 15,60 USD eşdeğer.",
+          "12 uzman, 250 kredi/ay. İndirimli fiyatlar; KDV ödeme sırasında ekleniyor."
+        ]
+      ],
+      "widths": [
+        178,
+        314,
+        372
+      ],
+      "refs": [
+        "marbprice",
+        "sintraprice"
+      ],
+      "note": "Sintra aynı sayfada yıllık ödemeyi bir yerde 187 USD diye yuvarlıyor; tabloda 187,20 USD var. Kendi ürünümüzde peşin tutar ve aylık karşılığı açık gösterilmeli. Eski bireysel uzman planları güncel teklif gibi kullanılmadı.",
+      "image": null,
+      "kind": "normal"
+    },
+    {
+      "title": "Aktif reklam var; harcama tutarı bilinmiyor",
+      "lead": "3 Ekim 2026 Apify çıktısında resmî kimlik ve alan adıyla eşleşen örnekler.",
+      "bullets": [
+        "Seçilen kayıtların spend ve reachEstimate alanları boş. Bütçe, ROAS, CAC, ödeme dönüşümü veya kâr reklam sayısından türetilemez.",
+        "Reklam kopyasındaki yüksek görüntülenme iddiaları sağlayıcı beyanıdır; bizim ürünümüz için başarı kanıtı değildir."
+      ],
+      "table": [
+        [
+          "Marka / örneklem",
+          "Mesaj ve hedef",
+          "Ne gösterir?"
+        ],
+        [
+          "Marblism · 10 aktif kayıt",
+          "LinkedIn satış takibi; trend video ve sosyal medya. Marblism site/ilk kurulum sayfasına yönlendirme.",
+          "Facebook ve Instagram dahil reklam yayını. 10, toplam reklam sayısı değildir."
+        ],
+        [
+          "Sintra · 10 aktif kayıt",
+          "İşletme sahibinin yükünü azaltan uzman ekibi. quiz-claude ve quiz-gpt gibi test sayfalarına yönlendirme.",
+          "Test akışlı satış yaklaşımı. Sonuç kaydı, testin dönüşüm oranını göstermez."
+        ]
+      ],
+      "widths": [
+        200,
+        361,
+        303
+      ],
+      "refs": [
+        "marbad",
+        "sintraad"
+      ],
+      "note": "",
+      "image": null,
+      "kind": "normal"
+    },
+    {
+      "title": "Rakiplerin kazancı hakkında bildiklerimiz",
+      "lead": "Tarih ve ölçü birimi belirtilmeden ARR, aylık gelir ve banka hareketi karşılaştırılamaz.",
+      "bullets": [
+        "Sintra için güncel ayrıntılı maliyet dökümü doğrulanmadı. Marblism için 620 bin doların kaçının reklama veya modele gittiği bu kaynakta yok.",
+        "Sonuç: pazar talebi ve büyüme işareti var; “onlar bu kadar kazanıyor, biz de kazanırız” şeklinde gelir tahmini kurulamaz."
+      ],
+      "table": [
+        [
+          "Kaynak",
+          "Beyan",
+          "Doğru yorum"
+        ],
+        [
+          "Marblism kurucusu · 3 Eylül 2026",
+          "Ağustos: 622.000 USD giriş, 620.000 USD çıkış; yaklaşık 2.000 USD fark.",
+          "Kurucu banka hareketi anlatıyor. Denetlenmiş net kâr veya API/reklam gider dağılımı değil."
+        ],
+        [
+          "Earlybird · 9 Temmuz 2025",
+          "Sintra: 12 milyon USD üzeri ARR ve ilk yılda 40 bin ödeme yapan müşteri.",
+          "Yatırımcı tarafından aktarılan tarihsel şirket beyanı. 2026 güncel geliri ve net kârı kanıtlamaz."
+        ]
+      ],
+      "widths": [
+        236,
+        289,
+        339
+      ],
+      "refs": [
+        "cash",
+        "arr"
+      ],
+      "note": "",
+      "image": null,
+      "kind": "normal"
+    },
+    {
+      "title": "Kullanıcı başına örnek teknik tüketim",
+      "lead": "Grok 4.7 standart global API; her istekte giriş bağlamı 200 bin token altında. Önbellek indirimi varsayılmadı.",
+      "bullets": [],
+      "table": [
+        [
+          "Kalem",
+          "Aylık varsayım",
+          "USD"
+        ],
+        [
+          "Giriş tokenı",
+          "Tüm çağrılarda toplam 2 milyon",
+          "4,00"
+        ],
+        [
+          "Çıktı tokenı",
+          "Düşünme dahil 400 bin ücretli token",
+          "2,40"
+        ],
+        [
+          "Web aracı",
+          "50 çağrı",
+          "0,25"
+        ],
+        [
+          "Görsel",
+          "20 adet Image 2.0 / 1K Low, metinden",
+          "0,80"
+        ],
+        [
+          "Toplam",
+          "Örnek tüketim sepeti",
+          "7,45"
+        ]
+      ],
+      "widths": [
+        216,
+        518,
+        130
+      ],
+      "refs": [
+        "price"
+      ],
+      "note": "Bu sepet müşteri ortalaması değildir. Ses, video, tarayıcı çalıştırma, Apify, sunucu, destek ve vergiler hariç. Paket fiyatından önce pilot görevlerde tüm alt çağrılar ve yeniden denemeler ölçülmeli.",
+      "image": null,
+      "kind": "normal"
+    },
+    {
+      "title": "Maliyet kontrolünün ürün gereksinimleri",
+      "lead": "Bir müşteri yoğun iş yaptığında diğer müşterilerin bütçesi tüketilmemeli.",
+      "bullets": [
+        "Müşteri hesabına dönemsel kullanım hakkı; aynı sahibin alanları ortak hakkı paylaşır. İş başlamadan puan ayrılır; yeni alan açmak kotayı artırmaz.",
+        "Gerçek token, araç, medya ve çalışma süresi kaydı. Başarısız veya iptal edilmiş ama ücret doğurmuş çağrılar da maliyete dahil.",
+        "Yeni görev başlamadan sınır kontrolü. Devam eden harici isteğin iptali, sağlayıcının ücretini sıfırladı diye varsayılmamalı.",
+        "Görsel, video, telefon ve tarayıcı işleri ayrı kotalı. Çok ajanlı işte uzman başına çağrı sayısı ve bağlam maliyeti görünür.",
+        "Müşteri ekranında anlaşılır kalan hak; yönetici ekranında gerçek dolar maliyeti. Model tur limiti tek başına kesin araç çağrısı üst sınırı değildir."
+      ],
+      "table": null,
+      "widths": null,
+      "refs": [
+        "costtracking"
+      ],
+      "note": "Ortak müşteri puanı, kullanım ekranı, iptal ve dönem geçişi eklendi. Müşteri puanı işin başında ayrılan miktarı aşmaz; gerçek sağlayıcı aşımı işletmeye kalır. Canlı ödeme, Hermes toplam tutarı ve gerçek maliyet ölçümü henüz tamamlanmadı.",
+      "image": null,
+      "kind": "normal"
+    },
+    {
+      "title": "Altı aylık hesabın varsayımları",
+      "lead": "Reklam verilerinden çıkarılmış sonuç değil; kendi ürünümüz için değiştirilebilir planlama modeli.",
+      "bullets": [],
+      "table": [
+        [
+          "Değişken",
+          "Çalışma senaryosu"
+        ],
+        [
+          "Ortalama aylık abonelik geliri",
+          "29 USD / aktif ödeme yapan müşteri; paket karışımı varsayımı."
+        ],
+        [
+          "Edinme",
+          "Reklamdan ödeme yapan müşteri CAC = 50 USD; ayda 5 organik yeni müşteri."
+        ],
+        [
+          "Aylık kayıp",
+          "%8. Her ay önce eski abonelerin kaybı, ardından yeni üyeler."
+        ],
+        [
+          "Değişken gider",
+          "8 USD teknik tüketim + 1,50 USD destek karşılığı / aktif müşteri."
+        ],
+        [
+          "Tahsilat ve iade karşılığı",
+          "Brüt gelirin %6,5’i; sağlayıcı teklifi değil, model varsayımı."
+        ],
+        [
+          "Zamanlama",
+          "Yeni üyeler ay başında kabul edilir. Kesirli aboneler beklenen değer; gerçek kişi sayısı değildir."
+        ]
+      ],
+      "widths": [
+        241,
+        623
+      ],
+      "refs": [],
+      "note": "Vergiler, kurucunun maaşı ve başlangıç geliştirme emeği hariç. Yıllık peşin tahsilat kullanılmadı. Bu nedenle aşağıdaki sonuç şirketin muhasebe net kârı değildir.",
+      "image": null,
+      "kind": "normal"
+    },
+    {
+      "title": "Altı aylık çalışma senaryosu",
+      "lead": "Reklam bütçesi, kullanıcı kaybı ve devam eden servis maliyeti birlikte hesaplandı.",
+      "bullets": [
+        "6. ay aylık gelir: 4.921 USD. Altı ay toplam sonuç: -811 USD.",
+        "Modelde en yüksek birikimli açık: 1.000 USD. Başlangıç geliştirme gideri ve ek nakit tamponu buna dahil değil."
+      ],
+      "table": [
+        [
+          "Ay",
+          "Reklam",
+          "Yeni",
+          "Aktif",
+          "Brüt gelir",
+          "Diğer gider*",
+          "Sonuç"
+        ],
+        [
+          "1",
+          "500",
+          "15.0",
+          "15.0",
+          "435",
+          "271",
+          "-336"
+        ],
+        [
+          "2",
+          "750",
+          "20.0",
+          "33.8",
+          "980",
+          "505",
+          "-275"
+        ],
+        [
+          "3",
+          "1.000",
+          "25.0",
+          "56.1",
+          "1.627",
+          "789",
+          "-162"
+        ],
+        [
+          "4",
+          "1.500",
+          "35.0",
+          "86.6",
+          "2.512",
+          "1.186",
+          "-174"
+        ],
+        [
+          "5",
+          "2.000",
+          "45.0",
+          "124.7",
+          "3.616",
+          "1.669",
+          "-54"
+        ],
+        [
+          "6",
+          "2.500",
+          "55.0",
+          "169.7",
+          "4.921",
+          "2.232",
+          "189"
+        ]
+      ],
+      "widths": [
+        45,
+        115,
+        80,
+        95,
+        130,
+        170,
+        229
+      ],
+      "refs": [],
+      "note": "*Teknik tüketim, destek karşılığı, tahsilat/iade karşılığı ve ortak altyapı. Tabloda yuvarlama yapılır; hesap dosyası tam hassasiyetlidir. MRR burada model varsayımındaki aylık abonelik geliriyle aynı kabul edildi.",
+      "image": null,
+      "kind": "normal"
+    },
+    {
+      "title": "Gelir sonucu en çok edinme ve tutunmaya bağlı",
+      "lead": "Aynı reklam bütçeleri ve birim fiyatlarla üç farklı varsayım.",
+      "bullets": [
+        "Reklamı izlenme veya indirme ucuz diye büyütme. İlk yararlı işe, ödemeye ve ikinci ay devam eden müşteriye kadar ölç.",
+        "Kârlılık tarihi varsayımlara duyarlı. İlk tabloda kullanılan sabit CPI ve dönüşüm oranları bu ürün için doğrulanmış kabul edilmemeli.",
+        "Yıllık peşin ödeme nakit girişini hızlandırabilir; henüz sunulmamış ayların gelirini ve servis yükümlülüğünü ortadan kaldırmaz."
+      ],
+      "table": [
+        [
+          "Senaryo",
+          "CAC / kayıp / organik",
+          "6. ay aktif",
+          "6. ay gelir",
+          "6 ay toplam sonuç"
+        ],
+        [
+          "Temkinli",
+          "80 USD / %12 / 2",
+          "94.1",
+          "2.730",
+          "-4.631"
+        ],
+        [
+          "Çalışma senaryosu",
+          "50 USD / %8 / 5",
+          "169.7",
+          "4.921",
+          "-811"
+        ],
+        [
+          "İyi pilot sonucu",
+          "35 USD / %5 / 8",
+          "259.8",
+          "7.534",
+          "3.637"
+        ]
+      ],
+      "widths": [
+        181,
+        241,
+        115,
+        137,
+        190
+      ],
+      "refs": [],
+      "note": "",
+      "image": null,
+      "kind": "normal"
+    },
+    {
+      "title": "İlk reklam ve satış deneyi",
+      "lead": "Bir sektörde üç farklı mesajı, aynı ürün deneyimine bağlayarak denemek.",
+      "bullets": [],
+      "table": [
+        [
+          "Yaratıcı fikir",
+          "20-30 saniyelik anlatım",
+          "Ölçülecek sonuç"
+        ],
+        [
+          "Kafe: içerik hazırlama",
+          "Piko sipariş yoğunluğunda yardım teklif eder → gerçek panelde haftalık plan → düzenlenebilir gönderi.",
+          "İlk içeriği kaydetme, bağlantı kurma, ücretli devam."
+        ],
+        [
+          "Emlak: ilanı anlatma",
+          "İlan bağlantısı → sahne/metin taslağı → kullanıcının düzeltmesi → izinli görsellerle video.",
+          "Üretim maliyeti, düzeltme sayısı, çıktı indirme."
+        ],
+        [
+          "Çalışan: haftayı düzenleme",
+          "Dağınık notlar → öncelikli işler → takvim önizlemesi → onay sonrası kayıt.",
+          "İlk plan, ikinci haftada kullanım, takvim doğruluğu."
+        ]
+      ],
+      "widths": [
+        180,
+        444,
+        240
+      ],
+      "refs": [],
+      "note": "Canlı özellik çalışmadan gerçek sonuç gibi reklamda gösterilmemeli. İlk reklamlarda müşteri kazancı veya zaman tasarrufu sayısı ancak ölçülmüşse kullanılmalı. Reklam bütçesi onayı ve platform hesabı henüz yok; reklam yayımlanmadı.",
+      "image": null,
+      "kind": "normal"
+    },
+    {
+      "title": "Yerel uygulamada bugün ne çalışıyor?",
+      "lead": "Bu durum kaynak dosyaları, API testleri ve gerçek yerel tarayıcı akışıyla kontrol edildi.",
+      "bullets": [],
+      "table": [
+        [
+          "Alan",
+          "Mevcut kanıt",
+          "Kalan iş"
+        ],
+        [
+          "Hesap ve kullanım",
+          "Alan ayrımı; ortak puan; atomik rezervasyon; kullanım ekranı.",
+          "Üye daveti, e-posta doğrulama; ödeme alma ve webhooks."
+        ],
+        [
+          "Sohbet ve hafıza",
+          "Kalıcı konuşma, arşiv/dışa aktarım; seçerek hafızaya kayıt.",
+          "PDF/DOCX, belge arama; gerçek kullanıcı kalite ölçümü."
+        ],
+        [
+          "Google işlemleri",
+          "Onaylı Gmail taslağı ve takvim kaydı; OAuth/yenileme testleri.",
+          "Canlı Google hesabında kabul; diğer araçlar; takvim eşitleme."
+        ],
+        [
+          "Görev ve arayüz",
+          "Kuyruk/iptal; masaüstü ve 390 px mobil; gerçek HTTP test akışı.",
+          "Canlı model, medya/yayın, mobil mağaza paketi, cihazda ses."
+        ]
+      ],
+      "widths": [
+        187,
+        336,
+        341
+      ],
+      "refs": [],
+      "note": "85 test geçti. Gerçek uygulama kuyruğu yerel test modeliyle sınandı; Google çağrıları test yanıtlarıyla doğrulandı. Canlı model, Google ve ödeme denenmedi. Deneme hakkı operatörce açılır; kayıt olmak otomatik kullanım veya ödeme başlatmaz.",
+      "image": null,
+      "kind": "normal"
+    },
+    {
+      "title": "Katalogdaki rol, tamamlanmış hizmet demek değil",
+      "lead": "Yerel prototipte 14 rol tanımı var; aşağıdaki işlerin canlı entegrasyonu ayrıca tamamlanmalı.",
+      "bullets": [],
+      "table": [
+        [
+          "Hizmet",
+          "Uçtan uca tamamlanma koşulu"
+        ],
+        [
+          "Sosyal medya + SEO",
+          "Gerçek marka kiti, medya, takvim, CMS/sosyal hesap bağlantısı, onay ve yayın sonucu."
+        ],
+        [
+          "E-posta + ajanda + telefon",
+          "Gerçek yetkilendirme, token yenileme, taslak/gönderim ayrımı, takvim çakışması, telefon uçları."
+        ],
+        [
+          "Satış + destek + işe alım",
+          "Yetkili veri kaynakları, CRM/kutu bağlantısı, hedef doğru kişi, onaylı iletişim ve takip durdurma."
+        ],
+        [
+          "Analiz + belge + site",
+          "Dosya okuma, hesap doğrulama, indirilebilir belge, site önizleme/yayın/geri alma."
+        ],
+        [
+          "Ajans ve kişisel hizmet",
+          "Müşteri/üye sınırları, konuşma hafızası, bildirim, güvenilir düzenli işler ve mobil kullanım."
+        ]
+      ],
+      "widths": [
+        252,
+        612
+      ],
+      "refs": [],
+      "note": "Kapsam bu tabloyla korunuyor. Sadece üç işin pilotta öne alınması, diğer istenen işlevlerin tamamlandığı veya kapsamdan çıkarıldığı anlamına gelmez.",
+      "image": null,
+      "kind": "normal"
+    },
+    {
+      "title": "Uygulama sırası ve kabul kapıları",
+      "lead": "Takvim bir tahmindir; dış platform onayları ve gerçek görev sonuçları süreyi değiştirebilir.",
+      "bullets": [],
+      "table": [
+        [
+          "Aşama",
+          "Yapılacak iş",
+          "Çıkış kanıtı"
+        ],
+        [
+          "1 · Ürün temeli",
+          "Hesap/roller, konuşmalar, hafıza, kuyruk, kullanım defteri, ödeme yaşam döngüsü.",
+          "Müşteri ayrımı; ödeme tekrarları; bütçe eşzamanlılık testleri."
+        ],
+        [
+          "2 · İlk gerçek işler",
+          "Araştırma, içerik düzenleme, Google taslak ve takvim, onay ekranı.",
+          "Gerçek pilot hesabında kaynak ve kayıt kimliğiyle doğru teslim."
+        ],
+        [
+          "3 · Medya ve yayın",
+          "Görsel/video; sosyal platformlar; CMS; düzenli iş; ajans onayı.",
+          "Planlı gönderi bir kez yayımlanır; kullanıcı durdurabilir."
+        ],
+        [
+          "4 · Tam hizmet kataloğu",
+          "Satış, destek, işe alım, analiz, belge, site, telefon ve mobil paket.",
+          "Her hizmet için canlı kabul senaryosu, bütçe ve hata geri kazanımı."
+        ],
+        [
+          "5 · Yayın ve büyüme",
+          "Sunucu, yedek/geri yükleme, izleme, destek akışı; kontrollü müşteri alımı.",
+          "Canlı uçtan uca satın alma → bağlantı → görev → iptal akışı."
+        ]
+      ],
+      "widths": [
+        147,
+        409,
+        308
+      ],
+      "refs": [],
+      "note": "Tek geliştirici için tüm kapsamı birkaç günde üretime hazır kabul etmek gerçekçi değil. İlk gerçek işler 2-4 haftalık planlama aralığında denenebilir; tam kapsamın süresi pilot ölçümünden sonra yeniden hesaplanmalı.",
+      "image": null,
+      "kind": "normal"
+    },
+    {
+      "title": "Kendi sunucuna dağıtım planı",
+      "lead": "Uygulama ve müşteri verisi kendi sunucunda tutulabilir; bulut modeline gönderilen içerik ayrıca dışarı çıkar.",
+      "bullets": [
+        "Alan adı ve HTTPS; uygulama/API; veritabanı; iş kuyruğu; dosya deposu. Geliştirme sunucusu doğrudan internete açılmamalı.",
+        "İlk yerel yapı SQLite ve tek işçi süreci kullanıyor. Çoklu sunucu/işçi ve artan yük için PostgreSQL ile dayanıklı kuyruk geçişi planlanmalı.",
+        "Gizli anahtarlar sunucunun gizli ayarlarında; yedekte şifreleme anahtarı ayrı korunmalı. Yedek almak kadar geri yüklemeyi denemek de gerekli.",
+        "Hermes kullanılacak alanlar için ayrı konteyner ve disk, dar ağ/araç yetkisi; sıradan sohbet için sürekli açık tarayıcı bilgisayarı zorunlu değil.",
+        "Ödeme, Google ve sosyal platformların üretim ayarları; hata takibi; kullanıcı verisi silme ve bağlantı iptali akışları."
+      ],
+      "table": null,
+      "widths": null,
+      "refs": [],
+      "note": "Sunucu erişimi, DNS, model bağlantısı ve üretim ödeme hesabı henüz sağlanmadı. Yerel uygulama hazırlanması, canlı yayın yapıldığı anlamına gelmez.",
+      "image": null,
+      "kind": "normal"
+    },
+    {
+      "title": "Yayına hazır demek için kalan doğrulamalar",
+      "lead": "Hiçbir kapı, yalnızca arayüzün görünmesiyle tamamlanmış sayılmıyor.",
+      "bullets": [],
+      "table": [
+        [
+          "Kapı",
+          "Gerekli gerçek kanıt"
+        ],
+        [
+          "Model ve ajan",
+          "20 görev karşılaştırması; gerçek maliyet; kaynak doğruluğu; araç izinleri."
+        ],
+        [
+          "Müşteri güvenliği",
+          "Alan/üye ayrımı; OAuth geri dönüşü; token yenileme/iptal; onaylı işlem sürümü."
+        ],
+        [
+          "Ticari yaşam döngüsü",
+          "Ödeme, yenileme, iade, iptal, paket değişimi ve limit aşımında doğru davranış."
+        ],
+        [
+          "Entegrasyon ve mobil",
+          "Seçilen tüm hizmetlerde gerçek kaynak kaydı; mağaza paketi/izinler ve cihazda ses."
+        ],
+        [
+          "İşletim",
+          "Yedekten geri yükleme; kesintiden sonra doğru devam; hata uyarısı; destek sorumlusu."
+        ]
+      ],
+      "widths": [
+        220,
+        644
+      ],
+      "refs": [],
+      "note": "Şu anki sonuç: kaynaklı rekabet araştırması + yerel uygulama temeli + kapsam ve kabul planı. Tam kapsamlı hizmetin canlı ve doğrulanmış biçimde yayını henüz tamamlanmadı.",
+      "image": null,
+      "kind": "normal"
+    },
+    {
+      "title": "Kaynaklar 1",
+      "lead": "Bağlantılar tıklanabilir. Ürün ve fiyat sayfaları 4 Ekim 2026 itibarıyla incelendi.",
+      "bullets": [
+        "<b>Marblism ürün</b><br/><link href=\"https://www.marblism.com/\" color=\"#245AF2\">https://www.marblism.com/</link>",
+        "<b>Marblism Eva</b><br/><link href=\"https://www.marblism.com/ai-employees/eva\" color=\"#245AF2\">https://www.marblism.com/ai-employees/eva</link>",
+        "<b>Marblism Sonny</b><br/><link href=\"https://www.marblism.com/ai-employees/sonny\" color=\"#245AF2\">https://www.marblism.com/ai-employees/sonny</link>",
+        "<b>Marblism Stan</b><br/><link href=\"https://www.marblism.com/ai-employees/stan\" color=\"#245AF2\">https://www.marblism.com/ai-employees/stan</link>",
+        "<b>Marblism Penny</b><br/><link href=\"https://www.marblism.com/ai-employees/penny\" color=\"#245AF2\">https://www.marblism.com/ai-employees/penny</link>",
+        "<b>Marblism Walter</b><br/><link href=\"https://www.marblism.com/ai-employees/walter\" color=\"#245AF2\">https://www.marblism.com/ai-employees/walter</link>",
+        "<b>Marblism Rachel</b><br/><link href=\"https://www.marblism.com/ai-employees/rachel\" color=\"#245AF2\">https://www.marblism.com/ai-employees/rachel</link>",
+        "<b>Marblism Linda</b><br/><link href=\"https://www.marblism.com/ai-employees/linda\" color=\"#245AF2\">https://www.marblism.com/ai-employees/linda</link>",
+        "<b>Marblism fiyatlar ve iş saati hesabı</b><br/><link href=\"https://help.marblism.com/en/articles/15361461-marblism-pricing-plans-billing-cadence\" color=\"#245AF2\">https://help.marblism.com/en/articles/15361461-marblism-pricing-plans-billing-cadence</link>"
+      ],
+      "table": null,
+      "widths": null,
+      "refs": [],
+      "note": "",
+      "image": null,
+      "kind": "sources"
+    },
+    {
+      "title": "Kaynaklar 2",
+      "lead": "Bağlantılar tıklanabilir. Ürün ve fiyat sayfaları 4 Ekim 2026 itibarıyla incelendi.",
+      "bullets": [
+        "<b>Marblism çalışma alanı sınırları</b><br/><link href=\"https://help.marblism.com/en/articles/15688766-when-should-i-create-a-new-workspace-best-practices\" color=\"#245AF2\">https://help.marblism.com/en/articles/15688766-when-should-i-create-a-new-workspace-best-practices</link>",
+        "<b>Marblism entegrasyonlar</b><br/><link href=\"https://help.marblism.com/en/articles/15278633-what-integrations-are-available\" color=\"#245AF2\">https://help.marblism.com/en/articles/15278633-what-integrations-are-available</link>",
+        "<b>Sintra ürün ve rol kataloğu</b><br/><link href=\"https://sintra.ai/\" color=\"#245AF2\">https://sintra.ai/</link>",
+        "<b>Sintra Summer Edition 2026</b><br/><link href=\"https://sintra.ai/summer-edition\" color=\"#245AF2\">https://sintra.ai/summer-edition</link>",
+        "<b>Sintra fiyatlar</b><br/><link href=\"https://help.sintra.ai/en/articles/12606895-sintra-ai-plans-and-pricing\" color=\"#245AF2\">https://help.sintra.ai/en/articles/12606895-sintra-ai-plans-and-pricing</link>",
+        "<b>Sintra arayüz dilleri</b><br/><link href=\"https://help.sintra.ai/en/articles/12448626-what-languages-is-the-ui-interface-available-in\" color=\"#245AF2\">https://help.sintra.ai/en/articles/12448626-what-languages-is-the-ui-interface-available-in</link>",
+        "<b>Sintra entegrasyonlar</b><br/><link href=\"https://sintra.ai/integrations\" color=\"#245AF2\">https://sintra.ai/integrations</link>",
+        "<b>Sintra Brain AI</b><br/><link href=\"https://sintra.ai/features/brain-ai\" color=\"#245AF2\">https://sintra.ai/features/brain-ai</link>",
+        "<b>Marblism karakter reklamı</b><br/><link href=\"https://www.instagram.com/p/DdzWKQYJIK-/\" color=\"#245AF2\">https://www.instagram.com/p/DdzWKQYJIK-/</link>"
+      ],
+      "table": null,
+      "widths": null,
+      "refs": [],
+      "note": "",
+      "image": null,
+      "kind": "sources"
+    },
+    {
+      "title": "Kaynaklar 3",
+      "lead": "Bağlantılar tıklanabilir. Ürün ve fiyat sayfaları 4 Ekim 2026 itibarıyla incelendi.",
+      "bullets": [
+        "<b>Marblism ilk kurulum</b><br/><link href=\"https://www.instagram.com/p/Dd9gNr3il86/\" color=\"#245AF2\">https://www.instagram.com/p/Dd9gNr3il86/</link>",
+        "<b>Marblism emlak videosu</b><br/><link href=\"https://www.instagram.com/p/DeAj77dJiED/\" color=\"#245AF2\">https://www.instagram.com/p/DeAj77dJiED/</link>",
+        "<b>Marblism trend video anlatımı</b><br/><link href=\"https://www.instagram.com/p/Dd6pwG_JVZV/\" color=\"#245AF2\">https://www.instagram.com/p/Dd6pwG_JVZV/</link>",
+        "<b>Sintra çalışma alanı turu</b><br/><link href=\"https://www.instagram.com/p/DZM_braAGgS/\" color=\"#245AF2\">https://www.instagram.com/p/DZM_braAGgS/</link>",
+        "<b>Sintra Brain ve Brand Kit</b><br/><link href=\"https://www.instagram.com/p/Dbkaa1oNW5h/\" color=\"#245AF2\">https://www.instagram.com/p/Dbkaa1oNW5h/</link>",
+        "<b>Sintra sosyal medya iş akışı</b><br/><link href=\"https://www.instagram.com/p/Db5DRlatzUa/\" color=\"#245AF2\">https://www.instagram.com/p/Db5DRlatzUa/</link>",
+        "<b>Sintra özel yardımcı oluşturma</b><br/><link href=\"https://www.instagram.com/p/DZfbmUOiYEL/\" color=\"#245AF2\">https://www.instagram.com/p/DZfbmUOiYEL/</link>",
+        "<b>Marblism örnek aktif reklam</b><br/><link href=\"https://www.facebook.com/ads/library/?id=1769320344267627\" color=\"#245AF2\">https://www.facebook.com/ads/library/?id=1769320344267627</link>",
+        "<b>Sintra örnek aktif reklam</b><br/><link href=\"https://www.facebook.com/ads/library/?id=1827557191940323\" color=\"#245AF2\">https://www.facebook.com/ads/library/?id=1827557191940323</link>"
+      ],
+      "table": null,
+      "widths": null,
+      "refs": [],
+      "note": "",
+      "image": null,
+      "kind": "sources"
+    },
+    {
+      "title": "Kaynaklar 4",
+      "lead": "Bağlantılar tıklanabilir. Ürün ve fiyat sayfaları 4 Ekim 2026 itibarıyla incelendi.",
+      "bullets": [
+        "<b>Marblism kurucusunun Ağustos 2026 nakit beyanı</b><br/><link href=\"https://www.linkedin.com/pulse/after-20-years-i-finally-made-my-first-internet-dollar-ulric-musset-nlyif\" color=\"#245AF2\">https://www.linkedin.com/pulse/after-20-years-i-finally-made-my-first-internet-dollar-ulric-musset-nlyif</link>",
+        "<b>Earlybird: Sintra Haziran 2025 beyanları</b><br/><link href=\"https://www.linkedin.com/pulse/earlybird-edition-june-2025-earlybird-venture-capital-3xofc\" color=\"#245AF2\">https://www.linkedin.com/pulse/earlybird-edition-june-2025-earlybird-venture-capital-3xofc</link>",
+        "<b>Grok Bot çalışma ortamı</b><br/><link href=\"https://docs.x.ai/grok-bot/overview\" color=\"#245AF2\">https://docs.x.ai/grok-bot/overview</link>",
+        "<b>Grok Bot kullanım koşulları</b><br/><link href=\"https://x.ai/legal/grok-bot-terms\" color=\"#245AF2\">https://x.ai/legal/grok-bot-terms</link>",
+        "<b>xAI ticari API koşulları</b><br/><link href=\"https://x.ai/legal/terms-of-service-enterprise\" color=\"#245AF2\">https://x.ai/legal/terms-of-service-enterprise</link>",
+        "<b>xAI API fiyatları</b><br/><link href=\"https://docs.x.ai/developers/pricing\" color=\"#245AF2\">https://docs.x.ai/developers/pricing</link>",
+        "<b>xAI gerçek istek maliyeti</b><br/><link href=\"https://docs.x.ai/developers/cost-tracking\" color=\"#245AF2\">https://docs.x.ai/developers/cost-tracking</link>",
+        "<b>Grok Bot kota ve faturalama</b><br/><link href=\"https://cursor.com/help/grok-bot/plans\" color=\"#245AF2\">https://cursor.com/help/grok-bot/plans</link>",
+        "<b>Cursor TypeScript SDK</b><br/><link href=\"https://cursor.com/docs/sdk/typescript\" color=\"#245AF2\">https://cursor.com/docs/sdk/typescript</link>"
+      ],
+      "table": null,
+      "widths": null,
+      "refs": [],
+      "note": "",
+      "image": null,
+      "kind": "sources"
+    },
+    {
+      "title": "Kaynaklar 5",
+      "lead": "Bağlantılar tıklanabilir. Ürün ve fiyat sayfaları 4 Ekim 2026 itibarıyla incelendi.",
+      "bullets": [
+        "<b>Hermes Agent kaynak kodu</b><br/><link href=\"https://github.com/NousResearch/hermes-agent\" color=\"#245AF2\">https://github.com/NousResearch/hermes-agent</link>",
+        "<b>Hermes API sunucusu</b><br/><link href=\"https://hermes-agent.nousresearch.com/docs/user-guide/features/api-server\" color=\"#245AF2\">https://hermes-agent.nousresearch.com/docs/user-guide/features/api-server</link>",
+        "<b>Hermes profil ayrımı</b><br/><link href=\"https://hermes-agent.nousresearch.com/docs/user-guide/profiles\" color=\"#245AF2\">https://hermes-agent.nousresearch.com/docs/user-guide/profiles</link>",
+        "<b>Hermes güvenlik modeli</b><br/><link href=\"https://hermes-agent.nousresearch.com/docs/user-guide/security\" color=\"#245AF2\">https://hermes-agent.nousresearch.com/docs/user-guide/security</link>",
+        "<b>Hermes MIT lisansı</b><br/><link href=\"https://raw.githubusercontent.com/NousResearch/hermes-agent/main/LICENSE\" color=\"#245AF2\">https://raw.githubusercontent.com/NousResearch/hermes-agent/main/LICENSE</link>"
+      ],
+      "table": null,
+      "widths": null,
+      "refs": [],
+      "note": "",
+      "image": null,
+      "kind": "sources"
+    }
+  ],
+  "current_state": "local prototype, not fully deployed service"
+}

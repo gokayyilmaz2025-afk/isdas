@@ -1,0 +1,10 @@
+{
+  "passed": true,
+  "checks": {
+    "persona_and_goal_survive_email_gate": true,
+    "selection_survives_reload_before_creation": true,
+    "confirmed_selection_persisted": true
+  },
+  "mail": "local memory capture only",
+  "live_smtp_tested": false
+}

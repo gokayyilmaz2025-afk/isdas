@@ -1,0 +1,37 @@
+{
+  "checked_at": "2026-10-04",
+  "billing_collection_enabled": false,
+  "live_provider_tested": false,
+  "live_payment_tested": false,
+  "backend_tests": 85,
+  "new_entitlement_tests": 17,
+  "policy": {
+    "account": "workspace owner; members use owner pool",
+    "pilot": "operator only, one lifetime grant, 14 days, 300 credits, 3 workspaces",
+    "credit": "1000 milli = 1 credit = USD 0.01 metered model/tool cost",
+    "job_charge_cap": "the job reservation; provider overrun is recorded separately",
+    "periods": "immutable and nonoverlapping; idempotent source reference; no calendar-month refill"
+  },
+  "evidence": [
+    "verification/tests.xml",
+    "verification/billing-browser-results.json",
+    "verification/billing-desktop.png",
+    "verification/billing-mobile.png",
+    "verification/chat-browser-results.json"
+  ],
+  "remaining": [
+    "verified payment adapter/webhooks",
+    "checkout, renew/cancel/refund, plan changes",
+    "live model and OAuth acceptance",
+    "additional external cost meters",
+    "production deployment"
+  ],
+  "test_only_grant_route_absent_from_main": true,
+  "main_app_health": "200",
+  "isolated_test_server_stopped": true,
+  "pdf_changed_pages_visually_reviewed": [
+    25,
+    26,
+    31
+  ]
+}

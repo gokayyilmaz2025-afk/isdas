@@ -1,0 +1,26 @@
+{
+  "passed": true,
+  "scope": "Heuristic computed text contrast on five default public pages, opaque nearest backgrounds; not a full accessibility audit",
+  "findings": [
+    {
+      "path": "/",
+      "findings": []
+    },
+    {
+      "path": "/isdaslar",
+      "findings": []
+    },
+    {
+      "path": "/paketler",
+      "findings": []
+    },
+    {
+      "path": "/baglantilar",
+      "findings": []
+    },
+    {
+      "path": "/yardim",
+      "findings": []
+    }
+  ]
+}

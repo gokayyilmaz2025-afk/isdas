@@ -1,0 +1,110 @@
+{
+  "engine": "faster-whisper base.en; machine transcript; verify uncertain terms",
+  "segments": [
+    {
+      "start": 0.0,
+      "end": 2.58,
+      "text": "Today, we're talking about the helper builder."
+    },
+    {
+      "start": 2.58,
+      "end": 6.12,
+      "text": "Sinterest new tool to help you build a helper from scratch."
+    },
+    {
+      "start": 6.12,
+      "end": 8.68,
+      "text": "You can give it a role, give it boundaries,"
+    },
+    {
+      "start": 8.68,
+      "end": 10.28,
+      "text": "and give it a personality."
+    },
+    {
+      "start": 10.28,
+      "end": 12.6,
+      "text": "And from that point on, it's ready to work"
+    },
+    {
+      "start": 12.6,
+      "end": 14.2,
+      "text": "for your business at any time."
+    },
+    {
+      "start": 14.2,
+      "end": 15.88,
+      "text": "Inside Sinterest Helper Builder,"
+    },
+    {
+      "start": 15.88,
+      "end": 19.2,
+      "text": "there are no forms to fill out or tools to configure."
+    },
+    {
+      "start": 19.2,
+      "end": 20.92,
+      "text": "You just have a conversation"
+    },
+    {
+      "start": 20.92,
+      "end": 22.56,
+      "text": "in the way you would brief a new hire."
+    },
+    {
+      "start": 22.56,
+      "end": 25.04,
+      "text": "Define what it does, how it communicates,"
+    },
+    {
+      "start": 25.04,
+      "end": 26.44,
+      "text": "and any rules that should follow."
+    },
+    {
+      "start": 26.44,
+      "end": 29.76,
+      "text": "And from that point on, it carries all of the context"
+    },
+    {
+      "start": 29.8,
+      "end": 31.52,
+      "text": "into any conversation that you have."
+    },
+    {
+      "start": 31.52,
+      "end": 34.28,
+      "text": "And what's more, once your helper is trained up,"
+    },
+    {
+      "start": 34.28,
+      "end": 35.96,
+      "text": "you can add it to the marketplace."
+    },
+    {
+      "start": 35.96,
+      "end": 38.92,
+      "text": "Then other businesses can go around hiring it,"
+    },
+    {
+      "start": 38.92,
+      "end": 41.96,
+      "text": "and if they hire yours, you get paid through Sinterest."
+    },
+    {
+      "start": 41.96,
+      "end": 44.12,
+      "text": "That's the upside of building something well."
+    },
+    {
+      "start": 44.12,
+      "end": 45.76,
+      "text": "It doesn't just save you time,"
+    },
+    {
+      "start": 45.76,
+      "end": 47.52,
+      "text": "but it can also become an asset, no."
+    }
+  ]
+}

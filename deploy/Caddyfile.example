@@ -1,0 +1,10 @@
+# Replace app.example.com with the exact hostname used by init_config.py.
+# Keep existing unrelated Caddy sites when adding this block.
+app.example.com {
+    encode zstd gzip
+    request_body {
+        max_size 10MB
+    }
+    reverse_proxy 127.0.0.1:8000
+    header Strict-Transport-Security "max-age=31536000"
+}

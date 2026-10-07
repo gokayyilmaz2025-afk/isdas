@@ -1,0 +1,16 @@
+.venv/
+.research-deps/
+node_modules/
+dist/
+.env
+.env.*
+!.env.example
+data/
+research/videos/*.mp4
+research/videos/*.wav
+research/sources/raw/
+__pycache__/
+.pytest_cache/
+*.sqlite*
+tmp/
+output/*.zip

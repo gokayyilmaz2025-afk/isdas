@@ -1,0 +1,44 @@
+{
+  "checked_at": "2026-10-04",
+  "implemented": [
+    "atomic first-message and conversation creation",
+    "replayed request returns same conversation/job",
+    "one active response per conversation",
+    "tenant-filtered paginated history",
+    "workspace collaboration with explicit shared visibility",
+    "archive/restore/rename/plain-text export",
+    "bounded prior conversation pairs",
+    "latest edited artifact and current action state supplied as data",
+    "explicit user-reviewed save to workspace memory",
+    "persisted deep links and reload",
+    "real job-state animation and cancellation",
+    "browser dictation UI; live microphone not tested"
+  ],
+  "limits": {
+    "history_turns": 12,
+    "history_chars": 32000,
+    "resources": "recent linked application state, separately excerpted",
+    "xai_storage": false,
+    "hermes": "explicit caller history; old workspace-wide transcript header removed",
+    "visibility": "shared with workspace members, not private DMs",
+    "live_model_benchmark": false,
+    "live_voice_test": false
+  },
+  "verification": {
+    "unit_tests": 68,
+    "http_requests_in_clean_browser_run": 4,
+    "prior_assistant_message_counts": [
+      0,
+      1,
+      2,
+      0
+    ],
+    "provider": "synthetic local HTTP service",
+    "browser_result": "verification/chat-browser-results.json",
+    "request_evidence": "verification/chat-provider-requests.json"
+  },
+  "sources": [
+    "https://docs.x.ai/developers/model-capabilities/text/generate-text",
+    "https://hermes-agent.nousresearch.com/docs/user-guide/features/api-server"
+  ]
+}

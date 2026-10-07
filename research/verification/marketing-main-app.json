@@ -1,0 +1,22 @@
+{
+  "port": 8000,
+  "pid": 14124,
+  "ready_status": 200,
+  "public_pages": {
+    "/": 200,
+    "/kullanim/kisisel": 200,
+    "/kullanim/isletme": 200,
+    "/kullanim/ajans": 200,
+    "/isdaslar": 200,
+    "/baglantilar": 200,
+    "/paketler": 200,
+    "/yardim": 200
+  },
+  "catalogue_status": "preview; no checkout",
+  "web_assets_match_release_manifest": true,
+  "archive": "Isdas-Sunucu-Paketi-20261004-r7.zip",
+  "test_mailbox_status": 405,
+  "outbound_mail_rows": 0,
+  "active_jobs": 0,
+  "backup": "data/backups/before-marketing-20261004-144003.sqlite3"
+}

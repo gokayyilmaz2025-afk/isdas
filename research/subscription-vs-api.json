@@ -1,0 +1,53 @@
+{
+  "checked_at": "2026-10-04",
+  "question": "Tek Grok Bot aboneliğinde satın alan her müşteriye bot açarak kendi uygulamamdan hizmet verebilir miyim?",
+  "recommendation": "Kendi uygulamasında müşteri başına çalışma alanı, hafıza, bağlantı ve kullanım bütçesi; sunucudan ticari model API'si. Grok Bot aboneliği üzerinden çok müşterili hizmet sunma varsayımıyla maliyet hesabı yapılmamalı.",
+  "verified": [
+    {"fact": "Aynı kullanıcının Grok Bot'ları bilgisayarı, dosyaları, tarayıcı oturumlarını ve uygulama girişlerini paylaşır. Bot başına bağımsız müşteri güvenlik sınırı yoktur.", "url": "https://docs.x.ai/grok-bot/overview"},
+    {"fact": "Grok Bot kullanım hakkı haftalık yenilenir; fazla kullanım açıksa ek ücret doğar. Yeni bot yeni kota yaratmaz. Devam eden görev aylık harcama sınırını aşarak bitebilir.", "url": "https://cursor.com/help/grok-bot/plans"},
+    {"fact": "Grok Bot ek koşulları 1.1 iç iş kullanımı tanımlar. Standart abonelikten otomatik yeniden satış hakkı çıkarılmamalı.", "url": "https://x.ai/legal/grok-bot-terms"},
+    {"fact": "API ticari koşulları 1.1 müşterinin kendi ürünüyle entegre hizmeti son kullanıcılarına sunmasını öngörür; diğer koşullar uygulanmaya devam eder.", "url": "https://x.ai/legal/terms-of-service-enterprise"},
+    {"fact": "Cursor resmi TypeScript SDK sunar. Bu, Grok Bot'un tüm kalıcı bilgisayar ve bağlantı yeteneklerinin beyaz etiketli API ile sunulduğunu kanıtlamaz.", "url": "https://cursor.com/docs/sdk/typescript"},
+    {"fact": "Team Bot kullanımı normalde mesajı yazan ekip üyesinin kotasına düşer; sahibinin tek kotasıyla sınırsız ekip kullanımı değildir.", "url": "https://docs.x.ai/grok-bot/team-bots"}
+  ],
+  "unknown": [
+    "Grok Bot için tüm istenen işlevleri kapsayan kamuya açık white-label görev API'si doğrulanmadı.",
+    "Özel yeniden satış anlaşmasının bulunabilirliği ve fiyatı bilinmiyor.",
+    "Gerçek Türkçe görevlerde token, araç çağrısı, yeniden deneme ve tarayıcı süresi henüz ölçülmedi.",
+    "Kullanıcının mevcut sunucusunun boş kapasitesi ve artan yükteki maliyeti bilinmiyor."
+  ],
+  "oauth_explanation": "OAuth bağlantı izni sağlar. Müşterinin Google hesabını uygulamaya bağlamak ile işletmecinin Grok aboneliği üzerinden çok müşteriye hizmet sunma hakkı farklı konulardır. OAuth tek başına kota veya yeniden satış lisansı sağlamaz.",
+  "cost_example": {
+    "status": "illustration_not_observed_average_or_quote",
+    "currency": "USD",
+    "model": "grok-4.7",
+    "endpoint": "global_standard",
+    "per_request_input_below_tokens": 200000,
+    "cache_discount_assumed": false,
+    "monthly_all_calls_input_tokens": 1000000,
+    "monthly_billable_output_tokens_including_reasoning": 200000,
+    "input_per_million_usd": 2,
+    "output_per_million_usd": 6,
+    "text_total_usd": 3.2,
+    "web_search_calls": 50,
+    "web_search_per_call_usd": 0.005,
+    "web_search_total_usd": 0.25,
+    "image_model": "grok-imagine-image-2.0",
+    "image_mode": "text_to_image_1k_low",
+    "images": 20,
+    "image_each_usd": 0.04,
+    "image_total_usd": 0.8,
+    "total_usd": 4.25,
+    "excluded": ["voice", "video", "browser compute", "Apify or other paid tools", "hosting", "support", "payment fees", "tax", "advertising", "development labor"],
+    "source": "https://docs.x.ai/developers/pricing"
+  },
+  "implementation_requirements": [
+    "Tahsilat sonrası uygulama içinde müşteri alanı ve bot tanımı oluştur; Grok web arayüzünü otomatik tıklayarak hesap havuzu kurma.",
+    "Model API anahtarı yalnızca sunucuda; müşteri bağlantıları kendi alanında şifreli saklanmalı.",
+    "Ücretli her çağrıyı, başarısız veya iptal edilmiş ücretli işi de kapsayarak kullanım defterine işle.",
+    "Yeni iş başlamadan kullanım bütçesini ayır; müşteriler arasında kota karışmasını önle.",
+    "Araç, tarayıcı ve çok ajanlı işleri ayrı limitlerle denetle; modelin tur limiti araç çağrısı sayısı için kesin üst sınır olarak kabul edilmemeli.",
+    "Fiyatları ve gerçek görev maliyetini pilot sonuçlarına göre güncelle; limitsiz ses/video/tarayıcı işi vaat etme."
+  ],
+  "current_implementation_limit": "Yerel prototipte çalışma alanı ayrımı, doğrudan xAI isteklerinin tam sayı ücret kaydı, atomik bütçe rezervasyonu ve belirsiz ücret incelemesi var; test sağlayıcısıyla doğrulandı. Devam eden çağrı tahmini rezervasyonu aşabilir. Hermes toplam ücret adaptörü, ödeme entegrasyonu ve canlı maliyet doğrulaması henüz tamamlanmadı."
+}
